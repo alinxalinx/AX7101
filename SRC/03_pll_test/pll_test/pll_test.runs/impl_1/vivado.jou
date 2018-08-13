@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jun 15 15:04:07 2018
+# Process ID: 5284
+# Current directory: D:/demo_ax7101/demo/03_pll_test/pll_test/pll_test.runs/impl_1
+# Command line: vivado.exe -log pll_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pll_test.tcl -notrace
+# Log file: D:/demo_ax7101/demo/03_pll_test/pll_test/pll_test.runs/impl_1/pll_test.vdi
+# Journal file: D:/demo_ax7101/demo/03_pll_test/pll_test/pll_test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source pll_test.tcl -notrace

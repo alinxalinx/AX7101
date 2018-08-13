@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Jun 15 16:06:14 2018
+# Process ID: 1876
+# Current directory: D:/demo_ax7101/demo/04_1_uart_usb_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2428 D:\demo_ax7101\demo\04_1_uart_usb_test\uart_test.xpr
+# Log file: D:/demo_ax7101/demo/04_1_uart_usb_test/vivado.log
+# Journal file: D:/demo_ax7101/demo/04_1_uart_usb_test\vivado.jou
+#-----------------------------------------------------------
+start_gui

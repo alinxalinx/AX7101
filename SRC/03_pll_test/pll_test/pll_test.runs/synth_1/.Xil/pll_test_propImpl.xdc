@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:D:/demo_ax7101/demo/03_pll_test/pll_test/constrs_1/new/pll.xdc rfile:../../../constrs_1/new/pll.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R4 [get_ports sys_clk_p]
+set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN T6 [get_ports {rst_n}]
+set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN B22 [get_ports clk_out]

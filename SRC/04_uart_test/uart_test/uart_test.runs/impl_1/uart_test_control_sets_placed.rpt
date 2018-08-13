@@ -1,0 +1,77 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Jun 15 17:03:10 2018
+| Host         : PC-201805041311 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file uart_test_control_sets_placed.rpt
+| Design       : uart_test
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    65 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              51 |           22 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              68 |           20 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------+---------------------------------------+--------------------------------------------+------------------+----------------+
+|  Clock Signal |             Enable Signal             |              Set/Reset Signal              | Slice Load Count | Bel Load Count |
++---------------+---------------------------------------+--------------------------------------------+------------------+----------------+
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[0]_i_1_n_0       | uart_rx_inst/FSM_sequential_state_reg[2]_0 |                1 |              1 |
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[1]_i_1_n_0       | uart_rx_inst/FSM_sequential_state_reg[2]_0 |                1 |              1 |
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[2]_i_1_n_0       | uart_rx_inst/FSM_sequential_state_reg[2]_0 |                1 |              1 |
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[3]_i_1_n_0       | uart_rx_inst/FSM_sequential_state_reg[2]_0 |                1 |              1 |
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[4]_i_1_n_0       | uart_rx_inst/FSM_sequential_state_reg[2]_0 |                1 |              1 |
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[5]_i_1_n_0       | uart_rx_inst/FSM_sequential_state_reg[2]_0 |                1 |              1 |
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[6]_i_1_n_0       | uart_rx_inst/FSM_sequential_state_reg[2]_0 |                1 |              1 |
+|  sys_clk_BUFG | uart_rx_inst/rx_bits[7]_i_1_n_0       | uart_rx_inst/FSM_sequential_state_reg[2]_0 |                1 |              1 |
+|  sys_clk_BUFG | uart_tx_inst/tx_cnt_reg_0_sn_1        | uart_rx_inst/FSM_sequential_state_reg[2]_0 |                1 |              4 |
+|  sys_clk_BUFG | uart_tx_inst/tx_data_latch[7]_i_1_n_0 | uart_rx_inst/FSM_sequential_state_reg[2]_0 |                1 |              8 |
+|  sys_clk_BUFG | uart_rx_inst/E[0]                     | uart_rx_inst/FSM_sequential_state_reg[2]_0 |                2 |              8 |
+|  sys_clk_BUFG | uart_rx_inst/rx_data_valid01_out      | uart_rx_inst/FSM_sequential_state_reg[2]_0 |                1 |              8 |
+|  sys_clk_BUFG | wait_cnt[31]_i_1_n_0                  | uart_rx_inst/FSM_sequential_state_reg[2]_0 |                7 |             32 |
+|  sys_clk_BUFG |                                       | uart_rx_inst/FSM_sequential_state_reg[2]_0 |               22 |             51 |
++---------------+---------------------------------------+--------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     8 |
+| 4      |                     1 |
+| 8      |                     3 |
+| 16+    |                     2 |
++--------+-----------------------+
+
+

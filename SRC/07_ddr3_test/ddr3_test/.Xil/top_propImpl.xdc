@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:D:/demo_AX7050/7_ddr3_test/ddr3_test/ddr3_test.srcs/sources_1/ddr3_test.xdc rfile:../ddr3_test.srcs/sources_1/ddr3_test.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:22 export:INPUT save:INPUT read:READ} [current_design]
+create_clock -period 20 [get_ports sys_clk]
+set_property src_info {type:XDC file:1 line:23 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports {sys_clk}]
+set_property src_info {type:XDC file:1 line:24 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN P15 [get_ports {sys_clk}]
