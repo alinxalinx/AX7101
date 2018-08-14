@@ -1,0 +1,1614 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4348 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 435.902 ; gain = 94.395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:30]
+	Parameter MEM_DATA_BITS bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 25 - type: integer 
+	Parameter BUSRT_BITS bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19483]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFDS' (1#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19483]
+INFO: [Synth 8-638] synthesizing module 'sys_pll' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/realtime/sys_pll_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'sys_pll' (2#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/realtime/sys_pll_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'video_pll' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'video_pll' (3#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'i2c_config' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_config.v:30]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_WR_I2C_CHECK bound to: 1 - type: integer 
+	Parameter S_WR_I2C bound to: 2 - type: integer 
+	Parameter S_WR_I2C_DONE bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'i2c_master_top' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_master_top.v:30]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_WR_DEV_ADDR bound to: 1 - type: integer 
+	Parameter S_WR_REG_ADDR bound to: 2 - type: integer 
+	Parameter S_WR_DATA bound to: 3 - type: integer 
+	Parameter S_WR_ACK bound to: 4 - type: integer 
+	Parameter S_WR_ERR_NACK bound to: 5 - type: integer 
+	Parameter S_RD_DEV_ADDR0 bound to: 6 - type: integer 
+	Parameter S_RD_REG_ADDR bound to: 7 - type: integer 
+	Parameter S_RD_DEV_ADDR1 bound to: 8 - type: integer 
+	Parameter S_RD_DATA bound to: 9 - type: integer 
+	Parameter S_RD_STOP bound to: 10 - type: integer 
+	Parameter S_WR_STOP bound to: 11 - type: integer 
+	Parameter S_WAIT bound to: 12 - type: integer 
+	Parameter S_WR_REG_ADDR1 bound to: 13 - type: integer 
+	Parameter S_RD_REG_ADDR1 bound to: 14 - type: integer 
+	Parameter S_RD_ACK bound to: 15 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_master_top.v:96]
+INFO: [Synth 8-638] synthesizing module 'i2c_master_byte_ctrl' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_master_byte_ctrl.v:75]
+	Parameter ST_IDLE bound to: 5'b00000 
+	Parameter ST_START bound to: 5'b00001 
+	Parameter ST_READ bound to: 5'b00010 
+	Parameter ST_WRITE bound to: 5'b00100 
+	Parameter ST_ACK bound to: 5'b01000 
+	Parameter ST_STOP bound to: 5'b10000 
+INFO: [Synth 8-638] synthesizing module 'i2c_master_bit_ctrl' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_master_bit_ctrl.v:143]
+	Parameter idle bound to: 18'b000000000000000000 
+	Parameter start_a bound to: 18'b000000000000000001 
+	Parameter start_b bound to: 18'b000000000000000010 
+	Parameter start_c bound to: 18'b000000000000000100 
+	Parameter start_d bound to: 18'b000000000000001000 
+	Parameter start_e bound to: 18'b000000000000010000 
+	Parameter stop_a bound to: 18'b000000000000100000 
+	Parameter stop_b bound to: 18'b000000000001000000 
+	Parameter stop_c bound to: 18'b000000000010000000 
+	Parameter stop_d bound to: 18'b000000000100000000 
+	Parameter rd_a bound to: 18'b000000001000000000 
+	Parameter rd_b bound to: 18'b000000010000000000 
+	Parameter rd_c bound to: 18'b000000100000000000 
+	Parameter rd_d bound to: 18'b000001000000000000 
+	Parameter wr_a bound to: 18'b000010000000000000 
+	Parameter wr_b bound to: 18'b000100000000000000 
+	Parameter wr_c bound to: 18'b001000000000000000 
+	Parameter wr_d bound to: 18'b010000000000000000 
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_master_bit_ctrl.v:406]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_master_bit_ctrl.v:406]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_master_bit_ctrl.v:410]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_master_bit_ctrl.v:410]
+INFO: [Synth 8-256] done synthesizing module 'i2c_master_bit_ctrl' (4#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_master_bit_ctrl.v:143]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_master_byte_ctrl.v:230]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_master_byte_ctrl.v:230]
+INFO: [Synth 8-256] done synthesizing module 'i2c_master_byte_ctrl' (5#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_master_byte_ctrl.v:75]
+INFO: [Synth 8-256] done synthesizing module 'i2c_master_top' (6#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_master_top.v:30]
+WARNING: [Synth 8-5788] Register i2c_write_req_reg in module i2c_config is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_config.v:101]
+WARNING: [Synth 8-3848] Net i2c_read_req in module/entity i2c_config does not have driver. [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_config.v:57]
+INFO: [Synth 8-256] done synthesizing module 'i2c_config' (7#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_config.v:30]
+INFO: [Synth 8-638] synthesizing module 'lut_ov5640_rgb565_640_480' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/lut_ov5640_rgb565_640_480.v:30]
+INFO: [Synth 8-256] done synthesizing module 'lut_ov5640_rgb565_640_480' (8#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/lut_ov5640_rgb565_640_480.v:30]
+INFO: [Synth 8-638] synthesizing module 'cmos_8_16bit' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/cmos_8_16bit.v:30]
+INFO: [Synth 8-256] done synthesizing module 'cmos_8_16bit' (9#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/cmos_8_16bit.v:30]
+INFO: [Synth 8-638] synthesizing module 'cmos_write_req_gen' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/cmos_write_req_gen.v:30]
+INFO: [Synth 8-256] done synthesizing module 'cmos_write_req_gen' (10#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/cmos_write_req_gen.v:30]
+INFO: [Synth 8-638] synthesizing module 'color_bar' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/color_bar.v:33]
+	Parameter H_ACTIVE bound to: 16'b0000010100000000 
+	Parameter H_FP bound to: 16'b0000000001101110 
+	Parameter H_SYNC bound to: 16'b0000000000101000 
+	Parameter H_BP bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE bound to: 16'b0000001011010000 
+	Parameter V_FP bound to: 16'b0000000000000101 
+	Parameter V_SYNC bound to: 16'b0000000000000101 
+	Parameter V_BP bound to: 16'b0000000000010100 
+	Parameter HS_POL bound to: 1'b1 
+	Parameter VS_POL bound to: 1'b1 
+	Parameter H_TOTAL bound to: 16'b0000011001110010 
+	Parameter V_TOTAL bound to: 16'b0000001011101110 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+INFO: [Synth 8-256] done synthesizing module 'color_bar' (11#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/color_bar.v:33]
+INFO: [Synth 8-638] synthesizing module 'video_rect_read_data' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:30]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:43]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:47]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:48]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:51]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:55]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:56]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:59]
+INFO: [Synth 8-638] synthesizing module 'timing_gen_xy' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/timing_gen_xy.v:29]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'timing_gen_xy' (12#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/timing_gen_xy.v:29]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'timing_gen_xy_m0'. This will prevent further optimization [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:149]
+WARNING: [Synth 8-5788] Register pos_hs_d2_reg in module video_rect_read_data is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:80]
+WARNING: [Synth 8-5788] Register pos_vs_d2_reg in module video_rect_read_data is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:81]
+WARNING: [Synth 8-5788] Register pos_de_d2_reg in module video_rect_read_data is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:82]
+INFO: [Synth 8-256] done synthesizing module 'video_rect_read_data' (13#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:30]
+WARNING: [Synth 8-689] width (24) of port connection 'vout_data' does not match port width (16) of module 'video_rect_read_data' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:366]
+WARNING: [Synth 8-689] width (24) of port connection 'timing_data' does not match port width (16) of module 'video_rect_read_data' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:383]
+INFO: [Synth 8-638] synthesizing module 'frame_read_write' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/frame_read_write.v:31]
+	Parameter MEM_DATA_BITS bound to: 64 - type: integer 
+	Parameter READ_DATA_BITS bound to: 16 - type: integer 
+	Parameter WRITE_DATA_BITS bound to: 16 - type: integer 
+	Parameter ADDR_BITS bound to: 25 - type: integer 
+	Parameter BUSRT_BITS bound to: 10 - type: integer 
+	Parameter BURST_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'afifo_16i_64o_512' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/realtime/afifo_16i_64o_512_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'afifo_16i_64o_512' (14#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/realtime/afifo_16i_64o_512_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'rd_data_count' does not match port width (7) of module 'afifo_16i_64o_512' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/frame_read_write.v:96]
+INFO: [Synth 8-638] synthesizing module 'frame_fifo_write' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/frame_fifo_write.v:31]
+	Parameter MEM_DATA_BITS bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 25 - type: integer 
+	Parameter BUSRT_BITS bound to: 10 - type: integer 
+	Parameter BURST_SIZE bound to: 64 - type: integer 
+	Parameter ONE bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 
+	Parameter ZERO bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_ACK bound to: 1 - type: integer 
+	Parameter S_CHECK_FIFO bound to: 2 - type: integer 
+	Parameter S_WRITE_BURST bound to: 3 - type: integer 
+	Parameter S_WRITE_BURST_END bound to: 4 - type: integer 
+	Parameter S_END bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'frame_fifo_write' (15#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/frame_fifo_write.v:31]
+INFO: [Synth 8-638] synthesizing module 'afifo_64i_16o_128' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/realtime/afifo_64i_16o_128_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'afifo_64i_16o_128' (16#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/realtime/afifo_64i_16o_128_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'wr_data_count' does not match port width (7) of module 'afifo_64i_16o_128' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/frame_read_write.v:159]
+INFO: [Synth 8-638] synthesizing module 'frame_fifo_read' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/frame_fifo_read.v:31]
+	Parameter MEM_DATA_BITS bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 25 - type: integer 
+	Parameter BUSRT_BITS bound to: 10 - type: integer 
+	Parameter FIFO_DEPTH bound to: 128 - type: integer 
+	Parameter BURST_SIZE bound to: 64 - type: integer 
+	Parameter ONE bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 
+	Parameter ZERO bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_ACK bound to: 1 - type: integer 
+	Parameter S_CHECK_FIFO bound to: 2 - type: integer 
+	Parameter S_READ_BURST bound to: 3 - type: integer 
+	Parameter S_READ_BURST_END bound to: 4 - type: integer 
+	Parameter S_END bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'frame_fifo_read' (17#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/frame_fifo_read.v:31]
+INFO: [Synth 8-256] done synthesizing module 'frame_read_write' (18#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/frame_read_write.v:31]
+INFO: [Synth 8-638] synthesizing module 'ddr3' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/realtime/ddr3_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ddr3' (19#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/realtime/ddr3_stub.v:5]
+WARNING: [Synth 8-689] width (64) of port connection 's_axi_awaddr' does not match port width (30) of module 'ddr3' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:507]
+WARNING: [Synth 8-689] width (64) of port connection 's_axi_araddr' does not match port width (30) of module 'ddr3' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:530]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_arlock' does not match port width (1) of module 'ddr3' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:534]
+WARNING: [Synth 8-350] instance 'u_ddr3' of module 'ddr3' requires 66 connections, but only 65 given [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:475]
+INFO: [Synth 8-638] synthesizing module 'aq_axi_master' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/aq_axi_master.v:39]
+	Parameter S_WR_IDLE bound to: 3'b000 
+	Parameter S_WA_WAIT bound to: 3'b001 
+	Parameter S_WA_START bound to: 3'b010 
+	Parameter S_WD_WAIT bound to: 3'b011 
+	Parameter S_WD_PROC bound to: 3'b100 
+	Parameter S_WR_WAIT bound to: 3'b101 
+	Parameter S_WR_DONE bound to: 3'b110 
+	Parameter S_RD_IDLE bound to: 3'b000 
+	Parameter S_RA_WAIT bound to: 3'b001 
+	Parameter S_RA_START bound to: 3'b010 
+	Parameter S_RD_WAIT bound to: 3'b011 
+	Parameter S_RD_PROC bound to: 3'b100 
+	Parameter S_RD_DONE bound to: 3'b101 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/aq_axi_master.v:350]
+WARNING: [Synth 8-6014] Unused sequential element reg_w_stb_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/aq_axi_master.v:179]
+WARNING: [Synth 8-6014] Unused sequential element reg_wr_status_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/aq_axi_master.v:180]
+WARNING: [Synth 8-6014] Unused sequential element reg_w_count_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/aq_axi_master.v:181]
+WARNING: [Synth 8-6014] Unused sequential element reg_r_count_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/aq_axi_master.v:182]
+WARNING: [Synth 8-6014] Unused sequential element wr_chkdata_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/aq_axi_master.v:183]
+WARNING: [Synth 8-6014] Unused sequential element rd_chkdata_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/aq_axi_master.v:184]
+WARNING: [Synth 8-6014] Unused sequential element resp_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/aq_axi_master.v:185]
+WARNING: [Synth 8-5788] Register reg_r_last_reg in module aq_axi_master is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/aq_axi_master.v:370]
+INFO: [Synth 8-256] done synthesizing module 'aq_axi_master' (20#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/aq_axi_master.v:39]
+WARNING: [Synth 8-689] width (4) of port connection 'M_AXI_AWID' does not match port width (1) of module 'aq_axi_master' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:556]
+WARNING: [Synth 8-689] width (64) of port connection 'M_AXI_AWADDR' does not match port width (32) of module 'aq_axi_master' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:557]
+WARNING: [Synth 8-689] width (4) of port connection 'M_AXI_BID' does not match port width (1) of module 'aq_axi_master' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:574]
+WARNING: [Synth 8-689] width (4) of port connection 'M_AXI_ARID' does not match port width (1) of module 'aq_axi_master' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:579]
+WARNING: [Synth 8-689] width (64) of port connection 'M_AXI_ARADDR' does not match port width (32) of module 'aq_axi_master' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:580]
+WARNING: [Synth 8-689] width (4) of port connection 'M_AXI_RID' does not match port width (1) of module 'aq_axi_master' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:591]
+WARNING: [Synth 8-689] width (28) of port connection 'WR_ADRS' does not match port width (32) of module 'aq_axi_master' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:600]
+WARNING: [Synth 8-689] width (13) of port connection 'WR_LEN' does not match port width (32) of module 'aq_axi_master' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:601]
+WARNING: [Synth 8-689] width (28) of port connection 'RD_ADRS' does not match port width (32) of module 'aq_axi_master' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:609]
+WARNING: [Synth 8-689] width (13) of port connection 'RD_LEN' does not match port width (32) of module 'aq_axi_master' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:610]
+INFO: [Synth 8-638] synthesizing module 'mem_read_arbi' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/mem_read_arbi.v:29]
+	Parameter MEM_DATA_BITS bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 25 - type: integer 
+	Parameter BUSRT_BITS bound to: 10 - type: integer 
+	Parameter IDLE bound to: 6'b000000 
+	Parameter CH0_CHECK bound to: 6'b000001 
+	Parameter CH0_BEGIN bound to: 6'b000010 
+	Parameter CH0_READ bound to: 6'b000011 
+	Parameter CH0_END bound to: 6'b000100 
+	Parameter CH1_CHECK bound to: 6'b000101 
+	Parameter CH1_BEGIN bound to: 6'b000110 
+	Parameter CH1_READ bound to: 6'b000111 
+	Parameter CH1_END bound to: 6'b001000 
+	Parameter CH2_CHECK bound to: 6'b001001 
+	Parameter CH2_BEGIN bound to: 6'b001010 
+	Parameter CH2_READ bound to: 6'b001011 
+	Parameter CH2_END bound to: 6'b001100 
+	Parameter CH3_CHECK bound to: 6'b001101 
+	Parameter CH3_BEGIN bound to: 6'b001110 
+	Parameter CH3_READ bound to: 6'b001111 
+	Parameter CH3_END bound to: 6'b010000 
+INFO: [Synth 8-256] done synthesizing module 'mem_read_arbi' (21#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/mem_read_arbi.v:29]
+WARNING: [Synth 8-350] instance 'mem_read_arbi_m0' of module 'mem_read_arbi' requires 32 connections, but only 20 given [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+INFO: [Synth 8-638] synthesizing module 'mem_write_arbi' [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/mem_write_arbi.v:29]
+	Parameter MEM_DATA_BITS bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 25 - type: integer 
+	Parameter BUSRT_BITS bound to: 10 - type: integer 
+	Parameter IDLE bound to: 6'b000000 
+	Parameter CH0_CHECK bound to: 6'b000001 
+	Parameter CH0_BEGIN bound to: 6'b000010 
+	Parameter CH0_WRITE bound to: 6'b000011 
+	Parameter CH0_END bound to: 6'b000100 
+	Parameter CH1_CHECK bound to: 6'b000101 
+	Parameter CH1_BEGIN bound to: 6'b000110 
+	Parameter CH1_WRITE bound to: 6'b000111 
+	Parameter CH1_END bound to: 6'b001000 
+	Parameter CH2_CHECK bound to: 6'b001001 
+	Parameter CH2_BEGIN bound to: 6'b001010 
+	Parameter CH2_WRITE bound to: 6'b001011 
+	Parameter CH2_END bound to: 6'b001100 
+	Parameter CH3_CHECK bound to: 6'b001101 
+	Parameter CH3_BEGIN bound to: 6'b001110 
+	Parameter CH3_WRITE bound to: 6'b001111 
+	Parameter CH3_END bound to: 6'b010000 
+INFO: [Synth 8-256] done synthesizing module 'mem_write_arbi' (22#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/mem_write_arbi.v:29]
+WARNING: [Synth 8-350] instance 'mem_write_arbi_m0' of module 'mem_write_arbi' requires 32 connections, but only 20 given [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3848] Net s00_axi_buser in module/entity top does not have driver. [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:177]
+WARNING: [Synth 8-3848] Net s00_axi_ruser in module/entity top does not have driver. [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:198]
+INFO: [Synth 8-256] done synthesizing module 'top' (23#1) [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:30]
+WARNING: [Synth 8-3917] design top has port cmos1_rst_n driven by constant 1
+WARNING: [Synth 8-3917] design top has port cmos2_rst_n driven by constant 1
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RUSER[0]
+WARNING: [Synth 8-3331] design frame_fifo_write has unconnected port wr_burst_data_req
+WARNING: [Synth 8-3331] design i2c_master_top has unconnected port i2c_slave_dev_addr[0]
+WARNING: [Synth 8-3331] design top has unconnected port cmos1_db[1]
+WARNING: [Synth 8-3331] design top has unconnected port cmos1_db[0]
+WARNING: [Synth 8-3331] design top has unconnected port cmos2_db[1]
+WARNING: [Synth 8-3331] design top has unconnected port cmos2_db[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 493.246 ; gain = 151.738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin i2c_master_top_m0:i2c_read_req to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_config.v:130]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_req to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_len[9] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_len[8] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_len[7] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_len[6] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_len[5] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_len[4] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_len[3] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_len[2] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_len[1] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_len[0] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[24] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[23] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[22] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[21] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[20] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[19] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[18] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[17] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[16] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[15] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[14] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[13] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[12] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[11] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[10] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[9] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[8] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[7] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[6] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[5] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[4] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[3] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[2] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[1] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch2_rd_burst_addr[0] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_req to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_len[9] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_len[8] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_len[7] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_len[6] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_len[5] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_len[4] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_len[3] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_len[2] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_len[1] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_len[0] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[24] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[23] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[22] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[21] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[20] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[19] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[18] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[17] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[16] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[15] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[14] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[13] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[12] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[11] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[10] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[9] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[8] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[7] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[6] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[5] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[4] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[3] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[2] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[1] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_read_arbi_m0:ch3_rd_burst_addr[0] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:626]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_req to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_len[9] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_len[8] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_len[7] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_len[6] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_len[5] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_len[4] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_len[3] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_len[2] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_len[1] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_len[0] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[24] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[23] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[22] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[21] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[20] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[19] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[18] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[17] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[16] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[15] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[14] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[13] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[12] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[11] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[10] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+WARNING: [Synth 8-3295] tying undriven pin mem_write_arbi_m0:ch2_wr_burst_addr[9] to constant 0 [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/top.v:658]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 493.246 ; gain = 151.738
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp5/sys_pll_in_context.xdc] for cell 'sys_pll_m0'
+Finished Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp5/sys_pll_in_context.xdc] for cell 'sys_pll_m0'
+Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp6/video_pll_in_context.xdc] for cell 'video_pll_m0'
+Finished Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp6/video_pll_in_context.xdc] for cell 'video_pll_m0'
+Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp7/afifo_16i_64o_512_in_context.xdc] for cell 'frame_read_write_m0/write_buf'
+Finished Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp7/afifo_16i_64o_512_in_context.xdc] for cell 'frame_read_write_m0/write_buf'
+Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp7/afifo_16i_64o_512_in_context.xdc] for cell 'frame_read_write_m1/write_buf'
+Finished Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp7/afifo_16i_64o_512_in_context.xdc] for cell 'frame_read_write_m1/write_buf'
+Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp8/afifo_64i_16o_128_in_context.xdc] for cell 'frame_read_write_m0/read_buf'
+Finished Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp8/afifo_64i_16o_128_in_context.xdc] for cell 'frame_read_write_m0/read_buf'
+Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp8/afifo_64i_16o_128_in_context.xdc] for cell 'frame_read_write_m1/read_buf'
+Finished Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp8/afifo_64i_16o_128_in_context.xdc] for cell 'frame_read_write_m1/read_buf'
+Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc] for cell 'u_ddr3'
+Finished Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc] for cell 'u_ddr3'
+Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc]
+WARNING: [Vivado 12-507] No nets matched 'cmos1_pclk_IBUF'. [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:147]
+WARNING: [Vivado 12-507] No nets matched 'cmos2_pclk_IBUF'. [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:150]
+WARNING: [Vivado 12-627] No clocks matched 'clk_pll_i'. [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:151]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:151]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out1_video_pll'. [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:151]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:151]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out1_video_pll'. [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:152]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:152]
+WARNING: [Vivado 12-627] No clocks matched 'clk_pll_i'. [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:152]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:152]
+Finished Parsing XDC File [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 856.316 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 856.316 ; gain = 514.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 856.316 ; gain = 514.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[14]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[14]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_n[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_n[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_p[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_p[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cs_n[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cs_n[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[2]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[2]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[3]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[3]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[16]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[16]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[17]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[17]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[18]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[18]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[19]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[19]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[20]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[20]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[21]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[21]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[22]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[22]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[23]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[23]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[24]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[24]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[25]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[25]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[26]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[26]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[27]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[27]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[28]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[28]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[29]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[29]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[30]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[30]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[31]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 104).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[31]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 105).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 106).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 107).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 108).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 109).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 110).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 111).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 112).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 113).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 114).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 115).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 116).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 117).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 118).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 119).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 120).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 121).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 122).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 123).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[2]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 124).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[2]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 125).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[3]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 126).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[3]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 127).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 128).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 129).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 130).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 131).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[2]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 132).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[2]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 133).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[3]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 134).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[3]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 135).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 136).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 137).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 138).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 139).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 140).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 141).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 142).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/.Xil/Vivado-4912-PC-201805041311/dcp9/ddr3_in_context.xdc, line 143).
+Applied set_property DONT_TOUCH = true for frame_read_write_m0/read_buf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for frame_read_write_m0/write_buf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for frame_read_write_m1/read_buf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for frame_read_write_m1/write_buf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for sys_pll_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ddr3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for video_pll_m0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 856.316 ; gain = 514.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_bit_ctrl'
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_byte_ctrl'
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_master_top'
+INFO: [Synth 8-5544] ROM "read" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "error" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_config'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "lut_data" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element x_cnt_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/cmos_8_16bit.v:49]
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_active" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element x_cnt_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/timing_gen_xy.v:78]
+WARNING: [Synth 8-6014] Unused sequential element y_cnt_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/timing_gen_xy.v:87]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:121]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:122]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:121]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:122]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:121]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/video_rect_read_data.v:122]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'frame_fifo_write'
+INFO: [Synth 8-5544] ROM "write_finish" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_req_ack" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_aclr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'frame_fifo_read'
+INFO: [Synth 8-5544] ROM "read_finish" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_req_ack" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_aclr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'aq_axi_master'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'aq_axi_master'
+INFO: [Synth 8-5546] ROM "M_AXI_WLAST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_w_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "WR_READY" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_w_last" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wr_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RD_READY" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_r_last" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'read_state_reg' in module 'mem_read_arbi'
+INFO: [Synth 8-5546] ROM "rd_burst_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "read_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'write_state_reg' in module 'mem_write_arbi'
+INFO: [Synth 8-5546] ROM "wr_burst_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "write_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            00000 |               000000000000000000
+                 start_a |                            00001 |               000000000000000001
+                 start_b |                            00010 |               000000000000000010
+                 start_c |                            00011 |               000000000000000100
+                 start_d |                            00100 |               000000000000001000
+                 start_e |                            00101 |               000000000000010000
+                  stop_a |                            00110 |               000000000000100000
+                  stop_b |                            00111 |               000000000001000000
+                  stop_c |                            01000 |               000000000010000000
+                  stop_d |                            01001 |               000000000100000000
+                    wr_a |                            01010 |               000010000000000000
+                    wr_b |                            01011 |               000100000000000000
+                    wr_c |                            01100 |               001000000000000000
+                    wr_d |                            01101 |               010000000000000000
+                    rd_a |                            01110 |               000000001000000000
+                    rd_b |                            01111 |               000000010000000000
+                    rd_c |                            10000 |               000000100000000000
+                    rd_d |                            10001 |               000001000000000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'i2c_master_bit_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                              000 |                            00000
+                ST_START |                              001 |                            00001
+                 ST_READ |                              010 |                            00010
+                ST_WRITE |                              011 |                            00100
+                  ST_ACK |                              100 |                            01000
+                 ST_STOP |                              101 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'i2c_master_byte_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                 0000000000000001 |                             0000
+           S_WR_DEV_ADDR |                 0000000000000010 |                             0001
+           S_WR_REG_ADDR |                 0000000000010000 |                             0010
+          S_WR_REG_ADDR1 |                 0000000000100000 |                             1101
+               S_WR_DATA |                 0000000001000000 |                             0011
+          S_RD_DEV_ADDR0 |                 0000000000000100 |                             0110
+           S_WR_ERR_NACK |                 0000000000001000 |                             0101
+               S_WR_STOP |                 0000000010000000 |                             1011
+                S_WR_ACK |                 0000010000000000 |                             0100
+           S_RD_REG_ADDR |                 0000100000000000 |                             0111
+          S_RD_REG_ADDR1 |                 0001000000000000 |                             1110
+          S_RD_DEV_ADDR1 |                 0010000000000000 |                             1000
+               S_RD_DATA |                 0100000000000000 |                             1001
+               S_RD_STOP |                 1000000000000000 |                             1010
+                S_RD_ACK |                 0000000100000000 |                             1111
+                  S_WAIT |                 0000001000000000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'i2c_master_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                              000
+          S_WR_I2C_CHECK |                               01 |                              001
+                S_WR_I2C |                               10 |                              010
+           S_WR_I2C_DONE |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'i2c_config'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                             0000
+                   S_ACK |                              001 |                             0001
+            S_CHECK_FIFO |                              010 |                             0010
+           S_WRITE_BURST |                              011 |                             0011
+       S_WRITE_BURST_END |                              100 |                             0100
+                   S_END |                              101 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'frame_fifo_write'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                             0000
+                   S_ACK |                              001 |                             0001
+            S_CHECK_FIFO |                              010 |                             0010
+            S_READ_BURST |                              011 |                             0011
+        S_READ_BURST_END |                              100 |                             0100
+                   S_END |                              101 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'frame_fifo_read'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               S_WR_IDLE |                              000 |                              000
+               S_WA_WAIT |                              001 |                              001
+              S_WA_START |                              010 |                              010
+               S_WD_WAIT |                              011 |                              011
+               S_WD_PROC |                              100 |                              100
+               S_WR_WAIT |                              101 |                              101
+               S_WR_DONE |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'sequential' in module 'aq_axi_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               S_RD_IDLE |                              000 |                              000
+               S_RA_WAIT |                              001 |                              001
+              S_RA_START |                              010 |                              010
+               S_RD_WAIT |                              011 |                              011
+               S_RD_PROC |                              100 |                              100
+               S_RD_DONE |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'sequential' in module 'aq_axi_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                00000000000000001 |                           000000
+               CH0_CHECK |                00000000000000010 |                           000001
+               CH0_BEGIN |                00000000000000100 |                           000010
+                CH0_READ |                00000000000010000 |                           000011
+                 CH0_END |                00000000000100000 |                           000100
+               CH1_CHECK |                00000000000001000 |                           000101
+               CH1_BEGIN |                00000000001000000 |                           000110
+                CH1_READ |                00000000100000000 |                           000111
+                 CH1_END |                00000001000000000 |                           001000
+               CH2_CHECK |                00000000010000000 |                           001001
+               CH2_BEGIN |                00000010000000000 |                           001010
+                CH2_READ |                00001000000000000 |                           001011
+                 CH2_END |                00010000000000000 |                           001100
+               CH3_CHECK |                00000100000000000 |                           001101
+               CH3_BEGIN |                00100000000000000 |                           001110
+                CH3_READ |                01000000000000000 |                           001111
+                 CH3_END |                10000000000000000 |                           010000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'read_state_reg' using encoding 'one-hot' in module 'mem_read_arbi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                00000000000000001 |                           000000
+               CH0_CHECK |                00000000000000010 |                           000001
+               CH0_BEGIN |                00000000000000100 |                           000010
+               CH0_WRITE |                00000000000010000 |                           000011
+                 CH0_END |                00000000000100000 |                           000100
+               CH1_CHECK |                00000000000001000 |                           000101
+               CH1_BEGIN |                00000000001000000 |                           000110
+               CH1_WRITE |                00000000100000000 |                           000111
+                 CH1_END |                00000001000000000 |                           001000
+               CH2_CHECK |                00000000010000000 |                           001001
+               CH2_BEGIN |                00000010000000000 |                           001010
+               CH2_WRITE |                00001000000000000 |                           001011
+                 CH2_END |                00010000000000000 |                           001100
+               CH3_CHECK |                00000100000000000 |                           001101
+               CH3_BEGIN |                00100000000000000 |                           001110
+               CH3_WRITE |                01000000000000000 |                           001111
+                 CH3_END |                10000000000000000 |                           010000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'write_state_reg' using encoding 'one-hot' in module 'mem_write_arbi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 856.316 ; gain = 514.809
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     25 Bit       Adders := 8     
+	   2 Input     21 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input     14 Bit       Adders := 2     
+	   3 Input     13 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 7     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               25 Bit    Registers := 22    
+	               16 Bit    Registers := 16    
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 8     
+	                8 Bit    Registers := 13    
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 16    
+	                1 Bit    Registers := 148   
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 4     
+	   5 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   3 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 4     
+	   4 Input     25 Bit        Muxes := 4     
+	   6 Input     25 Bit        Muxes := 8     
+	   5 Input     25 Bit        Muxes := 2     
+	  18 Input     18 Bit        Muxes := 2     
+	  27 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 8     
+	  32 Input     16 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 2     
+	   4 Input     10 Bit        Muxes := 2     
+	   5 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 8     
+	   6 Input      8 Bit        Muxes := 4     
+	   8 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	  24 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 12    
+	   6 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 10    
+	  15 Input      3 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 6     
+	   7 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 88    
+	  18 Input      1 Bit        Muxes := 12    
+	   6 Input      1 Bit        Muxes := 57    
+	   3 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 12    
+	  10 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module i2c_master_bit_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  18 Input     18 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 2     
+	  24 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 13    
+	  18 Input      1 Bit        Muxes := 6     
+Module i2c_master_byte_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	  15 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 6     
+Module i2c_master_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  32 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+Module i2c_config 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+Module lut_ov5640_rgb565_640_480 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module cmos_8_16bit 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module cmos_write_req_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module color_bar 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	  10 Input      1 Bit        Muxes := 1     
+Module timing_gen_xy 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module video_rect_read_data 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module frame_fifo_write 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 2     
++---Registers : 
+	               25 Bit    Registers := 5     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     25 Bit        Muxes := 1     
+	   6 Input     25 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 10    
+Module frame_fifo_read 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 2     
++---Registers : 
+	               25 Bit    Registers := 5     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     25 Bit        Muxes := 1     
+	   6 Input     25 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 10    
+Module aq_axi_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     21 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 2     
+	   7 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   7 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 5     
+Module mem_read_arbi 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 4     
+	   5 Input     25 Bit        Muxes := 1     
+	  27 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module mem_write_arbi 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input     64 Bit        Muxes := 1     
+	   5 Input     25 Bit        Muxes := 1     
+	  27 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element i2c_master_top_m0/i2c_read_data_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/i2c_master/i2c_master_top.v:236]
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_active" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element x_cnt_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/timing_gen_xy.v:78]
+WARNING: [Synth 8-6014] Unused sequential element y_cnt_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/timing_gen_xy.v:87]
+WARNING: [Synth 8-6014] Unused sequential element x_cnt_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/timing_gen_xy.v:78]
+WARNING: [Synth 8-6014] Unused sequential element y_cnt_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/timing_gen_xy.v:87]
+INFO: [Synth 8-5546] ROM "reg_w_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "M_AXI_WLAST" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cmos_8_16bit_m0/hblank_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/cmos_8_16bit.v:69]
+WARNING: [Synth 8-6014] Unused sequential element cmos_8_16bit_m1/hblank_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/cmos_8_16bit.v:69]
+WARNING: [Synth 8-6014] Unused sequential element cmos_8_16bit_m0/x_cnt_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/cmos_8_16bit.v:49]
+WARNING: [Synth 8-6014] Unused sequential element cmos_8_16bit_m1/x_cnt_reg was removed.  [D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.srcs/sources_1/cmos_8_16bit.v:49]
+WARNING: [Synth 8-3917] design top has port cmos1_rst_n driven by constant 1
+WARNING: [Synth 8-3917] design top has port cmos2_rst_n driven by constant 1
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RUSER[0]
+WARNING: [Synth 8-3331] design top has unconnected port cmos1_db[1]
+WARNING: [Synth 8-3331] design top has unconnected port cmos1_db[0]
+WARNING: [Synth 8-3331] design top has unconnected port cmos2_db[1]
+WARNING: [Synth 8-3331] design top has unconnected port cmos2_db[0]
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[0]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[1]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[2]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[3]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[4]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[5]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[6]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[7]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[8]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[9]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[10]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[11]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[12]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[13]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[14]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[15]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[16]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[17]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[18]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[19]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[20]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[21]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[22]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[23]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d0_reg[24]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[0]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[1]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[2]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[3]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[4]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[5]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[6]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[7]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[8]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[9]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[10]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[11]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[12]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[13]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[14]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[15]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[16]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[17]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[18]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[19]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[20]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[21]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[22]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[23]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[24]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[0]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[1]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[2]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[3]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[4]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[5]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[6]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[7]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[8]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[9]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[10]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[11]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[12]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[13]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[14]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[15]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[16]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[17]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[18]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[19]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[20]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[21]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[22]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[23]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]' (FDC) to 'frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[0]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[1]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[2]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[3]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[4]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[5]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[6]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[7]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[8]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[9]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[10]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[11]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[12]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[13]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[14]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[15]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[16]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[17]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[18]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[19]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[20]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[21]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[22]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[23]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m1/frame_fifo_write_m0/write_len_d1_reg[24]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frame_read_write_m1/frame_fifo_read_m0/rd_burst_len_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frame_read_write_m0/frame_fifo_read_m0/rd_burst_len_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frame_read_write_m1/frame_fifo_write_m0/wr_burst_len_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frame_read_write_m0/frame_fifo_write_m0/wr_burst_len_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frame_read_write_m1/frame_fifo_read_m0/read_len_d0_reg[24] )
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/sta_condition_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/busy_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m0/i2c_master_top_m0/error_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m0/error_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m1/i2c_master_top_m0/byte_controller/bit_controller/sta_condition_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m1/i2c_master_top_m0/byte_controller/bit_controller/busy_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m1/i2c_master_top_m0/error_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m1/error_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_r_reg_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_r_reg_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_r_reg_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_g_reg_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_g_reg_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_b_reg_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_b_reg_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_b_reg_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_cnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_cnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_cnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_cnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_cnt_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_addr_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_addr_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_addr_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_addr_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_addr_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_len_latch_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_len_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_cnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_cnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_cnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_cnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_cnt_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_addr_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_addr_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_addr_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_addr_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_addr_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_len_latch_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_len_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_write_m0/write_cnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_write_m0/write_cnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_write_m0/write_cnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_write_m0/write_cnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_write_m0/write_cnt_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_write_m0/wr_burst_addr_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_write_m0/wr_burst_addr_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_write_m0/wr_burst_addr_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_write_m0/wr_burst_addr_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_write_m0/wr_burst_addr_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_write_m0/write_len_latch_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_write_m0/wr_burst_len_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_read_m0/read_cnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_read_m0/read_cnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_read_m0/read_cnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_read_m0/read_cnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_read_m0/read_cnt_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_read_m0/rd_burst_addr_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_read_m0/rd_burst_addr_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_read_m0/rd_burst_addr_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_read_m0/rd_burst_addr_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_read_m0/rd_burst_addr_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_read_m0/read_len_latch_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m1/frame_fifo_read_m0/rd_burst_len_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_len_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_len_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_len_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_len_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_len_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_len_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mem_read_arbi_m0/rd_burst_len_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mem_read_arbi_m0/rd_burst_len_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mem_read_arbi_m0/rd_burst_len_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mem_read_arbi_m0/rd_burst_len_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mem_read_arbi_m0/rd_burst_len_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mem_read_arbi_m0/rd_burst_len_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mem_read_arbi_m0/rd_burst_len_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mem_read_arbi_m0/rd_burst_len_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mem_read_arbi_m0/rd_burst_len_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mem_read_arbi_m0/rd_burst_addr_reg[4]) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 856.316 ; gain = 514.809
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'sys_pll_m0/clk_out1' to pin 'sys_pll_m0/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'sys_pll_m0/clk_in1' to 'sys_clk_ibufgds/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'sys_pll_m0/clk_out2' to pin 'sys_pll_m0/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'sys_pll_m0/clk_in1' to 'sys_clk_ibufgds/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_pll_m0/clk_out1' to pin 'video_pll_m0/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'video_pll_m0/clk_in1' to 'sys_clk_ibufgds/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_ddr3/ui_clk' to pin 'u_ddr3/bbstub_ui_clk/O'
+INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 860.367 ; gain = 518.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 873.500 ; gain = 531.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 901.934 ; gain = 560.426
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 901.934 ; gain = 560.426
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 901.934 ; gain = 560.426
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 901.934 ; gain = 560.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 901.934 ; gain = 560.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 901.934 ; gain = 560.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 901.934 ; gain = 560.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------+----------+
+|      |BlackBox name     |Instances |
++------+------------------+----------+
+|1     |sys_pll           |         1|
+|2     |video_pll         |         1|
+|3     |ddr3              |         1|
+|4     |afifo_16i_64o_512 |         2|
+|5     |afifo_64i_16o_128 |         2|
++------+------------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |afifo_16i_64o_512    |     1|
+|2     |afifo_16i_64o_512__2 |     1|
+|3     |afifo_64i_16o_128    |     1|
+|4     |afifo_64i_16o_128__2 |     1|
+|5     |ddr3                 |     1|
+|6     |sys_pll              |     1|
+|7     |video_pll            |     1|
+|8     |BUFG                 |     2|
+|9     |CARRY4               |   156|
+|10    |LUT1                 |   135|
+|11    |LUT2                 |   495|
+|12    |LUT3                 |   278|
+|13    |LUT4                 |   299|
+|14    |LUT5                 |   189|
+|15    |LUT6                 |   396|
+|16    |MUXF7                |    80|
+|17    |MUXF8                |    34|
+|18    |FDCE                 |   817|
+|19    |FDPE                 |     4|
+|20    |FDRE                 |   253|
+|21    |FDSE                 |    16|
+|22    |IBUF                 |    23|
+|23    |IBUFDS               |     1|
+|24    |IOBUF                |     4|
+|25    |OBUF                 |    20|
++------+---------------------+------+
+
+Report Instance Areas: 
++------+--------------------------+----------------------------+------+
+|      |Instance                  |Module                      |Cells |
++------+--------------------------+----------------------------+------+
+|1     |top                       |                            |  3571|
+|2     |  video_rect_read_data_m0 |video_rect_read_data__1     |   265|
+|3     |    timing_gen_xy_m0      |timing_gen_xy__1            |    95|
+|4     |  video_rect_read_data_m1 |video_rect_read_data        |   263|
+|5     |    timing_gen_xy_m0      |timing_gen_xy               |    95|
+|6     |  cmos_8_16bit_m0         |cmos_8_16bit                |    44|
+|7     |  cmos_8_16bit_m1         |cmos_8_16bit_0              |    44|
+|8     |  cmos_write_req_gen_m0   |cmos_write_req_gen          |    11|
+|9     |  cmos_write_req_gen_m1   |cmos_write_req_gen_1        |    11|
+|10    |  color_bar_m0            |color_bar                   |   122|
+|11    |  frame_read_write_m0     |frame_read_write__xdcDup__1 |   378|
+|12    |    frame_fifo_read_m0    |frame_fifo_read_6           |   131|
+|13    |    frame_fifo_write_m0   |frame_fifo_write_7          |   131|
+|14    |  frame_read_write_m1     |frame_read_write            |   380|
+|15    |    frame_fifo_read_m0    |frame_fifo_read             |   133|
+|16    |    frame_fifo_write_m0   |frame_fifo_write            |   131|
+|17    |  i2c_config_m0           |i2c_config                  |   487|
+|18    |    i2c_master_top_m0     |i2c_master_top_3            |   453|
+|19    |      byte_controller     |i2c_master_byte_ctrl_4      |   231|
+|20    |        bit_controller    |i2c_master_bit_ctrl_5       |   163|
+|21    |  i2c_config_m1           |i2c_config_2                |   486|
+|22    |    i2c_master_top_m0     |i2c_master_top              |   452|
+|23    |      byte_controller     |i2c_master_byte_ctrl        |   231|
+|24    |        bit_controller    |i2c_master_bit_ctrl         |   163|
+|25    |  mem_read_arbi_m0        |mem_read_arbi               |   261|
+|26    |  mem_write_arbi_m0       |mem_write_arbi              |   197|
+|27    |  u_aq_axi_master         |aq_axi_master               |   432|
++------+--------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 901.934 ; gain = 560.426
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 167 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 901.934 ; gain = 197.355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 901.934 ; gain = 560.426
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 298 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+289 Infos, 284 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 901.934 ; gain = 560.426
+INFO: [Common 17-1381] The checkpoint 'D:/demo_ax7101/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 901.934 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 27 11:48:45 2018...

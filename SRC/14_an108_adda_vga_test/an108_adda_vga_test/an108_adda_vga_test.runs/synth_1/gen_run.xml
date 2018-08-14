@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-2" LaunchTime="1530171682">
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/src/ad9280_sample.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/src/video_define.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/video_define.v"/>
+        <Attr Name="ImportTime" Val="1500957175"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/src/color_bar.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/color_bar.v"/>
+        <Attr Name="ImportTime" Val="1500957175"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/src/grid_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/grid_display.v"/>
+        <Attr Name="ImportTime" Val="1503912610"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/src/timing_gen_xy.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/timing_gen_xy.v"/>
+        <Attr Name="ImportTime" Val="1502851365"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/src/wav_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/wav_display.v"/>
+        <Attr Name="ImportTime" Val="1505204225"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/src/top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/top.v"/>
+        <Attr Name="ImportTime" Val="1505208737"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/sin512.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/an108_vga.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="video_pll"/>
+  <BlockFileSet Type="BlockSrcs" Name="adda_pll"/>
+  <BlockFileSet Type="BlockSrcs" Name="da_rom"/>
+  <BlockFileSet Type="BlockSrcs" Name="dpram1024x8"/>
+</GenRun>

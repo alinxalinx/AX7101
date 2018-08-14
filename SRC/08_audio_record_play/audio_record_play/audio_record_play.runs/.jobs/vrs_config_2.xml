@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="afifo_64_256_synth_1" LaunchDir="G:/AX7100/audio_record_play/audio_record_play/audio_record_play.runs/afifo_64_256_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jun 28 13:23:03 2018
+# Process ID: 6644
+# Current directory: D:/demo_ax7102/demo/17_ad7606_vga_test/ad7606_vga_test/ad7606_vga_test.runs/dpram1024x8_synth_1
+# Command line: vivado.exe -log dpram1024x8.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dpram1024x8.tcl
+# Log file: D:/demo_ax7102/demo/17_ad7606_vga_test/ad7606_vga_test/ad7606_vga_test.runs/dpram1024x8_synth_1/dpram1024x8.vds
+# Journal file: D:/demo_ax7102/demo/17_ad7606_vga_test/ad7606_vga_test/ad7606_vga_test.runs/dpram1024x8_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dpram1024x8.tcl -notrace

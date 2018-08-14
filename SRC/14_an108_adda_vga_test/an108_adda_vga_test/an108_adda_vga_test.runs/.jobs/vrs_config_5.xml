@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="adda_pll_synth_1" LaunchDir="D:/demo_ax7102/demo/18_an108_adda_vga_test/an108_adda_vga_test/an108_adda_vga_test.runs/adda_pll_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

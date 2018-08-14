@@ -1,0 +1,732 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7136 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 406.711 ; gain = 102.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/top.v:29]
+INFO: [Synth 8-638] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19483]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFDS' (1#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19483]
+INFO: [Synth 8-638] synthesizing module 'video_pll' [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.runs/synth_1/.Xil/Vivado-4572-PC-201805041311/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'video_pll' (2#1) [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.runs/synth_1/.Xil/Vivado-4572-PC-201805041311/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'adc_pll' [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.runs/synth_1/.Xil/Vivado-4572-PC-201805041311/realtime/adc_pll_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'adc_pll' (3#1) [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.runs/synth_1/.Xil/Vivado-4572-PC-201805041311/realtime/adc_pll_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'color_bar' [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/color_bar.v:33]
+	Parameter H_ACTIVE bound to: 16'b0000010000000000 
+	Parameter H_FP bound to: 16'b0000000000011000 
+	Parameter H_SYNC bound to: 16'b0000000010001000 
+	Parameter H_BP bound to: 16'b0000000010100000 
+	Parameter V_ACTIVE bound to: 16'b0000001100000000 
+	Parameter V_FP bound to: 16'b0000000000000011 
+	Parameter V_SYNC bound to: 16'b0000000000000110 
+	Parameter V_BP bound to: 16'b0000000000011101 
+	Parameter HS_POL bound to: 1'b0 
+	Parameter VS_POL bound to: 1'b0 
+	Parameter H_TOTAL bound to: 16'b0000010101000000 
+	Parameter V_TOTAL bound to: 16'b0000001100100110 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+INFO: [Synth 8-256] done synthesizing module 'color_bar' (4#1) [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/color_bar.v:33]
+INFO: [Synth 8-638] synthesizing module 'grid_display' [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/grid_display.v:29]
+INFO: [Synth 8-638] synthesizing module 'timing_gen_xy' [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/timing_gen_xy.v:29]
+INFO: [Synth 8-256] done synthesizing module 'timing_gen_xy' (5#1) [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/timing_gen_xy.v:29]
+INFO: [Synth 8-256] done synthesizing module 'grid_display' (6#1) [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/grid_display.v:29]
+INFO: [Synth 8-638] synthesizing module 'ad9226_sample' [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/ad9226_sample.v:29]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_SAMPLE bound to: 1 - type: integer 
+	Parameter S_WAIT bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element adc_data_narrow_d0_reg was removed.  [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/ad9226_sample.v:81]
+INFO: [Synth 8-256] done synthesizing module 'ad9226_sample' (7#1) [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/ad9226_sample.v:29]
+WARNING: [Synth 8-689] width (11) of port connection 'adc_buf_addr' does not match port width (12) of module 'ad9226_sample' [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/top.v:145]
+WARNING: [Synth 8-689] width (11) of port connection 'adc_buf_addr' does not match port width (12) of module 'ad9226_sample' [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/top.v:153]
+INFO: [Synth 8-638] synthesizing module 'wav_display' [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/wav_display.v:29]
+INFO: [Synth 8-638] synthesizing module 'dpram1024x8' [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.runs/synth_1/.Xil/Vivado-4572-PC-201805041311/realtime/dpram1024x8_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dpram1024x8' (8#1) [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.runs/synth_1/.Xil/Vivado-4572-PC-201805041311/realtime/dpram1024x8_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'wav_display' (9#1) [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/wav_display.v:29]
+WARNING: [Synth 8-689] width (11) of port connection 'adc_buf_addr' does not match port width (12) of module 'wav_display' [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/top.v:162]
+WARNING: [Synth 8-689] width (11) of port connection 'adc_buf_addr' does not match port width (12) of module 'wav_display' [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/top.v:179]
+INFO: [Synth 8-256] done synthesizing module 'top' (10#1) [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/top.v:29]
+WARNING: [Synth 8-3331] design wav_display has unconnected port adc_buf_addr[11]
+WARNING: [Synth 8-3331] design wav_display has unconnected port adc_buf_addr[10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 458.492 ; gain = 153.906
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 458.492 ; gain = 153.906
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.runs/synth_1/.Xil/Vivado-4572-PC-201805041311/dcp3/adc_pll_in_context.xdc] for cell 'adc_pll_m0'
+Finished Parsing XDC File [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.runs/synth_1/.Xil/Vivado-4572-PC-201805041311/dcp3/adc_pll_in_context.xdc] for cell 'adc_pll_m0'
+Parsing XDC File [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.runs/synth_1/.Xil/Vivado-4572-PC-201805041311/dcp4/video_pll_in_context.xdc] for cell 'video_pll_m0'
+Finished Parsing XDC File [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.runs/synth_1/.Xil/Vivado-4572-PC-201805041311/dcp4/video_pll_in_context.xdc] for cell 'video_pll_m0'
+Parsing XDC File [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.runs/synth_1/.Xil/Vivado-4572-PC-201805041311/dcp5/dpram1024x8_in_context.xdc] for cell 'wav_display_m0/buffer'
+Finished Parsing XDC File [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.runs/synth_1/.Xil/Vivado-4572-PC-201805041311/dcp5/dpram1024x8_in_context.xdc] for cell 'wav_display_m0/buffer'
+Parsing XDC File [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.runs/synth_1/.Xil/Vivado-4572-PC-201805041311/dcp5/dpram1024x8_in_context.xdc] for cell 'wav_display_m1/buffer'
+Finished Parsing XDC File [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.runs/synth_1/.Xil/Vivado-4572-PC-201805041311/dcp5/dpram1024x8_in_context.xdc] for cell 'wav_display_m1/buffer'
+Parsing XDC File [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/constrs_1/new/ad9226_vga.xdc]
+Finished Parsing XDC File [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/constrs_1/new/ad9226_vga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/constrs_1/new/ad9226_vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 814.855 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'wav_display_m0/buffer' at clock pin 'clka' is different from the actual clock period '15.385', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'wav_display_m1/buffer' at clock pin 'clka' is different from the actual clock period '15.385', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 814.855 ; gain = 510.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 814.855 ; gain = 510.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for adc_pll_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for video_pll_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for wav_display_m0/buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for wav_display_m1/buffer. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 814.855 ; gain = 510.270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_active" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element x_cnt_reg was removed.  [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/timing_gen_xy.v:75]
+WARNING: [Synth 8-6014] Unused sequential element y_cnt_reg was removed.  [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/timing_gen_xy.v:84]
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "wait_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "wait_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sample_cnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "adc_buf_wr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element rdaddress_reg was removed.  [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/wav_display.v:72]
+WARNING: [Synth 8-6014] Unused sequential element rdaddress_reg was removed.  [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/wav_display.v:72]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 814.855 ; gain = 510.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 5     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 9     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 5     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 30    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 18    
+	  10 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module color_bar 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	  10 Input      1 Bit        Muxes := 1     
+Module timing_gen_xy 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module grid_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+Module ad9226_sample 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module wav_display__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+Module wav_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "color_bar_m0/v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "color_bar_m0/h_active" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "ad9226_sample_m0/wait_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ad9226_sample_m0/state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "ad9226_sample_m0/adc_buf_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "ad9226_sample_m1/wait_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ad9226_sample_m1/state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "ad9226_sample_m1/adc_buf_wr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element grid_display_m0/timing_gen_xy_m0/x_cnt_reg was removed.  [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/timing_gen_xy.v:75]
+WARNING: [Synth 8-6014] Unused sequential element grid_display_m0/timing_gen_xy_m0/y_cnt_reg was removed.  [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/timing_gen_xy.v:84]
+WARNING: [Synth 8-6014] Unused sequential element wav_display_m0/timing_gen_xy_m0/x_cnt_reg was removed.  [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/timing_gen_xy.v:75]
+WARNING: [Synth 8-6014] Unused sequential element wav_display_m0/timing_gen_xy_m0/y_cnt_reg was removed.  [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/timing_gen_xy.v:84]
+WARNING: [Synth 8-6014] Unused sequential element wav_display_m0/rdaddress_reg was removed.  [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/wav_display.v:72]
+WARNING: [Synth 8-6014] Unused sequential element wav_display_m1/timing_gen_xy_m0/x_cnt_reg was removed.  [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/timing_gen_xy.v:75]
+WARNING: [Synth 8-6014] Unused sequential element wav_display_m1/timing_gen_xy_m0/y_cnt_reg was removed.  [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/timing_gen_xy.v:84]
+WARNING: [Synth 8-6014] Unused sequential element wav_display_m1/rdaddress_reg was removed.  [D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.srcs/sources_1/src/wav_display.v:72]
+INFO: [Synth 8-3886] merging instance 'color_bar_m0/rgb_b_reg_reg[3]' (FDCE) to 'color_bar_m0/rgb_b_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'color_bar_m0/rgb_b_reg_reg[4]' (FDCE) to 'color_bar_m0/rgb_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'color_bar_m0/rgb_b_reg_reg[5]' (FDCE) to 'color_bar_m0/rgb_b_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'color_bar_m0/rgb_b_reg_reg[6]' (FDCE) to 'color_bar_m0/rgb_b_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'color_bar_m0/rgb_g_reg_reg[2]' (FDCE) to 'color_bar_m0/rgb_g_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'color_bar_m0/rgb_g_reg_reg[3]' (FDCE) to 'color_bar_m0/rgb_g_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'color_bar_m0/rgb_g_reg_reg[4]' (FDCE) to 'color_bar_m0/rgb_g_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'color_bar_m0/rgb_g_reg_reg[5]' (FDCE) to 'color_bar_m0/rgb_g_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'color_bar_m0/rgb_g_reg_reg[6]' (FDCE) to 'color_bar_m0/rgb_g_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'color_bar_m0/rgb_r_reg_reg[3]' (FDCE) to 'color_bar_m0/rgb_r_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'color_bar_m0/rgb_r_reg_reg[4]' (FDCE) to 'color_bar_m0/rgb_r_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'color_bar_m0/rgb_r_reg_reg[5]' (FDCE) to 'color_bar_m0/rgb_r_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'color_bar_m0/rgb_r_reg_reg[6]' (FDCE) to 'color_bar_m0/rgb_r_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[3]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[4]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[5]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[6]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[7]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[10]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[11]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[12]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[13]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[14]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[15]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[19]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[22]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[20]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[22]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[21]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[22]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[22]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[3]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[4]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[5]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[6]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[10]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[11]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[12]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[13]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[14]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[19]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[20]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[21]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[22]' (FD) to 'grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ad9226_sample_m0/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ad9226_sample_m1/state_reg[2] )
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/v_data_reg[5]' (FD) to 'grid_display_m0/v_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/v_data_reg[6]' (FD) to 'grid_display_m0/v_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/v_data_reg[10]' (FD) to 'grid_display_m0/v_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/v_data_reg[11]' (FD) to 'grid_display_m0/v_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/v_data_reg[12]' (FD) to 'grid_display_m0/v_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/v_data_reg[13]' (FD) to 'grid_display_m0/v_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/v_data_reg[19]' (FD) to 'grid_display_m0/v_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/v_data_reg[20]' (FD) to 'grid_display_m0/v_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/v_data_reg[21]' (FD) to 'grid_display_m0/v_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[5]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[6]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[7]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[10]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[11]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[12]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[13]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[19]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[20]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[21]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[22]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[5]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[6]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[10]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[11]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[12]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[13]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[19]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[20]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[21]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'grid_display_m0/v_data_reg[3]' (FD) to 'grid_display_m0/v_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[3]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[3]' (FD) to 'wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/v_data_reg[5]' (FD) to 'wav_display_m0/v_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/v_data_reg[6]' (FD) to 'wav_display_m0/v_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/v_data_reg[10]' (FD) to 'wav_display_m0/v_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/v_data_reg[11]' (FD) to 'wav_display_m0/v_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/v_data_reg[12]' (FD) to 'wav_display_m0/v_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/v_data_reg[13]' (FD) to 'wav_display_m0/v_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/v_data_reg[19]' (FD) to 'wav_display_m0/v_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/v_data_reg[20]' (FD) to 'wav_display_m0/v_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/v_data_reg[21]' (FD) to 'wav_display_m0/v_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[5]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[6]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[7]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[10]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[11]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[12]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[13]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[19]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[23]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[20]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[21]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[22]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[5]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[6]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[10]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[11]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[12]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[13]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[19]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[20]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[21]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m0/v_data_reg[3]' (FD) to 'wav_display_m0/v_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[3]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[4]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[3]' (FD) to 'wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'wav_display_m1/v_data_reg[5]' (FD) to 'wav_display_m1/v_data_reg[6]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m0/state_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m0/adc_data_reve_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m0/adc_data_reve_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m0/adc_data_reve_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m0/adc_data_reve_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m0/adc_data_offset_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m0/adc_data_offset_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m0/adc_data_offset_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m0/adc_data_offset_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m0/adc_data_offset_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m1/state_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m1/adc_data_reve_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m1/adc_data_reve_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m1/adc_data_reve_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m1/adc_data_reve_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m1/adc_data_offset_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m1/adc_data_offset_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m1/adc_data_offset_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m1/adc_data_offset_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ad9226_sample_m1/adc_data_offset_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_b_reg_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_b_reg_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_b_reg_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_g_reg_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_g_reg_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_r_reg_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_r_reg_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (color_bar_m0/rgb_r_reg_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d0_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/timing_gen_xy_m0/i_data_d1_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (grid_display_m0/v_data_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d0_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m0/v_data_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d0_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/v_data_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/v_data_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/v_data_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/v_data_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/v_data_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/v_data_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/v_data_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (wav_display_m1/v_data_reg[0]) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 814.855 ; gain = 510.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'adc_pll_m0/clk_out1' to pin 'adc_pll_m0/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'adc_pll_m0/clk_in1' to 'sys_clk_ibufgds/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_pll_m0/clk_out1' to pin 'video_pll_m0/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'video_pll_m0/clk_in1' to 'sys_clk_ibufgds/O'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 814.855 ; gain = 510.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 826.102 ; gain = 521.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 828.488 ; gain = 523.902
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 828.488 ; gain = 523.902
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 828.488 ; gain = 523.902
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 828.488 ; gain = 523.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 828.488 ; gain = 523.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 828.488 ; gain = 523.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 828.488 ; gain = 523.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | wav_display_m1/timing_gen_xy_m0/hs_d1_reg         | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[23] | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|top         | wav_display_m0/timing_gen_xy_m0/i_data_d1_reg[15] | 3      | 4     | NO           | NO                 | NO                | 4      | 0       | 
+|top         | wav_display_m1/timing_gen_xy_m0/i_data_d1_reg[23] | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
++------------+---------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |video_pll     |         1|
+|2     |adc_pll       |         1|
+|3     |dpram1024x8   |         2|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |adc_pll        |     1|
+|2     |dpram1024x8    |     1|
+|3     |dpram1024x8__2 |     1|
+|4     |video_pll      |     1|
+|5     |CARRY4         |    49|
+|6     |LUT1           |    32|
+|7     |LUT2           |    83|
+|8     |LUT3           |    63|
+|9     |LUT4           |    39|
+|10    |LUT5           |   105|
+|11    |LUT6           |    48|
+|12    |SRL16E         |     9|
+|13    |FDCE           |   256|
+|14    |FDRE           |    69|
+|15    |FDSE           |     4|
+|16    |IBUF           |    17|
+|17    |IBUFDS         |     1|
+|18    |OBUF           |    20|
++------+---------------+------+
+
+Report Instance Areas: 
++------+---------------------+-----------------------+------+
+|      |Instance             |Module                 |Cells |
++------+---------------------+-----------------------+------+
+|1     |top                  |                       |   815|
+|2     |  ad9226_sample_m0   |ad9226_sample          |   138|
+|3     |  ad9226_sample_m1   |ad9226_sample_0        |   138|
+|4     |  color_bar_m0       |color_bar              |   115|
+|5     |  grid_display_m0    |grid_display           |   112|
+|6     |    timing_gen_xy_m0 |timing_gen_xy_2        |    92|
+|7     |  wav_display_m0     |wav_display__xdcDup__1 |   130|
+|8     |    timing_gen_xy_m0 |timing_gen_xy_1        |    95|
+|9     |  wav_display_m1     |wav_display            |   140|
+|10    |    timing_gen_xy_m0 |timing_gen_xy          |   101|
++------+---------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 828.488 ; gain = 523.902
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 114 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 828.488 ; gain = 167.539
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 828.488 ; gain = 523.902
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 67 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+162 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 828.488 ; gain = 535.371
+INFO: [Common 17-1381] The checkpoint 'D:/demo_ax7101/demo/16_ad9226_vga_test/ad9226_vga_test/ad9226_vga_test.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 828.488 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 28 13:40:50 2018...

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="afifo_64_256_synth_1" LaunchPart="xc7a100tfgg484-2" LaunchTime="1529895007">
+  <File Type="PA-TCL" Name="afifo_64_256.tcl"/>
+  <File Type="REPORTS-TCL" Name="afifo_64_256_reports.tcl"/>
+  <File Type="RDS-RDS" Name="afifo_64_256.vds"/>
+  <File Type="RDS-UTIL" Name="afifo_64_256_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="afifo_64_256_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="afifo_64_256.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/afifo_64_256">
+    <File Path="$PSRCDIR/sources_1/ip/afifo_64_256/afifo_64_256.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="afifo_64_256"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/afifo_64_256">
+    <File Path="$PSRCDIR/sources_1/ip/afifo_64_256/afifo_64_256.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="afifo_64_256"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

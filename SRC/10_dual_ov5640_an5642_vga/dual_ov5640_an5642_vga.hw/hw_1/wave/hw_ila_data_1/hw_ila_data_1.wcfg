@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/svn/FPGA/AX7102/demo/dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="268369fs"></ZoomStartTime>
+      <ZoomEndTime time="275820fs"></ZoomEndTime>
+      <Cursor1Time time="509000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="7" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="video_rect_read_data_m0/de" type="logic">
+      <obj_property name="ElementShortName">video_rect_read_data_m0/de</obj_property>
+      <obj_property name="ObjectShortName">video_rect_read_data_m0/de</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="video_rect_read_data_m0/pos_de" type="logic">
+      <obj_property name="ElementShortName">video_rect_read_data_m0/pos_de</obj_property>
+      <obj_property name="ObjectShortName">video_rect_read_data_m0/pos_de</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="video_rect_read_data_m0/pos_x" type="array">
+      <obj_property name="ElementShortName">video_rect_read_data_m0/pos_x[11:0]</obj_property>
+      <obj_property name="ObjectShortName">video_rect_read_data_m0/pos_x[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="video_rect_read_data_m0/pos_y" type="array">
+      <obj_property name="ElementShortName">video_rect_read_data_m0/pos_y[11:0]</obj_property>
+      <obj_property name="ObjectShortName">video_rect_read_data_m0/pos_y[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="video_rect_read_data_m0/read_en" type="logic">
+      <obj_property name="ElementShortName">video_rect_read_data_m0/read_en</obj_property>
+      <obj_property name="ObjectShortName">video_rect_read_data_m0/read_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="video_rect_read_data_m0/timing_data" type="array">
+      <obj_property name="ElementShortName">video_rect_read_data_m0/timing_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">video_rect_read_data_m0/timing_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="video_rect_read_data_m0/timing_de" type="logic">
+      <obj_property name="ElementShortName">video_rect_read_data_m0/timing_de</obj_property>
+      <obj_property name="ObjectShortName">video_rect_read_data_m0/timing_de</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-2" LaunchTime="1530099884">
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/aq_axi_master.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/aq_axi_master.v"/>
+        <Attr Name="ImportTime" Val="1480402366"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/cmos_8_16bit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/cmos_8_16bit.v"/>
+        <Attr Name="ImportTime" Val="1500957176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/cmos_select.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/cmos_select.v"/>
+        <Attr Name="ImportTime" Val="1516092150"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/cmos_write_req_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/cmos_write_req_gen.v"/>
+        <Attr Name="ImportTime" Val="1500957176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/video_define.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/video_define.v"/>
+        <Attr Name="ImportTime" Val="1500957446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/color_bar.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/color_bar.v"/>
+        <Attr Name="ImportTime" Val="1500957176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/frame_fifo_read.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/frame_fifo_read.v"/>
+        <Attr Name="ImportTime" Val="1500957176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/frame_fifo_write.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/frame_fifo_write.v"/>
+        <Attr Name="ImportTime" Val="1500957176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/frame_read_write.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/frame_read_write.v"/>
+        <Attr Name="ImportTime" Val="1505114228"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/i2c_master/i2c_config.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/i2c_master/i2c_config.v"/>
+        <Attr Name="ImportTime" Val="1500957176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/i2c_master/timescale.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/i2c_master/timescale.v"/>
+        <Attr Name="ImportTime" Val="1500957176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/i2c_master/i2c_master_defines.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/i2c_master/i2c_master_defines.v"/>
+        <Attr Name="ImportTime" Val="1500957176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/i2c_master/i2c_master_bit_ctrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/i2c_master/i2c_master_bit_ctrl.v"/>
+        <Attr Name="ImportTime" Val="1500957176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/i2c_master/i2c_master_byte_ctrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/i2c_master/i2c_master_byte_ctrl.v"/>
+        <Attr Name="ImportTime" Val="1500957176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/i2c_master/i2c_master_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/i2c_master/i2c_master_top.v"/>
+        <Attr Name="ImportTime" Val="1500957176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/lut_ov5640_rgb565_1024_768.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../ddr3_ov5640_vga/ddr3_ov5640_vga.srcs/sources_1/lut_ov5640_rgb565_1024_768.v"/>
+        <Attr Name="ImportTime" Val="1500957168"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/rgb_to_ycbcr.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/rgb_to_ycbcr.v"/>
+        <Attr Name="ImportTime" Val="1500973049"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sobel/sobel.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/sobel/sobel.v"/>
+        <Attr Name="ImportTime" Val="1503465491"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/video_timing_data.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/video_timing_data.v"/>
+        <Attr Name="ImportTime" Val="1500957176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sobel/ImageXlib_utils.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/sobel/ImageXlib_utils.vhd"/>
+        <Attr Name="ImportTime" Val="1484405411"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/sobel/ImageXlib_utils.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/sobel/ImageXlib_utils.vhd"/>
+        <Attr Name="ImportTime" Val="1484405411"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sobel/ImageXlib_arch.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sobel/linebuffer_Wapper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/sobel/linebuffer_Wapper.vhd"/>
+        <Attr Name="ImportTime" Val="1484405412"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/top.v"/>
+        <Attr Name="ImportTime" Val="1505115254"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/sobel/sobel.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/sobel/sobel.v"/>
+        <Attr Name="ImportTime" Val="1503465491"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/sobel/linebuffer_Wapper.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/sobel/linebuffer_Wapper.vhd"/>
+        <Attr Name="ImportTime" Val="1484405412"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ddr3/mig_a.prj">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ddr3_ov5640_an070_lcd/ddr3_ov5640_an070_lcd.srcs/sources_1/ip/ddr3/mig_a.prj"/>
+        <Attr Name="ImportTime" Val="1505097020"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="ddr3"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/ddr3_ov5640_vga.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../ddr3_ov5640_vga/ddr3_ov5640_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc"/>
+        <Attr Name="ImportTime" Val="1505117764"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/ddr3_ov5640_vga.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="sys_pll"/>
+  <BlockFileSet Type="BlockSrcs" Name="afifo_64i_16o_128"/>
+  <BlockFileSet Type="BlockSrcs" Name="video_pll"/>
+  <BlockFileSet Type="BlockSrcs" Name="afifo_16i_64o_512"/>
+  <BlockFileSet Type="BlockSrcs" Name="ddr3"/>
+</GenRun>

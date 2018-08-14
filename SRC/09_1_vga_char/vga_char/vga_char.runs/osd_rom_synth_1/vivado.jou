@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jun 25 11:46:49 2018
+# Process ID: 896
+# Current directory: D:/demo_ax7102/demo/12_1_vga_char/vga_char/vga_char.runs/osd_rom_synth_1
+# Command line: vivado.exe -log osd_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source osd_rom.tcl
+# Log file: D:/demo_ax7102/demo/12_1_vga_char/vga_char/vga_char.runs/osd_rom_synth_1/osd_rom.vds
+# Journal file: D:/demo_ax7102/demo/12_1_vga_char/vga_char/vga_char.runs/osd_rom_synth_1\vivado.jou
+#-----------------------------------------------------------
+source osd_rom.tcl -notrace

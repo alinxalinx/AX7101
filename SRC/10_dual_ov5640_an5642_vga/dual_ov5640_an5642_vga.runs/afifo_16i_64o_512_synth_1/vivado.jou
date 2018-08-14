@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jun 26 17:46:01 2018
+# Process ID: 6496
+# Current directory: D:/demo_ax7102/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/afifo_16i_64o_512_synth_1
+# Command line: vivado.exe -log afifo_16i_64o_512.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source afifo_16i_64o_512.tcl
+# Log file: D:/demo_ax7102/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/afifo_16i_64o_512_synth_1/afifo_16i_64o_512.vds
+# Journal file: D:/demo_ax7102/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/afifo_16i_64o_512_synth_1\vivado.jou
+#-----------------------------------------------------------
+source afifo_16i_64o_512.tcl -notrace

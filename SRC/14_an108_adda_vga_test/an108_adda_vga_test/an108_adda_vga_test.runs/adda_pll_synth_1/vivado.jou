@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jun 28 15:03:28 2018
+# Process ID: 2676
+# Current directory: D:/demo_ax7102/demo/18_an108_adda_vga_test/an108_adda_vga_test/an108_adda_vga_test.runs/adda_pll_synth_1
+# Command line: vivado.exe -log adda_pll.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source adda_pll.tcl
+# Log file: D:/demo_ax7102/demo/18_an108_adda_vga_test/an108_adda_vga_test/an108_adda_vga_test.runs/adda_pll_synth_1/adda_pll.vds
+# Journal file: D:/demo_ax7102/demo/18_an108_adda_vga_test/an108_adda_vga_test/an108_adda_vga_test.runs/adda_pll_synth_1\vivado.jou
+#-----------------------------------------------------------
+source adda_pll.tcl -notrace

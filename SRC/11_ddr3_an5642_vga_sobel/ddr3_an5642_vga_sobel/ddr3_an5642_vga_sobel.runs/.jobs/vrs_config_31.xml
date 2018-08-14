@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="afifo_64i_16o_128_synth_1" LaunchDir="D:/demo_ax7102/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/afifo_64i_16o_128_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ddr3_synth_1" LaunchDir="D:/demo_ax7102/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/ddr3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/demo_ax7102/demo/14_1_dual_ov5640_an5642_vga/dual_ov5640_an5642_vga.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="afifo_64i_16o_128_synth_1"/>
+		<Parent Id="ddr3_synth_1"/>
+	</Run>
+</Runs>
+
