@@ -1,0 +1,4 @@
+Language File-Name          IP       Library         File-Path                                                                    
+Verilog, sys_pll_clk_wiz.v, sys_pll, xil_defaultlib, ../../../../ddr3_ov5640_an070_lcd.srcs/sources_1/ip/sys_pll/sys_pll_clk_wiz.v
+Verilog, sys_pll.v,         sys_pll, xil_defaultlib, ../../../../ddr3_ov5640_an070_lcd.srcs/sources_1/ip/sys_pll/sys_pll.v        
+Verilog, glbl.v,            *,       xil_defaultlib, glbl.v                                                                       

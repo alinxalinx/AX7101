@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jul  5 11:42:39 2018
+# Process ID: 5588
+# Current directory: D:/demo_ax7102/demo/gtp_video/15_ddr3_an5642_vga_sobel/ddr3_an5642_vga_sobel/ddr3_an5642_vga_sobel.runs/fifo_2048_32i_8o_synth_1
+# Command line: vivado.exe -log fifo_2048_32i_8o.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_2048_32i_8o.tcl
+# Log file: D:/demo_ax7102/demo/gtp_video/15_ddr3_an5642_vga_sobel/ddr3_an5642_vga_sobel/ddr3_an5642_vga_sobel.runs/fifo_2048_32i_8o_synth_1/fifo_2048_32i_8o.vds
+# Journal file: D:/demo_ax7102/demo/gtp_video/15_ddr3_an5642_vga_sobel/ddr3_an5642_vga_sobel/ddr3_an5642_vga_sobel.runs/fifo_2048_32i_8o_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo_2048_32i_8o.tcl -notrace

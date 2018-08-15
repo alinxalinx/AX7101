@@ -1,0 +1,1753 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jul  6 10:12:10 2018
+# Process ID: 3888
+# Current directory: D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/top.vds
+# Journal file: D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5092 
+WARNING: [Synth 8-2507] parameter declaration becomes local in gtp_common with formal parameter declaration list [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_common.v:94]
+WARNING: [Synth 8-2507] parameter declaration becomes local in gtp_common with formal parameter declaration list [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_common.v:95]
+WARNING: [Synth 8-2507] parameter declaration becomes local in gtp_common with formal parameter declaration list [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_common.v:96]
+WARNING: [Synth 8-2507] parameter declaration becomes local in gtp_common with formal parameter declaration list [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_common.v:97]
+WARNING: [Synth 8-2507] parameter declaration becomes local in gtp_common with formal parameter declaration list [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_common.v:98]
+WARNING: [Synth 8-2507] parameter declaration becomes local in gtp_common with formal parameter declaration list [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_common.v:99]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 449.984 ; gain = 104.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:30]
+	Parameter MEM_DATA_BITS bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 25 - type: integer 
+	Parameter BUSRT_BITS bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19483]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFDS' (1#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19483]
+INFO: [Synth 8-638] synthesizing module 'video_pll' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'video_pll' (2#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'i2c_config' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_config.v:30]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_WR_I2C_CHECK bound to: 1 - type: integer 
+	Parameter S_WR_I2C bound to: 2 - type: integer 
+	Parameter S_WR_I2C_DONE bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'i2c_master_top' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_master_top.v:30]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_WR_DEV_ADDR bound to: 1 - type: integer 
+	Parameter S_WR_REG_ADDR bound to: 2 - type: integer 
+	Parameter S_WR_DATA bound to: 3 - type: integer 
+	Parameter S_WR_ACK bound to: 4 - type: integer 
+	Parameter S_WR_ERR_NACK bound to: 5 - type: integer 
+	Parameter S_RD_DEV_ADDR0 bound to: 6 - type: integer 
+	Parameter S_RD_REG_ADDR bound to: 7 - type: integer 
+	Parameter S_RD_DEV_ADDR1 bound to: 8 - type: integer 
+	Parameter S_RD_DATA bound to: 9 - type: integer 
+	Parameter S_RD_STOP bound to: 10 - type: integer 
+	Parameter S_WR_STOP bound to: 11 - type: integer 
+	Parameter S_WAIT bound to: 12 - type: integer 
+	Parameter S_WR_REG_ADDR1 bound to: 13 - type: integer 
+	Parameter S_RD_REG_ADDR1 bound to: 14 - type: integer 
+	Parameter S_RD_ACK bound to: 15 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_master_top.v:96]
+INFO: [Synth 8-638] synthesizing module 'i2c_master_byte_ctrl' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_master_byte_ctrl.v:75]
+	Parameter ST_IDLE bound to: 5'b00000 
+	Parameter ST_START bound to: 5'b00001 
+	Parameter ST_READ bound to: 5'b00010 
+	Parameter ST_WRITE bound to: 5'b00100 
+	Parameter ST_ACK bound to: 5'b01000 
+	Parameter ST_STOP bound to: 5'b10000 
+INFO: [Synth 8-638] synthesizing module 'i2c_master_bit_ctrl' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_master_bit_ctrl.v:143]
+	Parameter idle bound to: 18'b000000000000000000 
+	Parameter start_a bound to: 18'b000000000000000001 
+	Parameter start_b bound to: 18'b000000000000000010 
+	Parameter start_c bound to: 18'b000000000000000100 
+	Parameter start_d bound to: 18'b000000000000001000 
+	Parameter start_e bound to: 18'b000000000000010000 
+	Parameter stop_a bound to: 18'b000000000000100000 
+	Parameter stop_b bound to: 18'b000000000001000000 
+	Parameter stop_c bound to: 18'b000000000010000000 
+	Parameter stop_d bound to: 18'b000000000100000000 
+	Parameter rd_a bound to: 18'b000000001000000000 
+	Parameter rd_b bound to: 18'b000000010000000000 
+	Parameter rd_c bound to: 18'b000000100000000000 
+	Parameter rd_d bound to: 18'b000001000000000000 
+	Parameter wr_a bound to: 18'b000010000000000000 
+	Parameter wr_b bound to: 18'b000100000000000000 
+	Parameter wr_c bound to: 18'b001000000000000000 
+	Parameter wr_d bound to: 18'b010000000000000000 
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_master_bit_ctrl.v:406]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_master_bit_ctrl.v:406]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_master_bit_ctrl.v:410]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_master_bit_ctrl.v:410]
+INFO: [Synth 8-256] done synthesizing module 'i2c_master_bit_ctrl' (3#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_master_bit_ctrl.v:143]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_master_byte_ctrl.v:230]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_master_byte_ctrl.v:230]
+INFO: [Synth 8-256] done synthesizing module 'i2c_master_byte_ctrl' (4#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_master_byte_ctrl.v:75]
+INFO: [Synth 8-256] done synthesizing module 'i2c_master_top' (5#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_master_top.v:30]
+WARNING: [Synth 8-5788] Register i2c_write_req_reg in module i2c_config is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_config.v:101]
+WARNING: [Synth 8-3848] Net i2c_read_req in module/entity i2c_config does not have driver. [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_config.v:57]
+INFO: [Synth 8-256] done synthesizing module 'i2c_config' (6#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_config.v:30]
+INFO: [Synth 8-638] synthesizing module 'lut_ov5640_rgb565_1280_720' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/imports/sources_1/lut_ov5640_rgb565_1024_768.v:30]
+INFO: [Synth 8-256] done synthesizing module 'lut_ov5640_rgb565_1280_720' (7#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/imports/sources_1/lut_ov5640_rgb565_1024_768.v:30]
+INFO: [Synth 8-638] synthesizing module 'mv_debounce' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/mv_debounce.v:23]
+	Parameter N bound to: 32 - type: integer 
+	Parameter FREQ bound to: 24 - type: integer 
+	Parameter MAX_TIME bound to: 20 - type: integer 
+	Parameter TIMER_MAX_VAL bound to: 480000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mv_debounce' (8#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/mv_debounce.v:23]
+INFO: [Synth 8-638] synthesizing module 'cmos_8_16bit' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/cmos_8_16bit.v:30]
+INFO: [Synth 8-256] done synthesizing module 'cmos_8_16bit' (9#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/cmos_8_16bit.v:30]
+INFO: [Synth 8-638] synthesizing module 'video_packet_send' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_send.v:1]
+	Parameter SEND_FRAME_SYNC0 bound to: 0 - type: integer 
+	Parameter SEND_FRAME_SYNC1 bound to: 1 - type: integer 
+	Parameter SEND_LINE_START bound to: 2 - type: integer 
+	Parameter SEND_LINE_DATA bound to: 3 - type: integer 
+	Parameter SEND_LINE_END bound to: 4 - type: integer 
+	Parameter SEND_OTHER0 bound to: 5 - type: integer 
+	Parameter SEND_OTHER1 bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_4096_16i_32o' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/realtime/fifo_4096_16i_32o_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'fifo_4096_16i_32o' (10#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/realtime/fifo_4096_16i_32o_stub.v:6]
+WARNING: [Synth 8-350] instance 'fifo_4096_16i_32o_m0' of module 'fifo_4096_16i_32o' requires 13 connections, but only 11 given [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_send.v:63]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_send.v:105]
+INFO: [Synth 8-256] done synthesizing module 'video_packet_send' (11#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_send.v:1]
+INFO: [Synth 8-638] synthesizing module 'word_align' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/word_align.v:1]
+INFO: [Synth 8-256] done synthesizing module 'word_align' (12#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/word_align.v:1]
+INFO: [Synth 8-638] synthesizing module 'video_packet_rec' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_rec.v:1]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter READ_LINE bound to: 1 - type: integer 
+	Parameter SEND_LINE_END bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_2048_32i_8o' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/realtime/fifo_2048_32i_8o_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'fifo_2048_32i_8o' (13#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/realtime/fifo_2048_32i_8o_stub.v:6]
+WARNING: [Synth 8-689] width (13) of port connection 'rd_data_count' does not match port width (12) of module 'fifo_2048_32i_8o' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_rec.v:59]
+WARNING: [Synth 8-350] instance 'fifo_2048_32i_8o_m0' of module 'fifo_2048_32i_8o' requires 15 connections, but only 11 given [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_rec.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_rec.v:106]
+INFO: [Synth 8-256] done synthesizing module 'video_packet_rec' (14#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_rec.v:1]
+INFO: [Synth 8-638] synthesizing module 'cmos_write_req_gen' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/cmos_write_req_gen.v:30]
+INFO: [Synth 8-256] done synthesizing module 'cmos_write_req_gen' (15#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/cmos_write_req_gen.v:30]
+INFO: [Synth 8-638] synthesizing module 'video_timing_data' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/imports/sources_1/video_timing_data.v:30]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'color_bar' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/color_bar.v:33]
+	Parameter H_ACTIVE bound to: 16'b0000010100000000 
+	Parameter H_FP bound to: 16'b0000000001101110 
+	Parameter H_SYNC bound to: 16'b0000000000101000 
+	Parameter H_BP bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE bound to: 16'b0000001011010000 
+	Parameter V_FP bound to: 16'b0000000000000101 
+	Parameter V_SYNC bound to: 16'b0000000000000101 
+	Parameter V_BP bound to: 16'b0000000000010100 
+	Parameter HS_POL bound to: 1'b1 
+	Parameter VS_POL bound to: 1'b1 
+	Parameter H_TOTAL bound to: 16'b0000011001110010 
+	Parameter V_TOTAL bound to: 16'b0000001011101110 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+INFO: [Synth 8-256] done synthesizing module 'color_bar' (16#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/color_bar.v:33]
+WARNING: [Synth 8-5788] Register video_hs_d1_reg in module video_timing_data is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/imports/sources_1/video_timing_data.v:59]
+WARNING: [Synth 8-5788] Register video_vs_d1_reg in module video_timing_data is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/imports/sources_1/video_timing_data.v:60]
+WARNING: [Synth 8-5788] Register video_de_d1_reg in module video_timing_data is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/imports/sources_1/video_timing_data.v:61]
+INFO: [Synth 8-256] done synthesizing module 'video_timing_data' (17#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/imports/sources_1/video_timing_data.v:30]
+INFO: [Synth 8-638] synthesizing module 'frame_read_write' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/frame_read_write.v:31]
+	Parameter MEM_DATA_BITS bound to: 64 - type: integer 
+	Parameter READ_DATA_BITS bound to: 16 - type: integer 
+	Parameter WRITE_DATA_BITS bound to: 16 - type: integer 
+	Parameter ADDR_BITS bound to: 25 - type: integer 
+	Parameter BUSRT_BITS bound to: 10 - type: integer 
+	Parameter BURST_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'afifo_16i_64o_512' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/realtime/afifo_16i_64o_512_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'afifo_16i_64o_512' (18#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/realtime/afifo_16i_64o_512_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'rd_data_count' does not match port width (7) of module 'afifo_16i_64o_512' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/frame_read_write.v:96]
+INFO: [Synth 8-638] synthesizing module 'frame_fifo_write' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/frame_fifo_write.v:31]
+	Parameter MEM_DATA_BITS bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 25 - type: integer 
+	Parameter BUSRT_BITS bound to: 10 - type: integer 
+	Parameter BURST_SIZE bound to: 64 - type: integer 
+	Parameter ONE bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 
+	Parameter ZERO bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_ACK bound to: 1 - type: integer 
+	Parameter S_CHECK_FIFO bound to: 2 - type: integer 
+	Parameter S_WRITE_BURST bound to: 3 - type: integer 
+	Parameter S_WRITE_BURST_END bound to: 4 - type: integer 
+	Parameter S_END bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'frame_fifo_write' (19#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/frame_fifo_write.v:31]
+INFO: [Synth 8-638] synthesizing module 'afifo_64i_16o_128' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/realtime/afifo_64i_16o_128_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'afifo_64i_16o_128' (20#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/realtime/afifo_64i_16o_128_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'wr_data_count' does not match port width (7) of module 'afifo_64i_16o_128' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/frame_read_write.v:159]
+INFO: [Synth 8-638] synthesizing module 'frame_fifo_read' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/frame_fifo_read.v:31]
+	Parameter MEM_DATA_BITS bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 25 - type: integer 
+	Parameter BUSRT_BITS bound to: 10 - type: integer 
+	Parameter FIFO_DEPTH bound to: 128 - type: integer 
+	Parameter BURST_SIZE bound to: 64 - type: integer 
+	Parameter ONE bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 
+	Parameter ZERO bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_ACK bound to: 1 - type: integer 
+	Parameter S_CHECK_FIFO bound to: 2 - type: integer 
+	Parameter S_READ_BURST bound to: 3 - type: integer 
+	Parameter S_READ_BURST_END bound to: 4 - type: integer 
+	Parameter S_END bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'frame_fifo_read' (21#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/frame_fifo_read.v:31]
+INFO: [Synth 8-256] done synthesizing module 'frame_read_write' (22#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/frame_read_write.v:31]
+INFO: [Synth 8-638] synthesizing module 'ddr3' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/realtime/ddr3_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ddr3' (23#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/realtime/ddr3_stub.v:5]
+WARNING: [Synth 8-689] width (64) of port connection 's_axi_awaddr' does not match port width (30) of module 'ddr3' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:520]
+WARNING: [Synth 8-689] width (64) of port connection 's_axi_araddr' does not match port width (30) of module 'ddr3' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:543]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_arlock' does not match port width (1) of module 'ddr3' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:547]
+WARNING: [Synth 8-350] instance 'u_ddr3' of module 'ddr3' requires 66 connections, but only 65 given [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:488]
+INFO: [Synth 8-638] synthesizing module 'aq_axi_master' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/aq_axi_master.v:39]
+	Parameter S_WR_IDLE bound to: 3'b000 
+	Parameter S_WA_WAIT bound to: 3'b001 
+	Parameter S_WA_START bound to: 3'b010 
+	Parameter S_WD_WAIT bound to: 3'b011 
+	Parameter S_WD_PROC bound to: 3'b100 
+	Parameter S_WR_WAIT bound to: 3'b101 
+	Parameter S_WR_DONE bound to: 3'b110 
+	Parameter S_RD_IDLE bound to: 3'b000 
+	Parameter S_RA_WAIT bound to: 3'b001 
+	Parameter S_RA_START bound to: 3'b010 
+	Parameter S_RD_WAIT bound to: 3'b011 
+	Parameter S_RD_PROC bound to: 3'b100 
+	Parameter S_RD_DONE bound to: 3'b101 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/aq_axi_master.v:350]
+WARNING: [Synth 8-6014] Unused sequential element reg_w_stb_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/aq_axi_master.v:179]
+WARNING: [Synth 8-6014] Unused sequential element reg_wr_status_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/aq_axi_master.v:180]
+WARNING: [Synth 8-6014] Unused sequential element reg_w_count_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/aq_axi_master.v:181]
+WARNING: [Synth 8-6014] Unused sequential element reg_r_count_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/aq_axi_master.v:182]
+WARNING: [Synth 8-6014] Unused sequential element wr_chkdata_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/aq_axi_master.v:183]
+WARNING: [Synth 8-6014] Unused sequential element rd_chkdata_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/aq_axi_master.v:184]
+WARNING: [Synth 8-6014] Unused sequential element resp_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/aq_axi_master.v:185]
+WARNING: [Synth 8-5788] Register reg_r_last_reg in module aq_axi_master is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/aq_axi_master.v:370]
+INFO: [Synth 8-256] done synthesizing module 'aq_axi_master' (24#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/aq_axi_master.v:39]
+WARNING: [Synth 8-689] width (4) of port connection 'M_AXI_AWID' does not match port width (1) of module 'aq_axi_master' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:569]
+WARNING: [Synth 8-689] width (64) of port connection 'M_AXI_AWADDR' does not match port width (32) of module 'aq_axi_master' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:570]
+WARNING: [Synth 8-689] width (4) of port connection 'M_AXI_BID' does not match port width (1) of module 'aq_axi_master' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:587]
+WARNING: [Synth 8-689] width (4) of port connection 'M_AXI_ARID' does not match port width (1) of module 'aq_axi_master' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:592]
+WARNING: [Synth 8-689] width (64) of port connection 'M_AXI_ARADDR' does not match port width (32) of module 'aq_axi_master' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:593]
+WARNING: [Synth 8-689] width (4) of port connection 'M_AXI_RID' does not match port width (1) of module 'aq_axi_master' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:604]
+WARNING: [Synth 8-689] width (28) of port connection 'WR_ADRS' does not match port width (32) of module 'aq_axi_master' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:613]
+WARNING: [Synth 8-689] width (13) of port connection 'WR_LEN' does not match port width (32) of module 'aq_axi_master' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:614]
+WARNING: [Synth 8-689] width (28) of port connection 'RD_ADRS' does not match port width (32) of module 'aq_axi_master' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:622]
+WARNING: [Synth 8-689] width (13) of port connection 'RD_LEN' does not match port width (32) of module 'aq_axi_master' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:623]
+INFO: [Synth 8-638] synthesizing module 'gtp_exdes' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:3]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:57]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:58]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:61]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:62]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:63]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:64]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:65]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:66]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:67]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:71]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:72]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:73]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:74]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:75]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:76]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:77]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:81]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:82]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:83]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:84]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:85]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:86]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:87]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:91]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:92]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:93]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:94]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:95]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:96]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:97]
+INFO: [Synth 8-638] synthesizing module 'gtp_support' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_support.v:70]
+	Parameter EXAMPLE_SIM_GTRESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter STABLE_CLOCK_PERIOD bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'gtp_GT_USRCLK_SOURCE' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_gt_usrclk_source.v:68]
+INFO: [Synth 8-638] synthesizing module 'IBUFDS_GTE2' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19620]
+	Parameter CLKCM_CFG bound to: TRUE - type: string 
+	Parameter CLKRCV_TRST bound to: TRUE - type: string 
+	Parameter CLKSWING_CFG bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'IBUFDS_GTE2' (25#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19620]
+INFO: [Synth 8-638] synthesizing module 'gtp_CLOCK_MODULE' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_clock_module.v:69]
+	Parameter MULT bound to: 4.000000 - type: float 
+	Parameter DIVIDE bound to: 1 - type: integer 
+	Parameter CLK_PERIOD bound to: 6.400000 - type: float 
+	Parameter OUT0_DIVIDE bound to: 8.000000 - type: float 
+	Parameter OUT1_DIVIDE bound to: 4 - type: integer 
+	Parameter OUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter OUT3_DIVIDE bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (26#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25757]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 4.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 6.400000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 8.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (27#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25757]
+INFO: [Synth 8-256] done synthesizing module 'gtp_CLOCK_MODULE' (28#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_clock_module.v:69]
+INFO: [Synth 8-256] done synthesizing module 'gtp_GT_USRCLK_SOURCE' (29#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_gt_usrclk_source.v:68]
+INFO: [Synth 8-638] synthesizing module 'gtp_cpll_railing' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_cpll_railing.v:68]
+	Parameter USE_BUFG bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'BUFH' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'BUFH' (30#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'gtp_cpll_railing' (31#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_cpll_railing.v:68]
+INFO: [Synth 8-638] synthesizing module 'gtp_common' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_common.v:69]
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter SIM_PLL0REFCLK_SEL bound to: 3'b001 
+	Parameter SIM_PLL1REFCLK_SEL bound to: 3'b001 
+	Parameter PLL0_FBDIV_IN bound to: 5 - type: integer 
+	Parameter PLL1_FBDIV_IN bound to: 1 - type: integer 
+	Parameter PLL0_FBDIV_45_IN bound to: 5 - type: integer 
+	Parameter PLL1_FBDIV_45_IN bound to: 4 - type: integer 
+	Parameter PLL0_REFCLK_DIV_IN bound to: 1 - type: integer 
+	Parameter PLL1_REFCLK_DIV_IN bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'GTPE2_COMMON' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:9987]
+	Parameter BIAS_CFG bound to: 64'b0000000000000000000000000000000000000000000001010000000000000001 
+	Parameter COMMON_CFG bound to: 0 - type: integer 
+	Parameter IS_DRPCLK_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK0_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK1_INVERTED bound to: 1'b0 
+	Parameter IS_PLL0LOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter IS_PLL1LOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter PLL0_CFG bound to: 27'b000000111110000001111011100 
+	Parameter PLL0_DMON_CFG bound to: 1'b0 
+	Parameter PLL0_FBDIV bound to: 5 - type: integer 
+	Parameter PLL0_FBDIV_45 bound to: 5 - type: integer 
+	Parameter PLL0_INIT_CFG bound to: 24'b000000000000000000011110 
+	Parameter PLL0_LOCK_CFG bound to: 9'b111101000 
+	Parameter PLL0_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter PLL1_CFG bound to: 27'b000000111110000001111011100 
+	Parameter PLL1_DMON_CFG bound to: 1'b0 
+	Parameter PLL1_FBDIV bound to: 1 - type: integer 
+	Parameter PLL1_FBDIV_45 bound to: 4 - type: integer 
+	Parameter PLL1_INIT_CFG bound to: 24'b000000000000000000011110 
+	Parameter PLL1_LOCK_CFG bound to: 9'b111101000 
+	Parameter PLL1_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter PLL_CLKOUT_CFG bound to: 8'b00000000 
+	Parameter RSVD_ATTR0 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR1 bound to: 16'b0000000000000000 
+	Parameter SIM_PLL0REFCLK_SEL bound to: 3'b001 
+	Parameter SIM_PLL1REFCLK_SEL bound to: 3'b001 
+	Parameter SIM_RESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter SIM_VERSION bound to: 2.0 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'GTPE2_COMMON' (32#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:9987]
+INFO: [Synth 8-256] done synthesizing module 'gtp_common' (33#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_common.v:69]
+INFO: [Synth 8-638] synthesizing module 'gtp_common_reset' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_common_reset.v:74]
+	Parameter STABLE_CLOCK_PERIOD bound to: 10 - type: integer 
+	Parameter STARTUP_DELAY bound to: 500 - type: integer 
+	Parameter WAIT_CYCLES bound to: 50 - type: integer 
+	Parameter WAIT_MAX bound to: 60 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter ASSERT_COMMON_RESET bound to: 1'b1 
+INFO: [Synth 8-226] default block is never used [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_common_reset.v:121]
+INFO: [Synth 8-256] done synthesizing module 'gtp_common_reset' (34#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_common_reset.v:74]
+INFO: [Synth 8-638] synthesizing module 'gtp' [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/realtime/gtp_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'gtp' (35#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/realtime/gtp_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'gtp_support' (36#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_support.v:70]
+INFO: [Synth 8-256] done synthesizing module 'gtp_exdes' (37#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/gtp_exdes.v:3]
+WARNING: [Synth 8-350] instance 'gtp_exdes_m0' of module 'gtp_exdes' requires 35 connections, but only 32 given [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:634]
+WARNING: [Synth 8-3848] Net s00_axi_buser in module/entity top does not have driver. [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:146]
+WARNING: [Synth 8-3848] Net s00_axi_ruser in module/entity top does not have driver. [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:167]
+INFO: [Synth 8-256] done synthesizing module 'top' (38#1) [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/top.v:30]
+WARNING: [Synth 8-3917] design top has port tx_disable[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port tx_disable[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port tx_disable[1] driven by constant 0
+WARNING: [Synth 8-3917] design top has port tx_disable[0] driven by constant 0
+WARNING: [Synth 8-3917] design top has port cmos1_rst_n driven by constant 1
+WARNING: [Synth 8-3917] design top has port cmos2_rst_n driven by constant 1
+WARNING: [Synth 8-3331] design gtp_GT_USRCLK_SOURCE has unconnected port GT0_RX_MMCM_RESET_IN
+WARNING: [Synth 8-3331] design gtp_GT_USRCLK_SOURCE has unconnected port GT1_TXOUTCLK_IN
+WARNING: [Synth 8-3331] design gtp_GT_USRCLK_SOURCE has unconnected port GT1_TX_MMCM_RESET_IN
+WARNING: [Synth 8-3331] design gtp_GT_USRCLK_SOURCE has unconnected port GT1_RX_MMCM_RESET_IN
+WARNING: [Synth 8-3331] design gtp_GT_USRCLK_SOURCE has unconnected port GT2_TXOUTCLK_IN
+WARNING: [Synth 8-3331] design gtp_GT_USRCLK_SOURCE has unconnected port GT2_TX_MMCM_RESET_IN
+WARNING: [Synth 8-3331] design gtp_GT_USRCLK_SOURCE has unconnected port GT2_RX_MMCM_RESET_IN
+WARNING: [Synth 8-3331] design gtp_GT_USRCLK_SOURCE has unconnected port GT3_TXOUTCLK_IN
+WARNING: [Synth 8-3331] design gtp_GT_USRCLK_SOURCE has unconnected port GT3_TX_MMCM_RESET_IN
+WARNING: [Synth 8-3331] design gtp_GT_USRCLK_SOURCE has unconnected port GT3_RX_MMCM_RESET_IN
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RUSER[0]
+WARNING: [Synth 8-3331] design frame_fifo_write has unconnected port wr_burst_data_req
+WARNING: [Synth 8-3331] design word_align has unconnected port rst
+WARNING: [Synth 8-3331] design i2c_master_top has unconnected port i2c_slave_dev_addr[0]
+WARNING: [Synth 8-3331] design top has unconnected port DRP_CLK_IN_P
+WARNING: [Synth 8-3331] design top has unconnected port DRP_CLK_IN_N
+WARNING: [Synth 8-3331] design top has unconnected port cmos1_db[1]
+WARNING: [Synth 8-3331] design top has unconnected port cmos1_db[0]
+WARNING: [Synth 8-3331] design top has unconnected port cmos2_db[1]
+WARNING: [Synth 8-3331] design top has unconnected port cmos2_db[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 500.707 ; gain = 155.707
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin i2c_master_top_m0:i2c_read_req to constant 0 [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_config.v:130]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 500.707 ; gain = 155.707
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp7/gtp_in_context.xdc] for cell 'gtp_exdes_m0/gtp_support_i/gtp_init_i'
+Finished Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp7/gtp_in_context.xdc] for cell 'gtp_exdes_m0/gtp_support_i/gtp_init_i'
+Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp8/fifo_4096_16i_32o_in_context.xdc] for cell 'video_packet_send_m0/fifo_4096_16i_32o_m0'
+Finished Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp8/fifo_4096_16i_32o_in_context.xdc] for cell 'video_packet_send_m0/fifo_4096_16i_32o_m0'
+Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp8/fifo_4096_16i_32o_in_context.xdc] for cell 'video_packet_send_m1/fifo_4096_16i_32o_m0'
+Finished Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp8/fifo_4096_16i_32o_in_context.xdc] for cell 'video_packet_send_m1/fifo_4096_16i_32o_m0'
+Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp9/video_pll_in_context.xdc] for cell 'video_pll_m0'
+Finished Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp9/video_pll_in_context.xdc] for cell 'video_pll_m0'
+Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp10/afifo_16i_64o_512_in_context.xdc] for cell 'frame_read_write_m0/write_buf'
+Finished Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp10/afifo_16i_64o_512_in_context.xdc] for cell 'frame_read_write_m0/write_buf'
+Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp11/afifo_64i_16o_128_in_context.xdc] for cell 'frame_read_write_m0/read_buf'
+Finished Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp11/afifo_64i_16o_128_in_context.xdc] for cell 'frame_read_write_m0/read_buf'
+Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc] for cell 'u_ddr3'
+Finished Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc] for cell 'u_ddr3'
+Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp13/fifo_2048_32i_8o_in_context.xdc] for cell 'video_packet_rec_m0/fifo_2048_32i_8o_m0'
+Finished Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp13/fifo_2048_32i_8o_in_context.xdc] for cell 'video_packet_rec_m0/fifo_2048_32i_8o_m0'
+Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc]
+WARNING: [Vivado 12-507] No nets matched 'cmos1_pclk_IBUF'. [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:142]
+WARNING: [Vivado 12-507] No nets matched 'cmos2_pclk_IBUF'. [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:145]
+INFO: [Timing 38-2] Deriving generated clocks [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:146]
+WARNING: [Vivado 12-627] No clocks matched 'clk_pll_i'. [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:146]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:146]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out1_video_pll'. [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:146]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:146]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out1_video_pll'. [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:147]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:147]
+WARNING: [Vivado 12-627] No clocks matched 'clk_pll_i'. [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:147]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc:147]
+Finished Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/constrs_1/new/ddr3_ov5640_vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 862.355 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 862.355 ; gain = 517.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 862.355 ; gain = 517.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[14]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[14]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_n[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_n[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_p[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_p[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cs_n[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cs_n[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[2]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[2]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[3]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[3]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[16]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[16]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[17]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[17]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[18]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[18]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[19]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[19]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[20]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[20]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[21]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[21]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[22]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[22]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[23]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[23]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[24]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[24]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[25]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[25]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[26]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[26]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[27]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[27]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[28]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[28]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[29]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[29]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[30]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[30]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[31]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 104).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[31]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 105).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 106).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 107).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 108).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 109).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 110).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 111).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 112).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 113).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 114).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 115).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 116).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 117).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 118).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 119).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 120).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 121).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 122).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 123).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[2]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 124).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[2]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 125).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[3]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 126).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[3]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 127).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 128).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 129).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 130).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 131).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[2]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 132).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[2]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 133).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[3]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 134).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[3]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 135).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 136).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 137).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 138).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 139).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 140).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 141).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 142).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/.Xil/Vivado-3888-PC-201805041311/dcp12/ddr3_in_context.xdc, line 143).
+Applied set_property DONT_TOUCH = true for frame_read_write_m0/read_buf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for frame_read_write_m0/write_buf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for gtp_exdes_m0/gtp_support_i/gtp_init_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ddr3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for video_packet_rec_m0/fifo_2048_32i_8o_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for video_packet_send_m0/fifo_4096_16i_32o_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for video_packet_send_m1/fifo_4096_16i_32o_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for video_pll_m0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 862.355 ; gain = 517.355
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_bit_ctrl'
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_byte_ctrl'
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_master_top'
+INFO: [Synth 8-5544] ROM "read" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "error" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_config'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "lut_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "button_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element x_cnt_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/cmos_8_16bit.v:49]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'video_packet_send__xdcDup__1'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gt_tx_ctrl" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element data_cnt_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_send.v:81]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'video_packet_send'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gt_tx_ctrl" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element data_cnt_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_send.v:81]
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element vs_cnt_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_rec.v:17]
+WARNING: [Synth 8-6014] Unused sequential element wr_cnt_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_rec.v:82]
+WARNING: [Synth 8-6014] Unused sequential element data_cnt_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_rec.v:92]
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_active" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'frame_fifo_write'
+INFO: [Synth 8-5544] ROM "write_finish" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_req_ack" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_aclr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'frame_fifo_read'
+INFO: [Synth 8-5544] ROM "read_finish" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_req_ack" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_aclr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'aq_axi_master'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'aq_axi_master'
+INFO: [Synth 8-5546] ROM "M_AXI_WLAST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_w_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "WR_READY" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_w_last" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wr_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RD_READY" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_r_last" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "init_wait_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "init_wait_count" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element init_wait_count_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_common_reset.v:104]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            00000 |               000000000000000000
+                 start_a |                            00001 |               000000000000000001
+                 start_b |                            00010 |               000000000000000010
+                 start_c |                            00011 |               000000000000000100
+                 start_d |                            00100 |               000000000000001000
+                 start_e |                            00101 |               000000000000010000
+                  stop_a |                            00110 |               000000000000100000
+                  stop_b |                            00111 |               000000000001000000
+                  stop_c |                            01000 |               000000000010000000
+                  stop_d |                            01001 |               000000000100000000
+                    wr_a |                            01010 |               000010000000000000
+                    wr_b |                            01011 |               000100000000000000
+                    wr_c |                            01100 |               001000000000000000
+                    wr_d |                            01101 |               010000000000000000
+                    rd_a |                            01110 |               000000001000000000
+                    rd_b |                            01111 |               000000010000000000
+                    rd_c |                            10000 |               000000100000000000
+                    rd_d |                            10001 |               000001000000000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'i2c_master_bit_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                              000 |                            00000
+                ST_START |                              001 |                            00001
+                 ST_READ |                              010 |                            00010
+                ST_WRITE |                              011 |                            00100
+                  ST_ACK |                              100 |                            01000
+                 ST_STOP |                              101 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'i2c_master_byte_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                 0000000000000001 |                             0000
+           S_WR_DEV_ADDR |                 0000000000000010 |                             0001
+           S_WR_REG_ADDR |                 0000000000010000 |                             0010
+          S_WR_REG_ADDR1 |                 0000000000100000 |                             1101
+               S_WR_DATA |                 0000000001000000 |                             0011
+          S_RD_DEV_ADDR0 |                 0000000000000100 |                             0110
+           S_WR_ERR_NACK |                 0000000000001000 |                             0101
+               S_WR_STOP |                 0000000010000000 |                             1011
+                S_WR_ACK |                 0000010000000000 |                             0100
+           S_RD_REG_ADDR |                 0000100000000000 |                             0111
+          S_RD_REG_ADDR1 |                 0001000000000000 |                             1110
+          S_RD_DEV_ADDR1 |                 0010000000000000 |                             1000
+               S_RD_DATA |                 0100000000000000 |                             1001
+               S_RD_STOP |                 1000000000000000 |                             1010
+                S_RD_ACK |                 0000000100000000 |                             1111
+                  S_WAIT |                 0000001000000000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'i2c_master_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                              000
+          S_WR_I2C_CHECK |                               01 |                              001
+                S_WR_I2C |                               10 |                              010
+           S_WR_I2C_DONE |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'i2c_config'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             SEND_OTHER0 |                              000 |                              101
+             SEND_OTHER1 |                              001 |                              110
+         SEND_LINE_START |                              010 |                              010
+          SEND_LINE_DATA |                              011 |                              011
+           SEND_LINE_END |                              100 |                              100
+        SEND_FRAME_SYNC0 |                              101 |                              000
+        SEND_FRAME_SYNC1 |                              110 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'video_packet_send__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             SEND_OTHER0 |                              000 |                              101
+             SEND_OTHER1 |                              001 |                              110
+         SEND_LINE_START |                              010 |                              010
+          SEND_LINE_DATA |                              011 |                              011
+           SEND_LINE_END |                              100 |                              100
+        SEND_FRAME_SYNC0 |                              101 |                              000
+        SEND_FRAME_SYNC1 |                              110 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'video_packet_send'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                             0000
+                   S_ACK |                              001 |                             0001
+            S_CHECK_FIFO |                              010 |                             0010
+           S_WRITE_BURST |                              011 |                             0011
+       S_WRITE_BURST_END |                              100 |                             0100
+                   S_END |                              101 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'frame_fifo_write'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                             0000
+                   S_ACK |                              001 |                             0001
+            S_CHECK_FIFO |                              010 |                             0010
+            S_READ_BURST |                              011 |                             0011
+        S_READ_BURST_END |                              100 |                             0100
+                   S_END |                              101 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'frame_fifo_read'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               S_WR_IDLE |                              000 |                              000
+               S_WA_WAIT |                              001 |                              001
+              S_WA_START |                              010 |                              010
+               S_WD_WAIT |                              011 |                              011
+               S_WD_PROC |                              100 |                              100
+               S_WR_WAIT |                              101 |                              101
+               S_WR_DONE |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'sequential' in module 'aq_axi_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               S_RD_IDLE |                              000 |                              000
+               S_RA_WAIT |                              001 |                              001
+              S_RA_START |                              010 |                              010
+               S_RD_WAIT |                              011 |                              011
+               S_RD_PROC |                              100 |                              100
+               S_RD_DONE |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'sequential' in module 'aq_axi_master'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 862.355 ; gain = 517.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   2 Input     25 Bit       Adders := 4     
+	   2 Input     21 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 6     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               96 Bit    Registers := 1     
+	               32 Bit    Registers := 11    
+	               25 Bit    Registers := 10    
+	               16 Bit    Registers := 5     
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 16    
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 9     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 150   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   7 Input     32 Bit        Muxes := 6     
+	   3 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 4     
+	   4 Input     25 Bit        Muxes := 2     
+	   6 Input     25 Bit        Muxes := 4     
+	  18 Input     18 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 5     
+	  32 Input     16 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 2     
+	   4 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 8     
+	   6 Input      8 Bit        Muxes := 4     
+	   8 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	  24 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 14    
+	   6 Input      4 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 12    
+	  15 Input      3 Bit        Muxes := 2     
+	  11 Input      3 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 4     
+	   7 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 91    
+	  18 Input      1 Bit        Muxes := 12    
+	   6 Input      1 Bit        Muxes := 37    
+	   3 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 18    
+	  10 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module i2c_master_bit_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  18 Input     18 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 2     
+	  24 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 13    
+	  18 Input      1 Bit        Muxes := 6     
+Module i2c_master_byte_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	  15 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 6     
+Module i2c_master_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  32 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+Module i2c_config 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+Module lut_ov5640_rgb565_1280_720 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mv_debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module cmos_8_16bit 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module video_packet_send__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 4     
+Module video_packet_send 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 4     
+Module word_align 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+Module video_packet_rec 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+Module cmos_write_req_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module color_bar 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	  10 Input      1 Bit        Muxes := 1     
+Module video_timing_data 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module frame_fifo_write 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 2     
++---Registers : 
+	               25 Bit    Registers := 5     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     25 Bit        Muxes := 1     
+	   6 Input     25 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 10    
+Module frame_fifo_read 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 2     
++---Registers : 
+	               25 Bit    Registers := 5     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     25 Bit        Muxes := 1     
+	   6 Input     25 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 10    
+Module aq_axi_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     21 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 2     
+	   7 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   7 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 5     
+Module gtp_cpll_railing 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
+	               96 Bit    Registers := 1     
+Module gtp_common_reset 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module gtp_exdes 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 20    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element i2c_master_top_m0/i2c_read_data_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/i2c_master/i2c_master_top.v:236]
+INFO: [Synth 8-5545] ROM "button_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element data_cnt_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_send.v:81]
+WARNING: [Synth 8-6014] Unused sequential element data_cnt_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_send.v:81]
+WARNING: [Synth 8-6014] Unused sequential element vs_cnt_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_rec.v:17]
+WARNING: [Synth 8-6014] Unused sequential element data_cnt_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_rec.v:92]
+WARNING: [Synth 8-6014] Unused sequential element wr_cnt_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/video_packet_rec.v:82]
+WARNING: [Synth 8-6014] Unused sequential element color_bar_m0/active_x_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/color_bar.v:218]
+WARNING: [Synth 8-6014] Unused sequential element color_bar_m0/rgb_r_reg_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/color_bar.v:186]
+WARNING: [Synth 8-6014] Unused sequential element color_bar_m0/rgb_g_reg_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/color_bar.v:187]
+WARNING: [Synth 8-6014] Unused sequential element color_bar_m0/rgb_b_reg_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/color_bar.v:188]
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "color_bar_m0/v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "color_bar_m0/h_active" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_w_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "M_AXI_WLAST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gtp_support_i/common_reset_i/init_wait_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gtp_support_i/common_reset_i/init_wait_done" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element gtp_support_i/common_reset_i/init_wait_count_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/example_design/support/gtp_common_reset.v:104]
+WARNING: [Synth 8-6014] Unused sequential element cmos_8_16bit_m0/hblank_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/cmos_8_16bit.v:69]
+WARNING: [Synth 8-6014] Unused sequential element cmos_8_16bit_m1/hblank_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/cmos_8_16bit.v:69]
+WARNING: [Synth 8-6014] Unused sequential element cmos_8_16bit_m0/x_cnt_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/cmos_8_16bit.v:49]
+WARNING: [Synth 8-6014] Unused sequential element cmos_8_16bit_m1/x_cnt_reg was removed.  [D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.srcs/sources_1/cmos_8_16bit.v:49]
+WARNING: [Synth 8-3917] design top has port tx_disable[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port tx_disable[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port tx_disable[1] driven by constant 0
+WARNING: [Synth 8-3917] design top has port tx_disable[0] driven by constant 0
+WARNING: [Synth 8-3917] design top has port cmos1_rst_n driven by constant 1
+WARNING: [Synth 8-3917] design top has port cmos2_rst_n driven by constant 1
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RUSER[0]
+WARNING: [Synth 8-3331] design word_align has unconnected port rst
+WARNING: [Synth 8-3331] design top has unconnected port DRP_CLK_IN_P
+WARNING: [Synth 8-3331] design top has unconnected port DRP_CLK_IN_N
+WARNING: [Synth 8-3331] design top has unconnected port cmos1_db[1]
+WARNING: [Synth 8-3331] design top has unconnected port cmos1_db[0]
+WARNING: [Synth 8-3331] design top has unconnected port cmos2_db[1]
+WARNING: [Synth 8-3331] design top has unconnected port cmos2_db[0]
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[0]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[1]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[2]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[3]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[4]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[5]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[6]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[7]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[8]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[9]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[10]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[11]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[12]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[13]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[14]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[15]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[16]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[17]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[18]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[19]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[20]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[21]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[22]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[23]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[24]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[0]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[1]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[2]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[3]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[4]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[5]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[6]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[7]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[8]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[9]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[10]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[11]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[12]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[13]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[14]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[15]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[16]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[18]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[19]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[20]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[21]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[22]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[23]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24] )
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[0]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[1]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[2]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[3]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[4]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[5]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[6]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[7]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[8]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[9]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[10]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[11]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[12]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[13]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[14]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[15]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[16]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[17]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[18]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[19]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[20]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[21]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[22]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[23]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[0]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[1]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[2]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[3]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[4]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[5]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[6]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[7]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[8]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[9]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[10]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[11]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[12]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[13]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[14]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[15]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[16]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[18]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[19]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[20]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[21]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[22]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[23]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_latch_reg[0]' (FDCE) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_latch_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_latch_reg[1]' (FDCE) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_latch_reg[2]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_latch_reg[2]' (FDCE) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_latch_reg[3]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frame_read_write_m0/frame_fifo_read_m0/rd_burst_len_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video_packet_rec_m0/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frame_read_write_m0/frame_fifo_write_m0/wr_burst_len_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video_packet_send_m1/gt_tx_ctrl_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video_packet_send_m0/gt_tx_ctrl_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gt_tx_ctrl_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/sta_condition_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/busy_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m0/i2c_master_top_m0/error_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m0/error_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m1/i2c_master_top_m0/byte_controller/bit_controller/sta_condition_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m1/i2c_master_top_m0/byte_controller/bit_controller/busy_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m1/i2c_master_top_m0/error_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (i2c_config_m1/error_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (mv_debounce_m1/button_posedge_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (video_packet_send_m0/gt_tx_ctrl_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (video_packet_send_m1/gt_tx_ctrl_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_data_d0_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_ctrl_d0_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (word_align_m0/gt_rx_ctrl_d0_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (video_packet_rec_m0/state_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (video_timing_data_m0/video_de_d1_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_cnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_cnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_cnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_cnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_cnt_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_addr_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_addr_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_addr_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_addr_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_addr_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_len_latch_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_len_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_cnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_cnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_cnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_cnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_cnt_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_addr_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_addr_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_addr_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_addr_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_addr_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_len_latch_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_len_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_len_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_len_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_len_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_len_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_len_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_len_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m0/x_cnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m0/x_cnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m0/x_cnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m0/x_cnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m0/x_cnt_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m0/x_cnt_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m0/x_cnt_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m0/x_cnt_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m0/x_cnt_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m0/x_cnt_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m0/x_cnt_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m1/x_cnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m1/x_cnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m1/x_cnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m1/x_cnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m1/x_cnt_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m1/x_cnt_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cmos_8_16bit_m1/x_cnt_reg[7]) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 862.355 ; gain = 517.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/gt0_rxoutclkfabric_out' to pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/bbstub_gt0_rxoutclkfabric_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/gt0_txoutclk_out' to pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/bbstub_gt0_txoutclk_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/gt0_txoutclkfabric_out' to pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/bbstub_gt0_txoutclkfabric_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/gt1_rxoutclkfabric_out' to pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/bbstub_gt1_rxoutclkfabric_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/gt1_txoutclk_out' to pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/bbstub_gt1_txoutclk_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/gt1_txoutclkfabric_out' to pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/bbstub_gt1_txoutclkfabric_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/gt2_rxoutclkfabric_out' to pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/bbstub_gt2_rxoutclkfabric_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/gt2_txoutclk_out' to pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/bbstub_gt2_txoutclk_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/gt2_txoutclkfabric_out' to pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/bbstub_gt2_txoutclkfabric_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/gt3_rxoutclkfabric_out' to pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/bbstub_gt3_rxoutclkfabric_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/gt3_txoutclk_out' to pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/bbstub_gt3_txoutclk_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/gt3_txoutclkfabric_out' to pin 'gtp_exdes_m0/gtp_support_i/gtp_init_i/bbstub_gt3_txoutclkfabric_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_pll_m0/clk_out1' to pin 'video_pll_m0/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'video_pll_m0/clk_in1' to 'gt_tx_ctrl_reg[0]/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_ddr3/ui_clk' to pin 'u_ddr3/bbstub_ui_clk/O'
+INFO: [Synth 8-5819] Moved 15 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 869.266 ; gain = 524.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 882.230 ; gain = 537.230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 920.121 ; gain = 575.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin gtp_exdes_m0/gt_txfsmresetdone_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtp_exdes_m0/gt_txfsmresetdone_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtp_exdes_m0/gt0_rxfsmresetdone_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtp_exdes_m0/gt0_rxfsmresetdone_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtp_exdes_m0/gt1_rxfsmresetdone_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtp_exdes_m0/gt1_rxfsmresetdone_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtp_exdes_m0/gt2_rxfsmresetdone_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtp_exdes_m0/gt2_rxfsmresetdone_r2_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtp_exdes_m0/gt3_rxfsmresetdone_r_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin gtp_exdes_m0/gt3_rxfsmresetdone_r2_inferred:in0 to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 920.121 ; gain = 575.121
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 920.121 ; gain = 575.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 920.121 ; gain = 575.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 920.121 ; gain = 575.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 920.121 ; gain = 575.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 920.121 ; gain = 575.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | gtp_exdes_m0/gtp_support_i/cpll_railing_pll0_q0_clk0_refclk_i/cpllreset_wait_reg[127] | 128    | 1     | NO           | NO                 | YES               | 0      | 4       | 
+|top         | gtp_exdes_m0/gtp_support_i/cpll_railing_pll0_q0_clk0_refclk_i/cpllpd_wait_reg[95]     | 96     | 1     | NO           | NO                 | YES               | 0      | 3       | 
++------------+---------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------+----------+
+|      |BlackBox name     |Instances |
++------+------------------+----------+
+|1     |video_pll         |         1|
+|2     |ddr3              |         1|
+|3     |afifo_16i_64o_512 |         1|
+|4     |afifo_64i_16o_128 |         1|
+|5     |gtp               |         1|
+|6     |fifo_2048_32i_8o  |         1|
+|7     |fifo_4096_16i_32o |         2|
++------+------------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |afifo_16i_64o_512    |     1|
+|2     |afifo_64i_16o_128    |     1|
+|3     |ddr3                 |     1|
+|4     |fifo_2048_32i_8o     |     1|
+|5     |fifo_4096_16i_32o    |     1|
+|6     |fifo_4096_16i_32o__2 |     1|
+|7     |gtp                  |     1|
+|8     |video_pll            |     1|
+|9     |BUFG                 |     6|
+|10    |BUFH                 |     1|
+|11    |CARRY4               |   119|
+|12    |GTPE2_COMMON         |     1|
+|13    |IBUFDS_GTE2          |     1|
+|14    |LUT1                 |   143|
+|15    |LUT2                 |   321|
+|16    |LUT3                 |   261|
+|17    |LUT4                 |   232|
+|18    |LUT5                 |   303|
+|19    |LUT6                 |   620|
+|20    |MMCME2_ADV           |     1|
+|21    |MUXF7                |    70|
+|22    |SRLC32E              |     7|
+|23    |FDCE                 |   620|
+|24    |FDPE                 |     2|
+|25    |FDRE                 |   343|
+|26    |FDSE                 |    18|
+|27    |IBUF                 |    34|
+|28    |IBUFDS               |     1|
+|29    |IOBUF                |     4|
+|30    |OBUF                 |    32|
++------+---------------------+------+
+
+Report Instance Areas: 
++------+-----------------------------------------+-----------------------------+------+
+|      |Instance                                 |Module                       |Cells |
++------+-----------------------------------------+-----------------------------+------+
+|1     |top                                      |                             |  3974|
+|2     |  cmos_8_16bit_m0                        |cmos_8_16bit                 |    44|
+|3     |  cmos_8_16bit_m1                        |cmos_8_16bit_0               |    44|
+|4     |  cmos_write_req_gen_m0                  |cmos_write_req_gen           |    11|
+|5     |  frame_read_write_m0                    |frame_read_write             |   389|
+|6     |    frame_fifo_read_m0                   |frame_fifo_read              |   138|
+|7     |    frame_fifo_write_m0                  |frame_fifo_write             |   135|
+|8     |  gtp_exdes_m0                           |gtp_exdes                    |   503|
+|9     |    gtp_support_i                        |gtp_support                  |   473|
+|10    |      common0_i                          |gtp_common                   |     1|
+|11    |      common_reset_i                     |gtp_common_reset             |    28|
+|12    |      cpll_railing_pll0_q0_clk0_refclk_i |gtp_cpll_railing             |    10|
+|13    |      gt_usrclk_source                   |gtp_GT_USRCLK_SOURCE         |     5|
+|14    |        txoutclk_mmcm0_i                 |gtp_CLOCK_MODULE             |     4|
+|15    |  i2c_config_m0                          |i2c_config                   |   690|
+|16    |    i2c_master_top_m0                    |i2c_master_top_2             |   657|
+|17    |      byte_controller                    |i2c_master_byte_ctrl_3       |   230|
+|18    |        bit_controller                   |i2c_master_bit_ctrl_4        |   163|
+|19    |  i2c_config_m1                          |i2c_config_1                 |   689|
+|20    |    i2c_master_top_m0                    |i2c_master_top               |   656|
+|21    |      byte_controller                    |i2c_master_byte_ctrl         |   230|
+|22    |        bit_controller                   |i2c_master_bit_ctrl          |   163|
+|23    |  mv_debounce_m1                         |mv_debounce                  |    63|
+|24    |  u_aq_axi_master                        |aq_axi_master                |   428|
+|25    |  video_packet_rec_m0                    |video_packet_rec             |   191|
+|26    |  video_packet_send_m0                   |video_packet_send__xdcDup__1 |   199|
+|27    |  video_packet_send_m1                   |video_packet_send            |   232|
+|28    |  video_timing_data_m0                   |video_timing_data            |   122|
+|29    |    color_bar_m0                         |color_bar                    |    84|
+|30    |  word_align_m0                          |word_align                   |   106|
++------+-----------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 920.121 ; gain = 575.121
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 158 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 920.121 ; gain = 213.473
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 920.121 ; gain = 575.121
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 229 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+345 Infos, 235 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 920.121 ; gain = 575.121
+INFO: [Common 17-1381] The checkpoint 'D:/demo_ax7101/demo/gtp_video/gtp_an5642_vga/gtp_an5642_vga/gtp_an5642_vga.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 920.121 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  6 10:13:08 2018...

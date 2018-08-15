@@ -1,0 +1,2 @@
+gtp_sim_netlist.v,verilog,xil_defaultlib,../../../../ddr3_an5642_vga_sobel.srcs/sources_1/ip/gtp/gtp_sim_netlist.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

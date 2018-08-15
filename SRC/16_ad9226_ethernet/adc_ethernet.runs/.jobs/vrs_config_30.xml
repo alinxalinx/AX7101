@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="afifo_64i_16o_128_synth_1" LaunchDir="D:/demo_ax7102/demo/adc_ethnet/ddr3_an5642_an430_lcd/ddr3_an5642_an430_lcd.runs/afifo_64i_16o_128_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/demo_ax7102/demo/adc_ethnet/ddr3_an5642_an430_lcd/ddr3_an5642_an430_lcd.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="afifo_64i_16o_128_synth_1"/>
+	</Run>
+</Runs>
+

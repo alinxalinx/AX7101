@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Aug 29 11:17:47 2017
+# Process ID: 8544
+# Current directory: y:/project/AX/AX7101/CD/02_demo/vivado_project/13_iber_demo_1g/ibert_7series_gtp_0_example
+# Command line: vivado.exe -source y:/project/AX/AX7101/CD/02_demo/vivado_project/13_iber_demo_1g/iber_demo_1g/iber_demo_1g.srcs/sources_1/ip/ibert_7series_gtp_0/ibert_7series_gtp_0_ex.tcl
+# Log file: y:/project/AX/AX7101/CD/02_demo/vivado_project/13_iber_demo_1g/ibert_7series_gtp_0_example/vivado.log
+# Journal file: y:/project/AX/AX7101/CD/02_demo/vivado_project/13_iber_demo_1g/ibert_7series_gtp_0_example\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source y:/project/AX/AX7101/CD/02_demo/vivado_project/13_iber_demo_1g/iber_demo_1g/iber_demo_1g.srcs/sources_1/ip/ibert_7series_gtp_0/ibert_7series_gtp_0_ex.tcl
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1

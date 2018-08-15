@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jul  9 13:36:52 2018
+# Process ID: 6192
+# Current directory: D:/demo_ax7102/demo/adc_ethnet/ddr3_an5642_an430_lcd/ddr3_an5642_an430_lcd.runs/afifo_64i_16o_128_synth_1
+# Command line: vivado.exe -log afifo_64i_16o_128.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source afifo_64i_16o_128.tcl
+# Log file: D:/demo_ax7102/demo/adc_ethnet/ddr3_an5642_an430_lcd/ddr3_an5642_an430_lcd.runs/afifo_64i_16o_128_synth_1/afifo_64i_16o_128.vds
+# Journal file: D:/demo_ax7102/demo/adc_ethnet/ddr3_an5642_an430_lcd/ddr3_an5642_an430_lcd.runs/afifo_64i_16o_128_synth_1\vivado.jou
+#-----------------------------------------------------------
+source afifo_64i_16o_128.tcl -notrace

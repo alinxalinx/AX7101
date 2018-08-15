@@ -1,0 +1,2720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>ibert_7series_gtp_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_veriloginstantiationtemplate</spirit:name>
+        <spirit:displayName>Verilog Instantiation Template</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.template</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_veriloginstantiationtemplate_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>customizationCRC</spirit:name>
+            <spirit:value>ac62c50a</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>customizationCRCversion</spirit:name>
+            <spirit:value>5</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>boundaryCRC</spirit:name>
+            <spirit:value>b057a67b</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>boundaryCRCversion</spirit:name>
+            <spirit:value>1</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Tue Aug 29 03:31:04 UTC 2017</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>StaleAtRelink</spirit:name>
+            <spirit:value>false</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_blk_mem_gen_8_3__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_fifo_generator_13_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>customizationCRC</spirit:name>
+            <spirit:value>ac62c50a</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>customizationCRCversion</spirit:name>
+            <spirit:value>5</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>boundaryCRC</spirit:name>
+            <spirit:value>b057a67b</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>boundaryCRCversion</spirit:name>
+            <spirit:value>1</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Tue Aug 29 03:31:06 UTC 2017</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>StaleAtRelink</spirit:name>
+            <spirit:value>false</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
+        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>customizationCRC</spirit:name>
+            <spirit:value>ac62c50a</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>customizationCRCversion</spirit:name>
+            <spirit:value>5</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>boundaryCRC</spirit:name>
+            <spirit:value>b057a67b</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>boundaryCRCversion</spirit:name>
+            <spirit:value>1</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Tue Aug 29 03:31:06 UTC 2017</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>StaleAtRelink</spirit:name>
+            <spirit:value>false</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_implementation</spirit:name>
+        <spirit:displayName>Implementation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:implementation</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_implementation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>customizationCRC</spirit:name>
+            <spirit:value>ac62c50a</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>customizationCRCversion</spirit:name>
+            <spirit:value>5</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>boundaryCRC</spirit:name>
+            <spirit:value>b057a67b</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>boundaryCRCversion</spirit:name>
+            <spirit:value>1</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Tue Aug 29 03:31:06 UTC 2017</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>StaleAtRelink</spirit:name>
+            <spirit:value>false</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_versioninformation</spirit:name>
+        <spirit:displayName>Version Information</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:docs.versioninfo</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_versioninformation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>customizationCRC</spirit:name>
+            <spirit:value>ac62c50a</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>customizationCRCversion</spirit:name>
+            <spirit:value>5</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>boundaryCRC</spirit:name>
+            <spirit:value>b057a67b</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>boundaryCRCversion</spirit:name>
+            <spirit:value>1</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Tue Aug 29 03:31:06 UTC 2017</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>StaleAtRelink</spirit:name>
+            <spirit:value>false</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>TXN_O</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_CHANNEL&apos;)) * spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_QUADS&apos;))) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>TXP_O</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_CHANNEL&apos;)) * spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_QUADS&apos;))) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>RXOUTCLK_O</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>RXN_I</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_CHANNEL&apos;)) * spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_QUADS&apos;))) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>RXP_I</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_CHANNEL&apos;)) * spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_QUADS&apos;))) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>GTREFCLK0_I</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_QUADS&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>GTREFCLK1_I</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_QUADS&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SYSCLK_I</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="string">
+        <spirit:name>C_COMPONENT_NAME</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_COMPONENT_NAME">ibert_7series_gtp_0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_SI_VER</spirit:name>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SI_VER" spirit:bitStringLength="16">0x0300</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_NUM_QUADS</spirit:name>
+        <spirit:displayName>C Num Quads</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NUM_QUADS">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SYSCLK_MODE_EXTERNAL</spirit:name>
+        <spirit:displayName>C Sysclk Mode External</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SYSCLK_MODE_EXTERNAL" spirit:bitStringLength="1">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_ADD_RXOUTCLK_PROBES</spirit:name>
+        <spirit:displayName>C Add Rxoutclk Probes</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ADD_RXOUTCLK_PROBES" spirit:bitStringLength="1">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_DATA_WIDTH</spirit:name>
+        <spirit:displayName>C Data Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DATA_WIDTH">16</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_XSDB_PERIOD_FRC</spirit:name>
+        <spirit:displayName>C Xsdb Period Frc</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_XSDB_PERIOD_FRC">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_XSDB_PERIOD_INT</spirit:name>
+        <spirit:displayName>C Xsdb Period Int</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_XSDB_PERIOD_INT">10</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_ALL_DATA_WIDTHS</spirit:name>
+        <spirit:displayName>C All Data Widths</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ALL_DATA_WIDTHS">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_DMON_TRACE</spirit:name>
+        <spirit:displayName>C Dmon Trace</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DMON_TRACE">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_DEVICE_FAMILY</spirit:name>
+        <spirit:displayName>C Device Family</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DEVICE_FAMILY" spirit:bitStringLength="16">&quot;0000000000000101&quot;</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_DEVICE_TYPE</spirit:name>
+        <spirit:displayName>C Device Type</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DEVICE_TYPE" spirit:bitStringLength="16">&quot;0000000000001000&quot;</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_DEVICE_PACKAGE</spirit:name>
+        <spirit:displayName>C Device Package</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DEVICE_PACKAGE" spirit:bitStringLength="16">&quot;0000000000000010&quot;</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MAJOR_VERSION</spirit:name>
+        <spirit:displayName>C Major Version</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MAJOR_VERSION">2013</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MINOR_VERSION</spirit:name>
+        <spirit:displayName>C Minor Version</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MINOR_VERSION">3</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_BUILD_REVISION</spirit:name>
+        <spirit:displayName>C Build Revision</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_BUILD_REVISION">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_CORE_MAJOR_VER</spirit:name>
+        <spirit:displayName>C Core Major Ver</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CORE_MAJOR_VER">3</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_CORE_MINOR_VER</spirit:name>
+        <spirit:displayName>C Core Minor Ver</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CORE_MINOR_VER">0</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_CORE_MINOR_ALPHA_VER</spirit:name>
+        <spirit:displayName>C Core Minor Alpha Ver</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CORE_MINOR_ALPHA_VER">97</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PROTOCOL_COUNT</spirit:name>
+        <spirit:displayName>C Protocol Count</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_COUNT">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_1</spirit:name>
+        <spirit:displayName>C Protocol 1</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_1">Custom_1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_2</spirit:name>
+        <spirit:displayName>C Protocol 2</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_2">Custom_2</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_3</spirit:name>
+        <spirit:displayName>C Protocol 3</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_3">Custom_3</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_MAXLINERATE_1</spirit:name>
+        <spirit:displayName>C Protocol Maxlinerate 1</spirit:displayName>
+        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_MAXLINERATE_1" spirit:minimum="0.5" spirit:maximum="6.6">1.25</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_MAXLINERATE_2</spirit:name>
+        <spirit:displayName>C Protocol Maxlinerate 2</spirit:displayName>
+        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_MAXLINERATE_2" spirit:minimum="0.5" spirit:maximum="6.6">3.125</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_MAXLINERATE_3</spirit:name>
+        <spirit:displayName>C Protocol Maxlinerate 3</spirit:displayName>
+        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_MAXLINERATE_3" spirit:minimum="0.5" spirit:maximum="6.6">3.125</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PROTOCOL_DATAWIDTH_1</spirit:name>
+        <spirit:displayName>C Protocol Datawidth 1</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_DATAWIDTH_1">16</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PROTOCOL_DATAWIDTH_2</spirit:name>
+        <spirit:displayName>C Protocol Datawidth 2</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_DATAWIDTH_2">16</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PROTOCOL_DATAWIDTH_3</spirit:name>
+        <spirit:displayName>C Protocol Datawidth 3</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_DATAWIDTH_3">16</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_RXREFCLK_FREQUENCY_1</spirit:name>
+        <spirit:displayName>C Protocol Rxrefclk Frequency 1</spirit:displayName>
+        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_RXREFCLK_FREQUENCY_1">125.000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_RXREFCLK_FREQUENCY_2</spirit:name>
+        <spirit:displayName>C Protocol Rxrefclk Frequency 2</spirit:displayName>
+        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_RXREFCLK_FREQUENCY_2">125.000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_RXREFCLK_FREQUENCY_3</spirit:name>
+        <spirit:displayName>C Protocol Rxrefclk Frequency 3</spirit:displayName>
+        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_RXREFCLK_FREQUENCY_3">125.000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PROTOCOL_GT_COUNT_1</spirit:name>
+        <spirit:displayName>C Protocol Gt Count 1</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_GT_COUNT_1">1</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_GT_COUNT_1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PROTOCOL_GT_COUNT_2</spirit:name>
+        <spirit:displayName>C Protocol Gt Count 2</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_GT_COUNT_2">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_GT_COUNT_2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PROTOCOL_GT_COUNT_3</spirit:name>
+        <spirit:displayName>C Protocol Gt Count 3</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_GT_COUNT_3">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_GT_COUNT_3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_USE_QUAD_PLL_1</spirit:name>
+        <spirit:displayName>C Protocol Use Quad Pll 1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_USE_QUAD_PLL_1" spirit:bitStringLength="1">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_USE_QUAD_PLL_1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_USE_QUAD_PLL_2</spirit:name>
+        <spirit:displayName>C Protocol Use Quad Pll 2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_USE_QUAD_PLL_2" spirit:bitStringLength="1">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_USE_QUAD_PLL_2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_USE_QUAD_PLL_3</spirit:name>
+        <spirit:displayName>C Protocol Use Quad Pll 3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_USE_QUAD_PLL_3" spirit:bitStringLength="1">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_USE_QUAD_PLL_3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_USE_PLL0_1</spirit:name>
+        <spirit:displayName>C Protocol Use Pll0 1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_USE_PLL0_1" spirit:bitStringLength="1">1</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_USE_PLL0_1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_USE_PLL0_2</spirit:name>
+        <spirit:displayName>C Protocol Use Pll0 2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_USE_PLL0_2" spirit:bitStringLength="1">1</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_USE_PLL0_2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_USE_PLL0_3</spirit:name>
+        <spirit:displayName>C Protocol Use Pll0 3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_USE_PLL0_3" spirit:bitStringLength="1">1</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_USE_PLL0_3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_USE_PLL1_1</spirit:name>
+        <spirit:displayName>C Protocol Use Pll1 1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_USE_PLL1_1" spirit:bitStringLength="1">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_USE_PLL1_1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_USE_PLL1_2</spirit:name>
+        <spirit:displayName>C Protocol Use Pll1 2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_USE_PLL1_2" spirit:bitStringLength="1">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_USE_PLL1_2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_USE_PLL1_3</spirit:name>
+        <spirit:displayName>C Protocol Use Pll1 3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_USE_PLL1_3" spirit:bitStringLength="1">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_USE_PLL1_3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_CHECK_REFCLK_SOURCES</spirit:name>
+        <spirit:displayName>C Check Refclk Sources</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CHECK_REFCLK_SOURCES" spirit:bitStringLength="1">1</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_CHECK_REFCLK_SOURCES">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_GT_CORRECT</spirit:name>
+        <spirit:displayName>C Gt Correct</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_GT_CORRECT" spirit:bitStringLength="1">1</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_GT_CORRECT">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_QUAD0</spirit:name>
+        <spirit:displayName>C Protocol Quad0</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_QUAD0">None</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_QUAD0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_QUAD1</spirit:name>
+        <spirit:displayName>C Protocol Quad1</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_QUAD1">Custom_1_/_1.25_Gbps</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_QUAD1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_QUAD2</spirit:name>
+        <spirit:displayName>C Protocol Quad2</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_QUAD2">None</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_QUAD2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PROTOCOL_QUAD3</spirit:name>
+        <spirit:displayName>C Protocol Quad3</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PROTOCOL_QUAD3">None</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PROTOCOL_QUAD3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_REFCLK_SOURCE_QUAD_0</spirit:name>
+        <spirit:displayName>C Refclk Source Quad 0</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_REFCLK_SOURCE_QUAD_0">None</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_REFCLK_SOURCE_QUAD_0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_REFCLK_SOURCE_QUAD_1</spirit:name>
+        <spirit:displayName>C Refclk Source Quad 1</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_REFCLK_SOURCE_QUAD_1">MGTREFCLK0_216</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_REFCLK_SOURCE_QUAD_1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_REFCLK_SOURCE_QUAD_2</spirit:name>
+        <spirit:displayName>C Refclk Source Quad 2</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_REFCLK_SOURCE_QUAD_2">None</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_REFCLK_SOURCE_QUAD_2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_REFCLK_SOURCE_QUAD_3</spirit:name>
+        <spirit:displayName>C Refclk Source Quad 3</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_REFCLK_SOURCE_QUAD_3">None</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_REFCLK_SOURCE_QUAD_3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_CHANNEL_QUAD_0</spirit:name>
+        <spirit:displayName>C Channel Quad 0</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CHANNEL_QUAD_0">Channel_0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_CHANNEL_QUAD_0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_CHANNEL_QUAD_1</spirit:name>
+        <spirit:displayName>C Channel Quad 1</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CHANNEL_QUAD_1">Channel_0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_CHANNEL_QUAD_1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_CHANNEL_QUAD_2</spirit:name>
+        <spirit:displayName>C Channel Quad 2</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CHANNEL_QUAD_2">Channel_0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_CHANNEL_QUAD_2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_CHANNEL_QUAD_3</spirit:name>
+        <spirit:displayName>C Channel Quad 3</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CHANNEL_QUAD_3">Channel_0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_CHANNEL_QUAD_3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_RXOUTCLK_GT_LOCATION</spirit:name>
+        <spirit:displayName>C Rxoutclk Gt Location</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXOUTCLK_GT_LOCATION">QUAD_216</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_RXOUTCLK_GT_LOCATION">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_RXOUTCLK_PIN_STD</spirit:name>
+        <spirit:displayName>C Rxoutclk Pin Std</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXOUTCLK_PIN_STD">DIFF_SSTL15</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_RXOUTCLK_PIN_STD">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_RXOUTCLK_IS_DIFF</spirit:name>
+        <spirit:displayName>C Rxoutclk Is Diff</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXOUTCLK_IS_DIFF" spirit:bitStringLength="1">1</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_RXOUTCLK_IS_DIFF">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_RXOUTCLK_PIN_LOCATION</spirit:name>
+        <spirit:displayName>C Rxoutclk P Pin Location</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXOUTCLK_PIN_LOCATION">UNASSIGNED</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_RXOUTCLK_N_PIN_LOCATION</spirit:name>
+        <spirit:displayName>C Rxoutclk N Pin Location</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXOUTCLK_N_PIN_LOCATION">UNASSIGNED</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_RXOUTCLK_N_PIN_LOCATION">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_RXOUTCLK_FREQUENCY</spirit:name>
+        <spirit:displayName>C Rxoutclk Frequency</spirit:displayName>
+        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXOUTCLK_FREQUENCY">78.125</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_RXOUTCLK_FREQUENCY">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SYSCLOCK_SOURCE_INT</spirit:name>
+        <spirit:displayName>C Sysclock Source Int</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SYSCLOCK_SOURCE_INT">External</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SYSCLOCK_SOURCE_INT">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SYSCLK_IO_PIN_STD</spirit:name>
+        <spirit:displayName>C Sysclk Io Pin Std</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SYSCLK_IO_PIN_STD">DIFF_SSTL15</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SYSCLK_IO_PIN_STD">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_DISABLE_SYSCLK_BUF</spirit:name>
+        <spirit:displayName>C Disable Sysclk Buf</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DISABLE_SYSCLK_BUF" spirit:bitStringLength="1">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_DISABLE_SYSCLK_BUF">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SYSCLK_IS_DIFF</spirit:name>
+        <spirit:displayName>C Sysclk Is Diff</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SYSCLK_IS_DIFF" spirit:bitStringLength="1">1</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SYSCLK_IS_DIFF">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SYSCLK_IO_PIN_LOC_P</spirit:name>
+        <spirit:displayName>C Sysclk Io Pin Loc P</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SYSCLK_IO_PIN_LOC_P">R4</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SYSCLK_IO_PIN_LOC_P">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SYSCLK_IO_PIN_LOC_N</spirit:name>
+        <spirit:displayName>C Sysclk Io Pin Loc N</spirit:displayName>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SYSCLK_IO_PIN_LOC_N">T4</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SYSCLK_IO_PIN_LOC_N">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SYSCLK_FREQUENCY</spirit:name>
+        <spirit:displayName>C Sysclk Frequency</spirit:displayName>
+        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SYSCLK_FREQUENCY" spirit:minimum="50.0" spirit:maximum="650.0">200.00</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SYSCLK_FREQUENCY">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_ENABLE_DIFF_TERM</spirit:name>
+        <spirit:displayName>C Enable Diff Term</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ENABLE_DIFF_TERM" spirit:bitStringLength="1">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_ENABLE_DIFF_TERM">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_XDEVICE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_XDEVICE">xc7a100t</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_XDEVICE">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_XSPEEDGRADE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_XSPEEDGRADE">-2</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_XSPEEDGRADE">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_PACKAGE</spirit:name>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PACKAGE">fgg484</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PACKAGE">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_TXSYSCLKSEL_Q3</spirit:name>
+        <spirit:displayName>C Txsysclksel Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_TXSYSCLKSEL_Q3" spirit:bitStringLength="2">&quot;00&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_TXSYSCLKSEL_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_TXSYSCLKSEL_Q2</spirit:name>
+        <spirit:displayName>C Txsysclksel Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_TXSYSCLKSEL_Q2" spirit:bitStringLength="2">&quot;00&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_TXSYSCLKSEL_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_TXSYSCLKSEL_Q1</spirit:name>
+        <spirit:displayName>C Txsysclksel Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_TXSYSCLKSEL_Q1" spirit:bitStringLength="2">&quot;00&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_TXSYSCLKSEL_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_TXSYSCLKSEL_Q0</spirit:name>
+        <spirit:displayName>C Txsysclksel Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_TXSYSCLKSEL_Q0" spirit:bitStringLength="2">&quot;00&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_TXSYSCLKSEL_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_RXSYSCLKSEL_Q3</spirit:name>
+        <spirit:displayName>C Rxsysclksel Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXSYSCLKSEL_Q3" spirit:bitStringLength="2">&quot;00&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_RXSYSCLKSEL_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_RXSYSCLKSEL_Q2</spirit:name>
+        <spirit:displayName>C Rxsysclksel Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXSYSCLKSEL_Q2" spirit:bitStringLength="2">&quot;00&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_RXSYSCLKSEL_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_RXSYSCLKSEL_Q1</spirit:name>
+        <spirit:displayName>C Rxsysclksel Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXSYSCLKSEL_Q1" spirit:bitStringLength="2">&quot;00&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_RXSYSCLKSEL_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_RXSYSCLKSEL_Q0</spirit:name>
+        <spirit:displayName>C Rxsysclksel Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXSYSCLKSEL_Q0" spirit:bitStringLength="2">&quot;00&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_RXSYSCLKSEL_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_TXUSR_DRIVER_Q3</spirit:name>
+        <spirit:displayName>C Txusr Driver Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_TXUSR_DRIVER_Q3" spirit:bitStringLength="8">&quot;00000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_TXUSR_DRIVER_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_TXUSR_DRIVER_Q2</spirit:name>
+        <spirit:displayName>C Txusr Driver Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_TXUSR_DRIVER_Q2" spirit:bitStringLength="8">&quot;00000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_TXUSR_DRIVER_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_TXUSR_DRIVER_Q1</spirit:name>
+        <spirit:displayName>C Txusr Driver Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_TXUSR_DRIVER_Q1" spirit:bitStringLength="8">&quot;11111111&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_TXUSR_DRIVER_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_TXUSR_DRIVER_Q0</spirit:name>
+        <spirit:displayName>C Txusr Driver Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_TXUSR_DRIVER_Q0" spirit:bitStringLength="8">&quot;00000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_TXUSR_DRIVER_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_RXUSR_DRIVER_Q3</spirit:name>
+        <spirit:displayName>C Rxusr Driver Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXUSR_DRIVER_Q3" spirit:bitStringLength="8">&quot;11111110&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_RXUSR_DRIVER_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_RXUSR_DRIVER_Q2</spirit:name>
+        <spirit:displayName>C Rxusr Driver Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXUSR_DRIVER_Q2" spirit:bitStringLength="8">&quot;11111110&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_RXUSR_DRIVER_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_RXUSR_DRIVER_Q1</spirit:name>
+        <spirit:displayName>C Rxusr Driver Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXUSR_DRIVER_Q1" spirit:bitStringLength="8">&quot;00000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_RXUSR_DRIVER_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_RXUSR_DRIVER_Q0</spirit:name>
+        <spirit:displayName>C Rxusr Driver Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXUSR_DRIVER_Q0" spirit:bitStringLength="8">&quot;11111110&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_RXUSR_DRIVER_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL0REFCLKSEL_Q3</spirit:name>
+        <spirit:displayName>C Pll0refclksel Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL0REFCLKSEL_Q3" spirit:bitStringLength="3">&quot;000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL0REFCLKSEL_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL0REFCLKSEL_Q2</spirit:name>
+        <spirit:displayName>C Pll0refclksel Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL0REFCLKSEL_Q2" spirit:bitStringLength="3">&quot;000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL0REFCLKSEL_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL0REFCLKSEL_Q1</spirit:name>
+        <spirit:displayName>C Pll0refclksel Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL0REFCLKSEL_Q1" spirit:bitStringLength="3">&quot;000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL0REFCLKSEL_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL0REFCLKSEL_Q0</spirit:name>
+        <spirit:displayName>C Pll0refclksel Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL0REFCLKSEL_Q0" spirit:bitStringLength="3">&quot;001&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL0REFCLKSEL_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL1REFCLKSEL_Q3</spirit:name>
+        <spirit:displayName>C Pll1refclksel Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL1REFCLKSEL_Q3" spirit:bitStringLength="3">&quot;000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL1REFCLKSEL_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL1REFCLKSEL_Q2</spirit:name>
+        <spirit:displayName>C Pll1refclksel Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL1REFCLKSEL_Q2" spirit:bitStringLength="3">&quot;000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL1REFCLKSEL_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL1REFCLKSEL_Q1</spirit:name>
+        <spirit:displayName>C Pll1refclksel Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL1REFCLKSEL_Q1" spirit:bitStringLength="3">&quot;000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL1REFCLKSEL_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL1REFCLKSEL_Q0</spirit:name>
+        <spirit:displayName>C Pll1refclksel Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL1REFCLKSEL_Q0" spirit:bitStringLength="3">&quot;000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL1REFCLKSEL_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MGT_COORDINATE_Q3</spirit:name>
+        <spirit:displayName>C Mgt Coordinate Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MGT_COORDINATE_Q3" spirit:bitStringLength="16">&quot;0000000000000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MGT_COORDINATE_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MGT_COORDINATE_Q2</spirit:name>
+        <spirit:displayName>C Mgt Coordinate Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MGT_COORDINATE_Q2" spirit:bitStringLength="16">&quot;0000000000000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MGT_COORDINATE_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MGT_COORDINATE_Q1</spirit:name>
+        <spirit:displayName>C Mgt Coordinate Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MGT_COORDINATE_Q1" spirit:bitStringLength="16">&quot;0000000000000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MGT_COORDINATE_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MGT_COORDINATE_Q0</spirit:name>
+        <spirit:displayName>C Mgt Coordinate Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MGT_COORDINATE_Q0" spirit:bitStringLength="16">&quot;0000000000000100&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MGT_COORDINATE_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MGT_NUMBER_Q3</spirit:name>
+        <spirit:displayName>C Mgt Number Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MGT_NUMBER_Q3" spirit:bitStringLength="16">&quot;0000000000000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MGT_NUMBER_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MGT_NUMBER_Q2</spirit:name>
+        <spirit:displayName>C Mgt Number Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MGT_NUMBER_Q2" spirit:bitStringLength="16">&quot;0000000000000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MGT_NUMBER_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MGT_NUMBER_Q1</spirit:name>
+        <spirit:displayName>C Mgt Number Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MGT_NUMBER_Q1" spirit:bitStringLength="16">&quot;0000000000000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MGT_NUMBER_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MGT_NUMBER_Q0</spirit:name>
+        <spirit:displayName>C Mgt Number Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MGT_NUMBER_Q0" spirit:bitStringLength="16">&quot;0000000011011000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MGT_NUMBER_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL_COORDINATE_Q3</spirit:name>
+        <spirit:displayName>C Pll Coordinate Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL_COORDINATE_Q3" spirit:bitStringLength="16">&quot;0000000000000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL_COORDINATE_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL_COORDINATE_Q2</spirit:name>
+        <spirit:displayName>C Pll Coordinate Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL_COORDINATE_Q2" spirit:bitStringLength="16">&quot;0000000000000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL_COORDINATE_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL_COORDINATE_Q1</spirit:name>
+        <spirit:displayName>C Pll Coordinate Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL_COORDINATE_Q1" spirit:bitStringLength="16">&quot;0000000000000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL_COORDINATE_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL_COORDINATE_Q0</spirit:name>
+        <spirit:displayName>C Pll Coordinate Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL_COORDINATE_Q0" spirit:bitStringLength="16">&quot;0000000000000001&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL_COORDINATE_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MAX_REFCLK_FREQ_Q3</spirit:name>
+        <spirit:displayName>C Max Refclk Freq Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MAX_REFCLK_FREQ_Q3" spirit:bitStringLength="32">&quot;00000000000000000000000000000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MAX_REFCLK_FREQ_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MAX_REFCLK_FREQ_Q2</spirit:name>
+        <spirit:displayName>C Max Refclk Freq Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MAX_REFCLK_FREQ_Q2" spirit:bitStringLength="32">&quot;00000000000000000000000000000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MAX_REFCLK_FREQ_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MAX_REFCLK_FREQ_Q1</spirit:name>
+        <spirit:displayName>C Max Refclk Freq Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MAX_REFCLK_FREQ_Q1" spirit:bitStringLength="32">&quot;00000000000000000000000000000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MAX_REFCLK_FREQ_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MAX_REFCLK_FREQ_Q0</spirit:name>
+        <spirit:displayName>C Max Refclk Freq Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MAX_REFCLK_FREQ_Q0" spirit:bitStringLength="32">&quot;00000111011100110101100101000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MAX_REFCLK_FREQ_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="std_logic_vector">
+        <spirit:name>C_MAX_LINERATE_Q3</spirit:name>
+        <spirit:displayName>C Max Linerate Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MAX_LINERATE_Q3" spirit:bitStringLength="48">&quot;000000000000000000000000000000000000000000000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MAX_LINERATE_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="std_logic_vector">
+        <spirit:name>C_MAX_LINERATE_Q2</spirit:name>
+        <spirit:displayName>C Max Linerate Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MAX_LINERATE_Q2" spirit:bitStringLength="48">&quot;000000000000000000000000000000000000000000000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MAX_LINERATE_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="std_logic_vector">
+        <spirit:name>C_MAX_LINERATE_Q1</spirit:name>
+        <spirit:displayName>C Max Linerate Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MAX_LINERATE_Q1" spirit:bitStringLength="48">&quot;000000000000000000000000000000000000000000000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MAX_LINERATE_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="std_logic_vector">
+        <spirit:name>C_MAX_LINERATE_Q0</spirit:name>
+        <spirit:displayName>C Max Linerate Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MAX_LINERATE_Q0" spirit:bitStringLength="48">&quot;000000000000000001001010100000010111110010000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MAX_LINERATE_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL0PD_Q3</spirit:name>
+        <spirit:displayName>C Pll0pd Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL0PD_Q3" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL0PD_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL0PD_Q2</spirit:name>
+        <spirit:displayName>C Pll0pd Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL0PD_Q2" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL0PD_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL0PD_Q1</spirit:name>
+        <spirit:displayName>C Pll0pd Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL0PD_Q1" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL0PD_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL0PD_Q0</spirit:name>
+        <spirit:displayName>C Pll0pd Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL0PD_Q0" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL0PD_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL1PD_Q3</spirit:name>
+        <spirit:displayName>C Pll1pd Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL1PD_Q3" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL1PD_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL1PD_Q2</spirit:name>
+        <spirit:displayName>C Pll1pd Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL1PD_Q2" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL1PD_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL1PD_Q1</spirit:name>
+        <spirit:displayName>C Pll1pd Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL1PD_Q1" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL1PD_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL1PD_Q0</spirit:name>
+        <spirit:displayName>C Pll1pd Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL1PD_Q0" spirit:bitStringLength="1">&quot;1&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL1PD_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PD_Q3</spirit:name>
+        <spirit:displayName>C Pd Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PD_Q3" spirit:bitStringLength="4">&quot;0000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PD_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PD_Q2</spirit:name>
+        <spirit:displayName>C Pd Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PD_Q2" spirit:bitStringLength="4">&quot;0000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PD_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PD_Q1</spirit:name>
+        <spirit:displayName>C Pd Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PD_Q1" spirit:bitStringLength="4">&quot;0000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PD_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PD_Q0</spirit:name>
+        <spirit:displayName>C Pd Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PD_Q0" spirit:bitStringLength="4">&quot;0000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PD_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL_DIV_Q3</spirit:name>
+        <spirit:displayName>C Pll Div Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL_DIV_Q3" spirit:bitStringLength="8">&quot;00000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL_DIV_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL_DIV_Q2</spirit:name>
+        <spirit:displayName>C Pll Div Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL_DIV_Q2" spirit:bitStringLength="8">&quot;00000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL_DIV_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL_DIV_Q1</spirit:name>
+        <spirit:displayName>C Pll Div Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL_DIV_Q1" spirit:bitStringLength="8">&quot;00000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL_DIV_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_PLL_DIV_Q0</spirit:name>
+        <spirit:displayName>C Pll Div Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_PLL_DIV_Q0" spirit:bitStringLength="8">&quot;00000000&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_PLL_DIV_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_EAST_CLK0_Q0</spirit:name>
+        <spirit:displayName>C Share East Clk0 Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_EAST_CLK0_Q0" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_EAST_CLK0_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_EAST_CLK0_Q1</spirit:name>
+        <spirit:displayName>C Share East Clk0 Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_EAST_CLK0_Q1" spirit:bitStringLength="1">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_EAST_CLK0_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_EAST_CLK0_Q2</spirit:name>
+        <spirit:displayName>C Share East Clk0 Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_EAST_CLK0_Q2" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_EAST_CLK0_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_EAST_CLK0_Q3</spirit:name>
+        <spirit:displayName>C Share East Clk0 Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_EAST_CLK0_Q3" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_EAST_CLK0_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_EAST_CLK1_Q0</spirit:name>
+        <spirit:displayName>C Share East Clk1 Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_EAST_CLK1_Q0" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_EAST_CLK1_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_EAST_CLK1_Q1</spirit:name>
+        <spirit:displayName>C Share East Clk1 Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_EAST_CLK1_Q1" spirit:bitStringLength="1">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_EAST_CLK1_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_EAST_CLK1_Q2</spirit:name>
+        <spirit:displayName>C Share East Clk1 Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_EAST_CLK1_Q2" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_EAST_CLK1_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_EAST_CLK1_Q3</spirit:name>
+        <spirit:displayName>C Share East Clk1 Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_EAST_CLK1_Q3" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_EAST_CLK1_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_WEST_CLK0_Q0</spirit:name>
+        <spirit:displayName>C Share West Clk0 Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_WEST_CLK0_Q0" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_WEST_CLK0_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_WEST_CLK0_Q1</spirit:name>
+        <spirit:displayName>C Share West Clk0 Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_WEST_CLK0_Q1" spirit:bitStringLength="1">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_WEST_CLK0_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_WEST_CLK0_Q2</spirit:name>
+        <spirit:displayName>C Share West Clk0 Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_WEST_CLK0_Q2" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_WEST_CLK0_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_WEST_CLK0_Q3</spirit:name>
+        <spirit:displayName>C Share West Clk0 Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_WEST_CLK0_Q3" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_WEST_CLK0_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_WEST_CLK1_Q0</spirit:name>
+        <spirit:displayName>C Share West Clk1 Q0</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_WEST_CLK1_Q0" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_WEST_CLK1_Q0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_WEST_CLK1_Q1</spirit:name>
+        <spirit:displayName>C Share West Clk1 Q1</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_WEST_CLK1_Q1" spirit:bitStringLength="1">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_WEST_CLK1_Q1">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_WEST_CLK1_Q2</spirit:name>
+        <spirit:displayName>C Share West Clk1 Q2</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_WEST_CLK1_Q2" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_WEST_CLK1_Q2">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SHARE_WEST_CLK1_Q3</spirit:name>
+        <spirit:displayName>C Share West Clk1 Q3</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SHARE_WEST_CLK1_Q3" spirit:bitStringLength="1">&quot;0&quot;</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SHARE_WEST_CLK1_Q3">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MMCM_MULT</spirit:name>
+        <spirit:displayName>C Mmcm Mult</spirit:displayName>
+        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MMCM_MULT">5.000</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MMCM_MULT">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MMCM_CLKOUT0_DIVIDE</spirit:name>
+        <spirit:displayName>C Mmcm Clkout0 Divide</spirit:displayName>
+        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MMCM_CLKOUT0_DIVIDE">10.000</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MMCM_CLKOUT0_DIVIDE">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_MMCM_DIVCLK_DIVIDE</spirit:name>
+        <spirit:displayName>C Mmcm Divclk Divide</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MMCM_DIVCLK_DIVIDE">1</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_MMCM_DIVCLK_DIVIDE">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_RXOUTCLK_SOURCE_VALUE</spirit:name>
+        <spirit:displayName>C Rxoutclk Source Value</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RXOUTCLK_SOURCE_VALUE">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_RXOUTCLK_SOURCE_VALUE">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SYSCLOCK_REFCLK0_SOURCE</spirit:name>
+        <spirit:displayName>C Sysclock Refclk0 Source</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SYSCLOCK_REFCLK0_SOURCE">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SYSCLOCK_REFCLK0_SOURCE">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="string">
+        <spirit:name>C_SYSCLOCK_REFCLK1_SOURCE</spirit:name>
+        <spirit:displayName>C Sysclock Refclk1 Source</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SYSCLOCK_REFCLK1_SOURCE">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SYSCLOCK_REFCLK1_SOURCE">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_SYSCLOCK_SOURCE_VALUE</spirit:name>
+        <spirit:displayName>C Sysclock Source Value</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SYSCLOCK_SOURCE_VALUE">0</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SYSCLOCK_SOURCE_VALUE">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_SYSCLK_DIVIDER</spirit:name>
+        <spirit:displayName>C Sysclk Divider</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SYSCLK_DIVIDER">1</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_SYSCLK_DIVIDER">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_NUM_CHANNEL</spirit:name>
+        <spirit:displayName>C NUM CHANNEL</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NUM_CHANNEL">4</spirit:value>
+        <spirit:vendorExtensions>
+          <xilinx:parameterInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="MODELPARAM_ENABLEMENT.C_NUM_CHANNEL">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:parameterInfo>
+        </spirit:vendorExtensions>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_6f5507b7</spirit:name>
+      <spirit:enumeration>None</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_77c72842</spirit:name>
+      <spirit:enumeration>125.000</spirit:enumeration>
+      <spirit:enumeration>156.250</spirit:enumeration>
+      <spirit:enumeration>195.313</spirit:enumeration>
+      <spirit:enumeration>208.333</spirit:enumeration>
+      <spirit:enumeration>250.000</spirit:enumeration>
+      <spirit:enumeration>260.417</spirit:enumeration>
+      <spirit:enumeration>312.500</spirit:enumeration>
+      <spirit:enumeration>390.625</spirit:enumeration>
+      <spirit:enumeration>416.667</spirit:enumeration>
+      <spirit:enumeration>520.833</spirit:enumeration>
+      <spirit:enumeration>625.000</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_82097df1</spirit:name>
+      <spirit:enumeration>100.000</spirit:enumeration>
+      <spirit:enumeration>125.000</spirit:enumeration>
+      <spirit:enumeration>156.250</spirit:enumeration>
+      <spirit:enumeration>166.667</spirit:enumeration>
+      <spirit:enumeration>200.000</spirit:enumeration>
+      <spirit:enumeration>208.333</spirit:enumeration>
+      <spirit:enumeration>250.000</spirit:enumeration>
+      <spirit:enumeration>312.500</spirit:enumeration>
+      <spirit:enumeration>333.333</spirit:enumeration>
+      <spirit:enumeration>416.667</spirit:enumeration>
+      <spirit:enumeration>500.000</spirit:enumeration>
+      <spirit:enumeration>625.000</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_ae9f88f6</spirit:name>
+      <spirit:enumeration>1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_af38333b</spirit:name>
+      <spirit:enumeration>16</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_d85ad257</spirit:name>
+      <spirit:enumeration>0</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_ec65b49b</spirit:name>
+      <spirit:enumeration>PLL0</spirit:enumeration>
+      <spirit:enumeration>PLL1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_2b280c53</spirit:name>
+      <spirit:enumeration spirit:text="3g sdi">3g_sdi</spirit:enumeration>
+      <spirit:enumeration spirit:text="hd sdi">hd_sdi</spirit:enumeration>
+      <spirit:enumeration spirit:text="vby1">vby1</spirit:enumeration>
+      <spirit:enumeration spirit:text="Custom 3">Custom_3</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_42412757</spirit:name>
+      <spirit:enumeration spirit:text="Channel 0">Channel_0</spirit:enumeration>
+      <spirit:enumeration spirit:text="Channel 1">Channel_1</spirit:enumeration>
+      <spirit:enumeration spirit:text="Channel 2">Channel_2</spirit:enumeration>
+      <spirit:enumeration spirit:text="Channel 3">Channel_3</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_4873554b</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_7f1a0d0e</spirit:name>
+      <spirit:enumeration spirit:text="DIFF SSTL15">DIFF_SSTL15</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSTL I">HSTL_I</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSTL I 18">HSTL_I_18</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSTL I DCI">HSTL_I_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSTL I DCI 18">HSTL_I_DCI_18</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSTL II">HSTL_II</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSTL II 18">HSTL_II_18</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSTL II DCI">HSTL_II_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSTL II DCI 18">HSTL_II_DCI_18</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSTL III">HSTL_III</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSTL III 18">HSTL_III_18</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSTL III DCI">HSTL_III_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSTL III DCI 18">HSTL_III_DCI_18</spirit:enumeration>
+      <spirit:enumeration spirit:text="LVCMOS12">LVCMOS12</spirit:enumeration>
+      <spirit:enumeration spirit:text="LVCMOS15">LVCMOS15</spirit:enumeration>
+      <spirit:enumeration spirit:text="LVCMOS18">LVCMOS18</spirit:enumeration>
+      <spirit:enumeration spirit:text="LVCMOS25">LVCMOS25</spirit:enumeration>
+      <spirit:enumeration spirit:text="LVCMOS33">LVCMOS33</spirit:enumeration>
+      <spirit:enumeration spirit:text="LVDCI 15">LVDCI_15</spirit:enumeration>
+      <spirit:enumeration spirit:text="LVDCI 18">LVDCI_18</spirit:enumeration>
+      <spirit:enumeration spirit:text="LVDCI DV2 15">LVDCI_DV2_15</spirit:enumeration>
+      <spirit:enumeration spirit:text="LVDCI DV2 18">LVDCI_DV2_18</spirit:enumeration>
+      <spirit:enumeration spirit:text="LVDS">LVDS</spirit:enumeration>
+      <spirit:enumeration spirit:text="LVDS 25">LVDS_25</spirit:enumeration>
+      <spirit:enumeration spirit:text="LVTTL">LVTTL</spirit:enumeration>
+      <spirit:enumeration spirit:text="PCI33 3">PCI33_3</spirit:enumeration>
+      <spirit:enumeration spirit:text="PCI66 3">PCI66_3</spirit:enumeration>
+      <spirit:enumeration spirit:text="SSTL18 I">SSTL18_I</spirit:enumeration>
+      <spirit:enumeration spirit:text="SSTL18 I DCI">SSTL18_I_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="SSTL18 II">SSTL18_II</spirit:enumeration>
+      <spirit:enumeration spirit:text="SSTL18 II DCI">SSTL18_II_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSTL I 12">HSTL_I_12</spirit:enumeration>
+      <spirit:enumeration spirit:text="RSDS 25">RSDS_25</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF HSTL I">DIFF_HSTL_I</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF HSTL I 18">DIFF_HSTL_I_18</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF HSTL I DCI">DIFF_HSTL_I_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF HSTL I DCI 18">DIFF_HSTL_I_DCI_18</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF HSTL II">DIFF_HSTL_II</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF HSTL II 18">DIFF_HSTL_II_18</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF HSTL II DCI">DIFF_HSTL_II_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF HSTL II DCI 18">DIFF_HSTL_II_DCI_18</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF HSTL II T DCI">DIFF_HSTL_II_T_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF HSTL II T DCI 18">DIFF_HSTL_II_T_DCI_18</spirit:enumeration>
+      <spirit:enumeration spirit:text="BLVDS 25">BLVDS_25</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF SSTL15 DCI">DIFF_SSTL15_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF SSTL15 T DCI">DIFF_SSTL15_T_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF SSTL18 I">DIFF_SSTL18_I</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF SSTL18 I DCI">DIFF_SSTL18_I_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF SSTL18 II">DIFF_SSTL18_II</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF SSTL18 II DCI">DIFF_SSTL18_II_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF SSTL18 II T DCI">DIFF_SSTL18_II_T_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSLVDCI 15">HSLVDCI_15</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSLVDCI 18">HSLVDCI_18</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSTL II T DCI">HSTL_II_T_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="HSTL II T DCI 18">HSTL_II_T_DCI_18</spirit:enumeration>
+      <spirit:enumeration spirit:text="MINI LVDS 25">MINI_LVDS_25</spirit:enumeration>
+      <spirit:enumeration spirit:text="PPDS 25">PPDS_25</spirit:enumeration>
+      <spirit:enumeration spirit:text="SSTL15">SSTL15</spirit:enumeration>
+      <spirit:enumeration spirit:text="SSTL15 DCI">SSTL15_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="SSTL15 T DCI">SSTL15_T_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="SSTL18 II T DCI">SSTL18_II_T_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="TMDS 33">TMDS_33</spirit:enumeration>
+      <spirit:enumeration spirit:text="SSTL135">SSTL135</spirit:enumeration>
+      <spirit:enumeration spirit:text="SSTL135 DCI">SSTL135_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="SSTL135 T DCI">SSTL135_T_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF SSTL135">DIFF_SSTL135</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF SSTL135 DCI">DIFF_SSTL135_DCI</spirit:enumeration>
+      <spirit:enumeration spirit:text="DIFF SSTL135 T DCI">DIFF_SSTL135_T_DCI</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_8a8e7292</spirit:name>
+      <spirit:enumeration spirit:text="None">None</spirit:enumeration>
+      <spirit:enumeration spirit:text="QUAD 216">QUAD_216</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_9326496b</spirit:name>
+      <spirit:enumeration spirit:text="General ES/Production">General_ES/Production</spirit:enumeration>
+      <spirit:enumeration spirit:text="Initial ES">Initial_ES</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_b3ed57fb</spirit:name>
+      <spirit:enumeration spirit:text="3g sdi">3g_sdi</spirit:enumeration>
+      <spirit:enumeration spirit:text="hd sdi">hd_sdi</spirit:enumeration>
+      <spirit:enumeration spirit:text="vby1">vby1</spirit:enumeration>
+      <spirit:enumeration spirit:text="Custom 2">Custom_2</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_c1d3bd42</spirit:name>
+      <spirit:enumeration spirit:text="3g sdi">3g_sdi</spirit:enumeration>
+      <spirit:enumeration spirit:text="hd sdi">hd_sdi</spirit:enumeration>
+      <spirit:enumeration spirit:text="vby1">vby1</spirit:enumeration>
+      <spirit:enumeration spirit:text="Custom 1">Custom_1</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_de5f5f68</spirit:name>
+      <spirit:enumeration spirit:text="Channel 0">Channel_0</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_f5f1a1af</spirit:name>
+      <spirit:enumeration spirit:text="None">None</spirit:enumeration>
+      <spirit:enumeration spirit:text="Custom 1 / 1.25 Gbps">Custom_1_/_1.25_Gbps</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_f6295d49</spirit:name>
+      <spirit:enumeration spirit:text="X-----">X-----</spirit:enumeration>
+      <spirit:enumeration spirit:text="MGTREFCLK0 216">MGTREFCLK0_216</spirit:enumeration>
+      <spirit:enumeration spirit:text="MGTREFCLK1 216">MGTREFCLK1_216</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_fc9cd89b</spirit:name>
+      <spirit:enumeration spirit:text="External">External</spirit:enumeration>
+      <spirit:enumeration spirit:text="QUAD216 0">QUAD216_0</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_veriloginstantiationtemplate_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>ibert_7series_gtp_0.vho</spirit:name>
+        <spirit:userFileType>vhdlTemplate</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>ibert_7series_gtp_0.veo</spirit:name>
+        <spirit:userFileType>verilogTemplate</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_blk_mem_gen_8_3__ref_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>blk_mem_gen_v8_3_1</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>blk_mem_gen_v8_3_1/hdl/blk_mem_gen_v8_3.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>blk_mem_gen_v8_3_1</spirit:logicalName>
+      </spirit:file>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="blk_mem_gen" xilinx:version="8.3" xilinx:isGenerated="true" xilinx:checksum="74959cdf">
+            <xilinx:mode xilinx:name="copy_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_fifo_generator_13_0__ref_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>fifo_generator_v13_0_1/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>fifo_generator_v13_0_1</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>fifo_generator_v13_0_1/hdl/fifo_generator_v13_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>fifo_generator_v13_0_1</spirit:logicalName>
+      </spirit:file>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.0" xilinx:isGenerated="true" xilinx:checksum="93448794">
+            <xilinx:mode xilinx:name="copy_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/ibert_7series_gtp_v3_0_syn_rfs.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/chipscope_icon2xsdb_mstrbr_ver_inc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:isIncludeFile>true</spirit:isIncludeFile>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/cs_ver_inc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:isIncludeFile>true</spirit:isIncludeFile>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/cs_lib_function.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:isIncludeFile>true</spirit:isIncludeFile>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/icon_ver_inc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:isIncludeFile>true</spirit:isIncludeFile>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/ibert_7series_gtp_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_implementation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>tcl/count_ones_zeros_pblock.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_place_design</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>tcl/GT_pblocks.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_place_design</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_versioninformation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>doc/ibert_7series_gtp_v3_0_changelog.txt</spirit:name>
+        <spirit:userFileType>text</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>The IBERT 7 Series GTP core is customizable and designed for evaluating and monitoring 7 Series FPGA GTP transceivers. This core includes pattern generators and checkers that are implemented in FPGA logic, and access to ports and the dynamic reconfiguration port attributes of the GTP transceivers. Communication logic is also included to allow the design to be run-time accessible through Joint Test Action Group (JTAG). Run-time interaction with this core requires the use of the Vivado serial I/O analyzer feature.</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_ENABLE_DIFF_TERM</spirit:name>
+      <spirit:displayName>C Enable Diff Term</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.C_ENABLE_DIFF_TERM" spirit:order="6300">false</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_ENABLE_DIFF_TERM">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_SYSCLK_FREQUENCY</spirit:name>
+      <spirit:displayName>C Sysclk Frequency</spirit:displayName>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SYSCLK_FREQUENCY" spirit:order="6200" spirit:minimum="50" spirit:maximum="650">200.00</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_SYSCLK_IO_PIN_LOC_N</spirit:name>
+      <spirit:displayName>C Sysclk Io Pin Loc N</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_SYSCLK_IO_PIN_LOC_N" spirit:order="6100">T4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_SYSCLK_IO_PIN_LOC_P</spirit:name>
+      <spirit:displayName>C Sysclk Io Pin Loc P</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_SYSCLK_IO_PIN_LOC_P" spirit:order="6000">R4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_SYSCLK_IS_DIFF</spirit:name>
+      <spirit:displayName>C Sysclk Is Diff</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SYSCLK_IS_DIFF" spirit:choiceRef="choice_pairs_4873554b" spirit:order="5900" spirit:bitStringLength="1">&quot;1&quot;</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_DISABLE_SYSCLK_BUF</spirit:name>
+      <spirit:displayName>C Disable Sysclk Buf</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DISABLE_SYSCLK_BUF" spirit:choiceRef="choice_pairs_4873554b" spirit:order="5800" spirit:bitStringLength="1">&quot;1&quot;</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_DISABLE_SYSCLK_BUF">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_SYSCLK_IO_PIN_STD</spirit:name>
+      <spirit:displayName>C Sysclk Io Pin Std</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_SYSCLK_IO_PIN_STD" spirit:choiceRef="choice_pairs_7f1a0d0e" spirit:order="5700">DIFF_SSTL15</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_SYSCLK_MODE_EXTERNAL</spirit:name>
+      <spirit:displayName>C Sysclk Mode External</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SYSCLK_MODE_EXTERNAL" spirit:choiceRef="choice_pairs_4873554b" spirit:order="5600" spirit:bitStringLength="1">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_SYSCLOCK_SOURCE_INT</spirit:name>
+      <spirit:displayName>C Sysclock Source Int</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_SYSCLOCK_SOURCE_INT" spirit:choiceRef="choice_pairs_fc9cd89b" spirit:order="5500">External</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_RXOUTCLK_FREQUENCY</spirit:name>
+      <spirit:displayName>C Rxoutclk Frequency</spirit:displayName>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.C_RXOUTCLK_FREQUENCY" spirit:order="5400">78.125</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.C_RXOUTCLK_FREQUENCY">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_RXOUTCLK_N_PIN_LOCATION</spirit:name>
+      <spirit:displayName>C Rxoutclk N Pin Location</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_RXOUTCLK_N_PIN_LOCATION" spirit:order="5300">UNASSIGNED</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.C_RXOUTCLK_N_PIN_LOCATION">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_RXOUTCLK_PIN_LOCATION</spirit:name>
+      <spirit:displayName>C Rxoutclk P Pin Location</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_RXOUTCLK_PIN_LOCATION" spirit:order="5200">UNASSIGNED</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.C_RXOUTCLK_PIN_LOCATION">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_RXOUTCLK_IS_DIFF</spirit:name>
+      <spirit:displayName>C Rxoutclk Is Diff</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_RXOUTCLK_IS_DIFF" spirit:choiceRef="choice_pairs_4873554b" spirit:order="5100" spirit:bitStringLength="1">&quot;1&quot;</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.C_RXOUTCLK_IS_DIFF">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_RXOUTCLK_PIN_STD</spirit:name>
+      <spirit:displayName>C Rxoutclk Pin Std</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_RXOUTCLK_PIN_STD" spirit:choiceRef="choice_pairs_7f1a0d0e" spirit:order="5000">DIFF_SSTL15</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.C_RXOUTCLK_PIN_STD">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_RXOUTCLK_GT_LOCATION</spirit:name>
+      <spirit:displayName>C Rxoutclk Gt Location</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_RXOUTCLK_GT_LOCATION" spirit:choiceRef="choice_pairs_8a8e7292" spirit:order="4900">QUAD_216</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_ADD_RXOUTCLK_PROBES</spirit:name>
+      <spirit:displayName>C Add Rxoutclk Probes</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.C_ADD_RXOUTCLK_PROBES" spirit:order="4800">false</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_ADD_RXOUTCLK_PROBES">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_CHANNEL_QUAD_3</spirit:name>
+      <spirit:displayName>C Channel Quad 3</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_CHANNEL_QUAD_3" spirit:choiceRef="choice_pairs_de5f5f68" spirit:order="4700">Channel_0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.C_CHANNEL_QUAD_3">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_CHANNEL_QUAD_2</spirit:name>
+      <spirit:displayName>C Channel Quad 2</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_CHANNEL_QUAD_2" spirit:choiceRef="choice_pairs_de5f5f68" spirit:order="4600">Channel_0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.C_CHANNEL_QUAD_2">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_CHANNEL_QUAD_1</spirit:name>
+      <spirit:displayName>C Channel Quad 1</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_CHANNEL_QUAD_1" spirit:choiceRef="choice_pairs_42412757" spirit:order="4500">Channel_0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.C_CHANNEL_QUAD_1">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_CHANNEL_QUAD_0</spirit:name>
+      <spirit:displayName>C Channel Quad 0</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_CHANNEL_QUAD_0" spirit:choiceRef="choice_pairs_de5f5f68" spirit:order="4400">Channel_0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.C_CHANNEL_QUAD_0">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_REFCLK_SOURCE_QUAD_3</spirit:name>
+      <spirit:displayName>C Refclk Source Quad 3</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_REFCLK_SOURCE_QUAD_3" spirit:choiceRef="choice_list_6f5507b7" spirit:order="4300">None</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_REFCLK_SOURCE_QUAD_2</spirit:name>
+      <spirit:displayName>C Refclk Source Quad 2</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_REFCLK_SOURCE_QUAD_2" spirit:choiceRef="choice_list_6f5507b7" spirit:order="4200">None</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_REFCLK_SOURCE_QUAD_1</spirit:name>
+      <spirit:displayName>C Refclk Source Quad 1</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_REFCLK_SOURCE_QUAD_1" spirit:choiceRef="choice_pairs_f6295d49" spirit:order="4100">MGTREFCLK0_216</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_REFCLK_SOURCE_QUAD_0</spirit:name>
+      <spirit:displayName>C Refclk Source Quad 0</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_REFCLK_SOURCE_QUAD_0" spirit:choiceRef="choice_list_6f5507b7" spirit:order="4000">None</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_QUAD3</spirit:name>
+      <spirit:displayName>C Protocol Quad3</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_QUAD3" spirit:choiceRef="choice_pairs_f5f1a1af" spirit:order="3900">None</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_QUAD2</spirit:name>
+      <spirit:displayName>C Protocol Quad2</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_QUAD2" spirit:choiceRef="choice_pairs_f5f1a1af" spirit:order="3800">None</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_QUAD1</spirit:name>
+      <spirit:displayName>C Protocol Quad1</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_QUAD1" spirit:choiceRef="choice_pairs_f5f1a1af" spirit:order="3700">Custom_1_/_1.25_Gbps</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_QUAD0</spirit:name>
+      <spirit:displayName>C Protocol Quad0</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_QUAD0" spirit:choiceRef="choice_pairs_f5f1a1af" spirit:order="3600">None</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_GT_CORRECT</spirit:name>
+      <spirit:displayName>C Gt Correct</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_GT_CORRECT" spirit:choiceRef="choice_pairs_4873554b" spirit:order="3500" spirit:bitStringLength="1">&quot;1&quot;</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_CHECK_REFCLK_SOURCES</spirit:name>
+      <spirit:displayName>C Check Refclk Sources</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_CHECK_REFCLK_SOURCES" spirit:choiceRef="choice_pairs_4873554b" spirit:order="3400" spirit:bitStringLength="1">&quot;1&quot;</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_RXREFCLK_FREQUENCY_3</spirit:name>
+      <spirit:displayName>C Protocol Rxrefclk Frequency 3</spirit:displayName>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_RXREFCLK_FREQUENCY_3" spirit:choiceRef="choice_list_77c72842" spirit:order="3300">125.000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_RXREFCLK_FREQUENCY_2</spirit:name>
+      <spirit:displayName>C Protocol Rxrefclk Frequency 2</spirit:displayName>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_RXREFCLK_FREQUENCY_2" spirit:choiceRef="choice_list_77c72842" spirit:order="3200">125.000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_RXREFCLK_FREQUENCY_1</spirit:name>
+      <spirit:displayName>C Protocol Rxrefclk Frequency 1</spirit:displayName>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_RXREFCLK_FREQUENCY_1" spirit:choiceRef="choice_list_82097df1" spirit:order="3100">125.000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_GT_COUNT_3</spirit:name>
+      <spirit:displayName>C Protocol Gt Count 3</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_GT_COUNT_3" spirit:choiceRef="choice_list_d85ad257" spirit:order="3000">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_GT_COUNT_2</spirit:name>
+      <spirit:displayName>C Protocol Gt Count 2</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_GT_COUNT_2" spirit:choiceRef="choice_list_d85ad257" spirit:order="2900">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_GT_COUNT_1</spirit:name>
+      <spirit:displayName>C Protocol Gt Count 1</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_GT_COUNT_1" spirit:choiceRef="choice_list_ae9f88f6" spirit:order="2800">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_MAXLINERATE_3</spirit:name>
+      <spirit:displayName>C Protocol Maxlinerate 3</spirit:displayName>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_MAXLINERATE_3" spirit:order="2700" spirit:minimum="0.5" spirit:maximum="6.25">3.125</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_MAXLINERATE_2</spirit:name>
+      <spirit:displayName>C Protocol Maxlinerate 2</spirit:displayName>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_MAXLINERATE_2" spirit:order="2600" spirit:minimum="0.5" spirit:maximum="6.25">3.125</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_MAXLINERATE_1</spirit:name>
+      <spirit:displayName>C Protocol Maxlinerate 1</spirit:displayName>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_MAXLINERATE_1" spirit:order="2500" spirit:minimum="0.5" spirit:maximum="6.25">1.25</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_DATAWIDTH_3</spirit:name>
+      <spirit:displayName>C Protocol Datawidth 3</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_DATAWIDTH_3" spirit:choiceRef="choice_list_af38333b" spirit:order="2400">16</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.C_PROTOCOL_DATAWIDTH_3">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_DATAWIDTH_2</spirit:name>
+      <spirit:displayName>C Protocol Datawidth 2</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_DATAWIDTH_2" spirit:choiceRef="choice_list_af38333b" spirit:order="2200">16</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.C_PROTOCOL_DATAWIDTH_2">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_DATAWIDTH_1</spirit:name>
+      <spirit:displayName>C Protocol Datawidth 1</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_DATAWIDTH_1" spirit:choiceRef="choice_list_af38333b" spirit:order="2000">16</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.C_PROTOCOL_DATAWIDTH_1">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_3</spirit:name>
+      <spirit:displayName>C Protocol 3</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_3" spirit:choiceRef="choice_pairs_2b280c53" spirit:order="2300">Custom_3</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_2</spirit:name>
+      <spirit:displayName>C Protocol 2</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_2" spirit:choiceRef="choice_pairs_b3ed57fb" spirit:order="2100">Custom_2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_1</spirit:name>
+      <spirit:displayName>C Protocol 1</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_1" spirit:choiceRef="choice_pairs_c1d3bd42" spirit:order="1900">Custom_1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_USE_PLL1_3</spirit:name>
+      <spirit:displayName>C Protocol Use Pll0 3</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_USE_PLL1_3" spirit:order="1800">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_USE_PLL1_2</spirit:name>
+      <spirit:displayName>C Protocol Use Pll1 2</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_USE_PLL1_2" spirit:order="1700">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_USE_PLL1_1</spirit:name>
+      <spirit:displayName>C Protocol Use Pll1 1</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_USE_PLL1_1" spirit:order="1600">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_USE_QUAD_PLL_1</spirit:name>
+      <spirit:displayName>C Protocol Use Quad Pll 1</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_USE_QUAD_PLL_1" spirit:choiceRef="choice_list_ec65b49b" spirit:order="1300">PLL0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_USE_QUAD_PLL_2</spirit:name>
+      <spirit:displayName>C Protocol Use Quad Pll 2</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_USE_QUAD_PLL_2" spirit:choiceRef="choice_list_ec65b49b" spirit:order="1400">PLL0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_USE_QUAD_PLL_3</spirit:name>
+      <spirit:displayName>C Protocol Use Quad Pll 3</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_USE_QUAD_PLL_3" spirit:choiceRef="choice_list_ec65b49b" spirit:order="1500">PLL0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_USE_PLL0_3</spirit:name>
+      <spirit:displayName>C Protocol Use Pll0 3</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_USE_PLL0_3" spirit:order="1500000">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_USE_PLL0_2</spirit:name>
+      <spirit:displayName>C Protocol Use Pll0 2</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_USE_PLL0_2" spirit:order="1400000">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_USE_PLL0_1</spirit:name>
+      <spirit:displayName>C Protocol Use Pll0 1</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_USE_PLL0_1" spirit:order="1300000">true</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_PROTOCOL_COUNT</spirit:name>
+      <spirit:displayName>C Protocol Count</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_PROTOCOL_COUNT" spirit:choiceRef="choice_list_ae9f88f6" spirit:order="1200">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_SI_VER</spirit:name>
+      <spirit:displayName>C SI VER</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_SI_VER" spirit:choiceRef="choice_pairs_9326496b" spirit:order="1100">General_ES/Production</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">ibert_7series_gtp_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>IBERT 7 Series GTP</xilinx:displayName>
+      <xilinx:coreRevision>10</xilinx:coreRevision>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_CHANNEL_QUAD_0" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_CHANNEL_QUAD_1" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_CHANNEL_QUAD_2" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_CHANNEL_QUAD_3" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_PROTOCOL_MAXLINERATE_1" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_PROTOCOL_MAXLINERATE_2" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_PROTOCOL_MAXLINERATE_3" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_PROTOCOL_QUAD0" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_PROTOCOL_QUAD1" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_PROTOCOL_QUAD2" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_PROTOCOL_QUAD3" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_PROTOCOL_RXREFCLK_FREQUENCY_1" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_REFCLK_SOURCE_QUAD_0" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_REFCLK_SOURCE_QUAD_1" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_REFCLK_SOURCE_QUAD_2" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_REFCLK_SOURCE_QUAD_3" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_RXOUTCLK_FREQUENCY" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_RXOUTCLK_GT_LOCATION" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_RXOUTCLK_PIN_STD" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SYSCLK_IO_PIN_LOC_N" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SYSCLK_IO_PIN_LOC_P" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SYSCLOCK_SOURCE_INT" xilinx:valueSource="user"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2015.4</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5c300c99"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="0f9f5b01"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="5381b167"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="ed7c282b"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

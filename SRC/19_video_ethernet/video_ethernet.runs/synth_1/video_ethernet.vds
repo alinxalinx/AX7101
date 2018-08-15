@@ -1,0 +1,1966 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jul  3 13:38:01 2018
+# Process ID: 332
+# Current directory: D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1
+# Command line: vivado.exe -log video_ethernet.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source video_ethernet.tcl
+# Log file: D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/video_ethernet.vds
+# Journal file: D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source video_ethernet.tcl -notrace
+Command: synth_design -top video_ethernet -part xc7a100tfgg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7136 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 409.441 ; gain = 104.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'video_ethernet' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/video_ethernet.v:23]
+INFO: [Synth 8-638] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19483]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFDS' (1#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19483]
+INFO: [Synth 8-638] synthesizing module 'sys_pll' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/.Xil/Vivado-332-PC-201805041311/realtime/sys_pll_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'sys_pll' (2#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/.Xil/Vivado-332-PC-201805041311/realtime/sys_pll_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'i2c_config' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_config.v:30]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_WR_I2C_CHECK bound to: 1 - type: integer 
+	Parameter S_WR_I2C bound to: 2 - type: integer 
+	Parameter S_WR_I2C_DONE bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'i2c_master_top' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_top.v:30]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_WR_DEV_ADDR bound to: 1 - type: integer 
+	Parameter S_WR_REG_ADDR bound to: 2 - type: integer 
+	Parameter S_WR_DATA bound to: 3 - type: integer 
+	Parameter S_WR_ACK bound to: 4 - type: integer 
+	Parameter S_WR_ERR_NACK bound to: 5 - type: integer 
+	Parameter S_RD_DEV_ADDR0 bound to: 6 - type: integer 
+	Parameter S_RD_REG_ADDR bound to: 7 - type: integer 
+	Parameter S_RD_DEV_ADDR1 bound to: 8 - type: integer 
+	Parameter S_RD_DATA bound to: 9 - type: integer 
+	Parameter S_RD_STOP bound to: 10 - type: integer 
+	Parameter S_WR_STOP bound to: 11 - type: integer 
+	Parameter S_WAIT bound to: 12 - type: integer 
+	Parameter S_WR_REG_ADDR1 bound to: 13 - type: integer 
+	Parameter S_RD_REG_ADDR1 bound to: 14 - type: integer 
+	Parameter S_RD_ACK bound to: 15 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_top.v:96]
+INFO: [Synth 8-638] synthesizing module 'i2c_master_byte_ctrl' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_byte_ctrl.v:75]
+	Parameter ST_IDLE bound to: 5'b00000 
+	Parameter ST_START bound to: 5'b00001 
+	Parameter ST_READ bound to: 5'b00010 
+	Parameter ST_WRITE bound to: 5'b00100 
+	Parameter ST_ACK bound to: 5'b01000 
+	Parameter ST_STOP bound to: 5'b10000 
+INFO: [Synth 8-638] synthesizing module 'i2c_master_bit_ctrl' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_bit_ctrl.v:143]
+	Parameter idle bound to: 18'b000000000000000000 
+	Parameter start_a bound to: 18'b000000000000000001 
+	Parameter start_b bound to: 18'b000000000000000010 
+	Parameter start_c bound to: 18'b000000000000000100 
+	Parameter start_d bound to: 18'b000000000000001000 
+	Parameter start_e bound to: 18'b000000000000010000 
+	Parameter stop_a bound to: 18'b000000000000100000 
+	Parameter stop_b bound to: 18'b000000000001000000 
+	Parameter stop_c bound to: 18'b000000000010000000 
+	Parameter stop_d bound to: 18'b000000000100000000 
+	Parameter rd_a bound to: 18'b000000001000000000 
+	Parameter rd_b bound to: 18'b000000010000000000 
+	Parameter rd_c bound to: 18'b000000100000000000 
+	Parameter rd_d bound to: 18'b000001000000000000 
+	Parameter wr_a bound to: 18'b000010000000000000 
+	Parameter wr_b bound to: 18'b000100000000000000 
+	Parameter wr_c bound to: 18'b001000000000000000 
+	Parameter wr_d bound to: 18'b010000000000000000 
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_bit_ctrl.v:406]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_bit_ctrl.v:406]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_bit_ctrl.v:410]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_bit_ctrl.v:410]
+INFO: [Synth 8-256] done synthesizing module 'i2c_master_bit_ctrl' (3#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_bit_ctrl.v:143]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_byte_ctrl.v:230]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_byte_ctrl.v:230]
+INFO: [Synth 8-256] done synthesizing module 'i2c_master_byte_ctrl' (4#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_byte_ctrl.v:75]
+INFO: [Synth 8-256] done synthesizing module 'i2c_master_top' (5#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_top.v:30]
+WARNING: [Synth 8-5788] Register i2c_write_req_reg in module i2c_config is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_config.v:101]
+WARNING: [Synth 8-3848] Net i2c_read_req in module/entity i2c_config does not have driver. [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_config.v:57]
+INFO: [Synth 8-256] done synthesizing module 'i2c_config' (6#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_config.v:30]
+INFO: [Synth 8-638] synthesizing module 'lut_ov5640_rgb565_800_600' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/lut_ov5640_rgb565_800_600.v:30]
+INFO: [Synth 8-256] done synthesizing module 'lut_ov5640_rgb565_800_600' (7#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/lut_ov5640_rgb565_800_600.v:30]
+INFO: [Synth 8-638] synthesizing module 'cmos_select' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/cmos_select.v:21]
+INFO: [Synth 8-256] done synthesizing module 'cmos_select' (8#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/cmos_select.v:21]
+INFO: [Synth 8-638] synthesizing module 'camera_delay' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/camera_delay.v:1]
+INFO: [Synth 8-256] done synthesizing module 'camera_delay' (9#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/camera_delay.v:1]
+INFO: [Synth 8-638] synthesizing module 'camera_fifo' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/.Xil/Vivado-332-PC-201805041311/realtime/camera_fifo_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'camera_fifo' (10#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/.Xil/Vivado-332-PC-201805041311/realtime/camera_fifo_stub.v:6]
+WARNING: [Synth 8-689] width (11) of port connection 'rd_data_count' does not match port width (12) of module 'camera_fifo' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/video_ethernet.v:237]
+WARNING: [Synth 8-350] instance 'camera_fifo_inst1' of module 'camera_fifo' requires 13 connections, but only 10 given [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/video_ethernet.v:226]
+INFO: [Synth 8-638] synthesizing module 'mac_test' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:7]
+	Parameter IDLE bound to: 10'b0000000001 
+	Parameter ARP_REQ bound to: 10'b0000000010 
+	Parameter ARP_SEND bound to: 10'b0000000100 
+	Parameter ARP_WAIT bound to: 10'b0000001000 
+	Parameter GEN_REQ bound to: 10'b0000010000 
+	Parameter CHECK_FIFO bound to: 10'b0000100000 
+	Parameter SEND bound to: 10'b0001000000 
+	Parameter WAIT bound to: 10'b0010000000 
+	Parameter CHECK_ARP bound to: 10'b0100000000 
+	Parameter WAIT_SYNC bound to: 10'b1000000000 
+INFO: [Synth 8-638] synthesizing module 'mac_top' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_top.v:7]
+INFO: [Synth 8-638] synthesizing module 'mac_tx_top' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/mac_tx_top.v:7]
+INFO: [Synth 8-638] synthesizing module 'mac_tx' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/mac_tx.v:8]
+	Parameter SEND_IDLE bound to: 6'b000001 
+	Parameter SEND_START bound to: 6'b000010 
+	Parameter SEND_PREAMBLE bound to: 6'b000100 
+	Parameter SEND_DATA bound to: 6'b001000 
+	Parameter SEND_CRC bound to: 6'b010000 
+	Parameter SEND_END bound to: 6'b100000 
+INFO: [Synth 8-256] done synthesizing module 'mac_tx' (11#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/mac_tx.v:8]
+INFO: [Synth 8-638] synthesizing module 'mac_tx_mode' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/mac_tx_mode.v:7]
+	Parameter IDLE bound to: 3'b001 
+	Parameter ARP bound to: 3'b010 
+	Parameter IP bound to: 3'b100 
+INFO: [Synth 8-256] done synthesizing module 'mac_tx_mode' (12#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/mac_tx_mode.v:7]
+INFO: [Synth 8-638] synthesizing module 'crc' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/crc.v:5]
+	Parameter Tp bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'crc' (13#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/crc.v:5]
+INFO: [Synth 8-638] synthesizing module 'arp_tx' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/arp_tx.v:7]
+	Parameter mac_type bound to: 16'b0000100000000110 
+	Parameter hardware_type bound to: 16'b0000000000000001 
+	Parameter protocol_type bound to: 16'b0000100000000000 
+	Parameter mac_length bound to: 8'b00000110 
+	Parameter ip_length bound to: 8'b00000100 
+	Parameter ARP_REQUEST_CODE bound to: 16'b0000000000000001 
+	Parameter ARP_REPLY_CODE bound to: 16'b0000000000000010 
+	Parameter IDLE bound to: 5'b00001 
+	Parameter ARP_REQUEST_WAIT bound to: 5'b00010 
+	Parameter ARP_REQUEST bound to: 5'b00100 
+	Parameter ARP_REPLY_WAIT bound to: 5'b01000 
+	Parameter ARP_REPLY bound to: 5'b10000 
+INFO: [Synth 8-256] done synthesizing module 'arp_tx' (14#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/arp_tx.v:7]
+INFO: [Synth 8-638] synthesizing module 'ip_tx' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/ip_tx.v:9]
+	Parameter mac_type bound to: 16'b0000100000000000 
+	Parameter ip_version bound to: 4'b0100 
+	Parameter header_len bound to: 4'b0101 
+	Parameter IDLE bound to: 6'b000001 
+	Parameter WAIT_DATA_LENGTH bound to: 6'b000010 
+	Parameter GEN_CHECKSUM bound to: 6'b000100 
+	Parameter SEND_WAIT bound to: 6'b001000 
+	Parameter WAIT_MAC bound to: 6'b010000 
+	Parameter IP_SEND bound to: 6'b100000 
+WARNING: [Synth 8-3848] Net ip_tx_busy in module/entity ip_tx does not have driver. [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/ip_tx.v:28]
+INFO: [Synth 8-256] done synthesizing module 'ip_tx' (15#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/ip_tx.v:9]
+WARNING: [Synth 8-350] instance 'ip0' of module 'ip_tx' requires 19 connections, but only 18 given [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/mac_tx_top.v:158]
+INFO: [Synth 8-638] synthesizing module 'ip_tx_mode' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/ip_tx_mode.v:7]
+	Parameter ip_udp_type bound to: 8'b00010001 
+	Parameter ip_icmp_type bound to: 8'b00000001 
+	Parameter IDLE bound to: 3'b001 
+	Parameter UDP bound to: 3'b010 
+	Parameter ICMP bound to: 3'b100 
+INFO: [Synth 8-256] done synthesizing module 'ip_tx_mode' (16#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/ip_tx_mode.v:7]
+INFO: [Synth 8-638] synthesizing module 'udp_tx' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/udp_tx.v:7]
+	Parameter IDLE bound to: 7'b0000001 
+	Parameter HEADER_CHECKSUM bound to: 7'b0000010 
+	Parameter GEN_CHECKSUM bound to: 7'b0000100 
+	Parameter GEN_ODD_CHECKSUM bound to: 7'b0001000 
+	Parameter GEN_CHECKSUM_END bound to: 7'b0010000 
+	Parameter SEND_WAIT bound to: 7'b0100000 
+	Parameter UDP_SEND bound to: 7'b1000000 
+WARNING: [Synth 8-6014] Unused sequential element ram_write_addr_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/udp_tx.v:125]
+WARNING: [Synth 8-6014] Unused sequential element ram_wr_data_d0_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/udp_tx.v:150]
+WARNING: [Synth 8-6014] Unused sequential element ram_wr_data_d1_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/udp_tx.v:151]
+WARNING: [Synth 8-6014] Unused sequential element ram_rdata_d1_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/udp_tx.v:166]
+WARNING: [Synth 8-3848] Net udp_ram_data_req in module/entity udp_tx does not have driver. [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/udp_tx.v:24]
+WARNING: [Synth 8-3848] Net udp_tx_end in module/entity udp_tx does not have driver. [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/udp_tx.v:30]
+INFO: [Synth 8-256] done synthesizing module 'udp_tx' (17#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/udp_tx.v:7]
+INFO: [Synth 8-256] done synthesizing module 'mac_tx_top' (18#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/mac_tx_top.v:7]
+INFO: [Synth 8-638] synthesizing module 'mac_rx_top' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/mac_rx_top.v:7]
+INFO: [Synth 8-638] synthesizing module 'mac_rx' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/mac_rx.v:7]
+	Parameter IDLE bound to: 8'b00000001 
+	Parameter REC_PREAMBLE bound to: 8'b00000010 
+	Parameter REC_MAC_HEAD bound to: 8'b00000100 
+	Parameter REC_IDENTIFY bound to: 8'b00001000 
+	Parameter REC_DATA bound to: 8'b00010000 
+	Parameter REC_CRC bound to: 8'b00100000 
+	Parameter REC_ERROR bound to: 8'b01000000 
+	Parameter REC_END bound to: 8'b10000000 
+WARNING: [Synth 8-6014] Unused sequential element rx_dv_d1_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/mac_rx.v:200]
+WARNING: [Synth 8-6014] Unused sequential element mac_crc_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/mac_rx.v:238]
+INFO: [Synth 8-256] done synthesizing module 'mac_rx' (19#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/mac_rx.v:7]
+INFO: [Synth 8-638] synthesizing module 'ip_rx' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/ip_rx.v:7]
+	Parameter IDLE bound to: 5'b00001 
+	Parameter REC_HEADER0 bound to: 5'b00010 
+	Parameter REC_HEADER1 bound to: 5'b00100 
+	Parameter REC_DATA bound to: 5'b01000 
+	Parameter REC_END bound to: 5'b10000 
+WARNING: [Synth 8-6014] Unused sequential element ip_rx_data_d1_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/ip_rx.v:169]
+INFO: [Synth 8-256] done synthesizing module 'ip_rx' (20#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/ip_rx.v:7]
+INFO: [Synth 8-638] synthesizing module 'udp_rx' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/udp_rx.v:7]
+	Parameter IDLE bound to: 8'b00000001 
+	Parameter REC_HEAD bound to: 8'b00000010 
+	Parameter REC_DATA bound to: 8'b00000100 
+	Parameter REC_ODD_DATA bound to: 8'b00001000 
+	Parameter VERIFY_CHECKSUM bound to: 8'b00010000 
+	Parameter REC_ERROR bound to: 8'b00100000 
+	Parameter REC_END_WAIT bound to: 8'b01000000 
+	Parameter REC_END bound to: 8'b10000000 
+INFO: [Synth 8-638] synthesizing module 'dpram' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/dpram.v:1]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dpram' (21#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/dpram.v:1]
+INFO: [Synth 8-256] done synthesizing module 'udp_rx' (22#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/udp_rx.v:7]
+INFO: [Synth 8-638] synthesizing module 'arp_rx' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/arp_rx.v:7]
+	Parameter ARP_REQUEST_CODE bound to: 16'b0000000000000001 
+	Parameter ARP_REPLY_CODE bound to: 16'b0000000000000010 
+	Parameter IDLE bound to: 4'b0001 
+	Parameter ARP_REC_DATA bound to: 4'b0010 
+	Parameter ARP_WAIT bound to: 4'b0100 
+	Parameter ARP_END bound to: 4'b1000 
+INFO: [Synth 8-256] done synthesizing module 'arp_rx' (23#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/arp_rx.v:7]
+INFO: [Synth 8-256] done synthesizing module 'mac_rx_top' (24#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/mac_rx_top.v:7]
+INFO: [Synth 8-638] synthesizing module 'icmp_reply' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/icmp_reply.v:7]
+	Parameter ECHO_REQUEST bound to: 8'b00001000 
+	Parameter ECHO_REPLY bound to: 8'b00000000 
+	Parameter IDLE bound to: 11'b00000000001 
+	Parameter REC_DATA bound to: 11'b00000000010 
+	Parameter REC_ODD_DATA bound to: 11'b00000000100 
+	Parameter VERIFY_CHECKSUM bound to: 11'b00000001000 
+	Parameter REC_ERROR bound to: 11'b00000010000 
+	Parameter REC_END_WAIT bound to: 11'b00000100000 
+	Parameter GEN_CHECKSUM bound to: 11'b00001000000 
+	Parameter SEND_WAIT bound to: 11'b00010000000 
+	Parameter SEND bound to: 11'b00100000000 
+	Parameter REC_END bound to: 11'b01000000000 
+	Parameter SEND_END bound to: 11'b10000000000 
+INFO: [Synth 8-638] synthesizing module 'dpram__parameterized0' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/dpram.v:1]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dpram__parameterized0' (24#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/dpram.v:1]
+WARNING: [Synth 8-689] width (11) of port connection 'rdaddress' does not match port width (8) of module 'dpram__parameterized0' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/icmp_reply.v:313]
+WARNING: [Synth 8-689] width (11) of port connection 'wraddress' does not match port width (8) of module 'dpram__parameterized0' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/icmp_reply.v:314]
+WARNING: [Synth 8-3848] Net icmp_tx_end in module/entity icmp_reply does not have driver. [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/icmp_reply.v:20]
+INFO: [Synth 8-256] done synthesizing module 'icmp_reply' (25#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/icmp_reply.v:7]
+INFO: [Synth 8-638] synthesizing module 'arp_cache' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/arp_cache.v:1]
+INFO: [Synth 8-256] done synthesizing module 'arp_cache' (26#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/arp_cache.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mac_top' (27#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_top.v:7]
+WARNING: [Synth 8-3848] Net udp_rec_ram_read_addr in module/entity mac_test does not have driver. [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:45]
+INFO: [Synth 8-256] done synthesizing module 'mac_test' (28#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:7]
+WARNING: [Synth 8-689] width (11) of port connection 'rd_data_count' does not match port width (12) of module 'camera_fifo' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/video_ethernet.v:285]
+WARNING: [Synth 8-350] instance 'camera_fifo_inst2' of module 'camera_fifo' requires 13 connections, but only 10 given [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/video_ethernet.v:274]
+WARNING: [Synth 8-689] width (11) of port connection 'rd_data_count' does not match port width (12) of module 'camera_fifo' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/video_ethernet.v:333]
+WARNING: [Synth 8-350] instance 'camera_fifo_inst3' of module 'camera_fifo' requires 13 connections, but only 10 given [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/video_ethernet.v:322]
+WARNING: [Synth 8-689] width (11) of port connection 'rd_data_count' does not match port width (12) of module 'camera_fifo' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/video_ethernet.v:381]
+WARNING: [Synth 8-350] instance 'camera_fifo_inst4' of module 'camera_fifo' requires 13 connections, but only 10 given [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/video_ethernet.v:370]
+WARNING: [Synth 8-3848] Net e1_txer in module/entity video_ethernet does not have driver. [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/video_ethernet.v:56]
+WARNING: [Synth 8-3848] Net e2_txer in module/entity video_ethernet does not have driver. [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/video_ethernet.v:70]
+WARNING: [Synth 8-3848] Net e3_txer in module/entity video_ethernet does not have driver. [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/video_ethernet.v:84]
+WARNING: [Synth 8-3848] Net e4_txer in module/entity video_ethernet does not have driver. [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/video_ethernet.v:97]
+INFO: [Synth 8-256] done synthesizing module 'video_ethernet' (29#1) [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/video_ethernet.v:23]
+WARNING: [Synth 8-3917] design video_ethernet has port cmos1_rst_n driven by constant 1
+WARNING: [Synth 8-3917] design video_ethernet has port cmos2_rst_n driven by constant 1
+WARNING: [Synth 8-3917] design video_ethernet has port e1_reset driven by constant 1
+WARNING: [Synth 8-3917] design video_ethernet has port e2_reset driven by constant 1
+WARNING: [Synth 8-3917] design video_ethernet has port e3_reset driven by constant 1
+WARNING: [Synth 8-3917] design video_ethernet has port e4_reset driven by constant 1
+WARNING: [Synth 8-3331] design icmp_reply has unconnected port icmp_tx_end
+WARNING: [Synth 8-3331] design udp_tx has unconnected port udp_ram_data_req
+WARNING: [Synth 8-3331] design udp_tx has unconnected port udp_tx_end
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[31]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[30]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[29]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[28]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[27]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[26]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[25]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[24]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[23]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[22]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[21]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[20]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[19]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[18]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[17]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[16]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[15]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[14]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[13]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[12]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[11]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[10]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[9]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[8]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[7]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[6]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[5]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[4]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[3]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[2]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[1]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port source_ip_addr[0]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[31]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[30]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[29]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[28]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[27]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[26]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[25]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[24]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[23]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[22]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[21]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[20]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[19]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[18]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[17]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[16]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[15]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[14]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[13]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[12]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[11]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[10]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[9]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[8]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[7]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[6]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[5]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[4]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[3]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[2]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[1]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port destination_ip_addr[0]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port ram_wr_data[7]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port ram_wr_data[6]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port ram_wr_data[5]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port ram_wr_data[4]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port ram_wr_data[3]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port ram_wr_data[2]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port ram_wr_data[1]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port ram_wr_data[0]
+WARNING: [Synth 8-3331] design udp_tx has unconnected port ram_wr_en
+WARNING: [Synth 8-3331] design ip_tx has unconnected port ip_tx_busy
+WARNING: [Synth 8-3331] design mac_tx_top has unconnected port icmp_tx_end
+WARNING: [Synth 8-3331] design mac_test has unconnected port reg_conf_done
+WARNING: [Synth 8-3331] design i2c_master_top has unconnected port i2c_slave_dev_addr[0]
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e1_txer
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e2_txer
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e3_txer
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e4_txer
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e1_mdio
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e2_mdio
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e3_mdio
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e4_mdio
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port cmos1_db[1]
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port cmos1_db[0]
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port cmos2_db[1]
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port cmos2_db[0]
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e1_rxer
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e1_txc
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e2_rxer
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e2_txc
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e3_rxer
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e3_txc
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e4_rxer
+WARNING: [Synth 8-3331] design video_ethernet has unconnected port e4_txc
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 478.785 ; gain = 174.035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin i2c_master_top_m0:i2c_read_req to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_config.v:130]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:ram_wr_data[7] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:ram_wr_data[6] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:ram_wr_data[5] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:ram_wr_data[4] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:ram_wr_data[3] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:ram_wr_data[2] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:ram_wr_data[1] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:ram_wr_data[0] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:ram_wr_en to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:udp_rec_ram_read_addr[10] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:udp_rec_ram_read_addr[9] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:udp_rec_ram_read_addr[8] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:udp_rec_ram_read_addr[7] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:udp_rec_ram_read_addr[6] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:udp_rec_ram_read_addr[5] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:udp_rec_ram_read_addr[4] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:udp_rec_ram_read_addr[3] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:udp_rec_ram_read_addr[2] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:udp_rec_ram_read_addr[1] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+WARNING: [Synth 8-3295] tying undriven pin mac_top0:udp_rec_ram_read_addr[0] to constant 0 [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:176]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 478.785 ; gain = 174.035
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/.Xil/Vivado-332-PC-201805041311/dcp2/sys_pll_in_context.xdc] for cell 'sys_pll_m0'
+Finished Parsing XDC File [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/.Xil/Vivado-332-PC-201805041311/dcp2/sys_pll_in_context.xdc] for cell 'sys_pll_m0'
+Parsing XDC File [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/.Xil/Vivado-332-PC-201805041311/dcp3/camera_fifo_in_context.xdc] for cell 'camera_fifo_inst1'
+Finished Parsing XDC File [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/.Xil/Vivado-332-PC-201805041311/dcp3/camera_fifo_in_context.xdc] for cell 'camera_fifo_inst1'
+Parsing XDC File [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/.Xil/Vivado-332-PC-201805041311/dcp3/camera_fifo_in_context.xdc] for cell 'camera_fifo_inst2'
+Finished Parsing XDC File [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/.Xil/Vivado-332-PC-201805041311/dcp3/camera_fifo_in_context.xdc] for cell 'camera_fifo_inst2'
+Parsing XDC File [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/.Xil/Vivado-332-PC-201805041311/dcp3/camera_fifo_in_context.xdc] for cell 'camera_fifo_inst3'
+Finished Parsing XDC File [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/.Xil/Vivado-332-PC-201805041311/dcp3/camera_fifo_in_context.xdc] for cell 'camera_fifo_inst3'
+Parsing XDC File [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/.Xil/Vivado-332-PC-201805041311/dcp3/camera_fifo_in_context.xdc] for cell 'camera_fifo_inst4'
+Finished Parsing XDC File [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/.Xil/Vivado-332-PC-201805041311/dcp3/camera_fifo_in_context.xdc] for cell 'camera_fifo_inst4'
+Parsing XDC File [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc]
+WARNING: [Vivado 12-507] No nets matched 'cmos1_pclk_IBUF'. [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc:88]
+WARNING: [Vivado 12-507] No nets matched 'cmos2_pclk_IBUF'. [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc:91]
+Finished Parsing XDC File [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/video_ethernet_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/video_ethernet_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/video_ethernet_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 869.465 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'camera_fifo_inst1' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'camera_fifo_inst2' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'camera_fifo_inst3' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'camera_fifo_inst4' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 869.465 ; gain = 564.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 869.465 ; gain = 564.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for camera_fifo_inst1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for camera_fifo_inst2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for camera_fifo_inst3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for camera_fifo_inst4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for sys_pll_m0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 869.465 ; gain = 564.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_bit_ctrl'
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_byte_ctrl'
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "c_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_master_top'
+INFO: [Synth 8-5544] ROM "read" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "error" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_config'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "lut_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_sig" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element key_counter_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/cmos_select.v:54]
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'send_state_reg' in module 'mac_tx'
+INFO: [Synth 8-5544] ROM "send_next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "send_next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "send_next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mac_send_end" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element mac_tx_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/mac_tx.v:199]
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element timeout_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/mac_tx_mode.v:85]
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'arp_tx'
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "arp_destination_ip_addr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element timeout_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/arp_tx.v:150]
+WARNING: [Synth 8-6014] Unused sequential element arp_send_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/arp_tx.v:192]
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'ip_tx'
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "checksum" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element ip_send_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/ip_tx.v:199]
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element timeout_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/ip_tx_mode.v:92]
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "udp_tx_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'rec_state_reg' in module 'mac_rx'
+INFO: [Synth 8-5546] ROM "rec_next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rec_next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rec_next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rec_next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mac_rec_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_check" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_rec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mac_rx_destination_mac_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mac_rx_source_mac_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame_type" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element mac_rx_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/mac_rx.v:228]
+WARNING: [Synth 8-6014] Unused sequential element preamble_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/mac_rx.v:327]
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_total_data_length" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "checksum_tmp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "check_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_checksum_error" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element ip_rx_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/ip_rx.v:181]
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_total_data_length" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "checksum_tmp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "check_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_checksum_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'udp_rx'
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "udp_data_length" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "udp_rec_data_length" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "udp_checksum_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "verify_end" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element udp_rx_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/udp_rx.v:182]
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'arp_rx'
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element arp_rx_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/arp_rx.v:126]
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'icmp_reply'
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_tx_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_tx_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_data_length" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_checksum_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_rx_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reply_checkout_buf" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element icmp_rx_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/icmp_reply.v:242]
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'mac_test'
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "identify_code_d0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element identify_code_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:279]
+WARNING: [Synth 8-6014] Unused sequential element wait_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:290]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            00000 |               000000000000000000
+                 start_a |                            00001 |               000000000000000001
+                 start_b |                            00010 |               000000000000000010
+                 start_c |                            00011 |               000000000000000100
+                 start_d |                            00100 |               000000000000001000
+                 start_e |                            00101 |               000000000000010000
+                  stop_a |                            00110 |               000000000000100000
+                  stop_b |                            00111 |               000000000001000000
+                  stop_c |                            01000 |               000000000010000000
+                  stop_d |                            01001 |               000000000100000000
+                    wr_a |                            01010 |               000010000000000000
+                    wr_b |                            01011 |               000100000000000000
+                    wr_c |                            01100 |               001000000000000000
+                    wr_d |                            01101 |               010000000000000000
+                    rd_a |                            01110 |               000000001000000000
+                    rd_b |                            01111 |               000000010000000000
+                    rd_c |                            10000 |               000000100000000000
+                    rd_d |                            10001 |               000001000000000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'i2c_master_bit_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                              000 |                            00000
+                ST_START |                              001 |                            00001
+                 ST_READ |                              010 |                            00010
+                ST_WRITE |                              011 |                            00100
+                  ST_ACK |                              100 |                            01000
+                 ST_STOP |                              101 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'i2c_master_byte_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                 0000000000000001 |                             0000
+           S_WR_DEV_ADDR |                 0000000000000010 |                             0001
+           S_WR_REG_ADDR |                 0000000000010000 |                             0010
+          S_WR_REG_ADDR1 |                 0000000000100000 |                             1101
+               S_WR_DATA |                 0000000001000000 |                             0011
+          S_RD_DEV_ADDR0 |                 0000000000000100 |                             0110
+           S_WR_ERR_NACK |                 0000000000001000 |                             0101
+               S_WR_STOP |                 0000000010000000 |                             1011
+                S_WR_ACK |                 0000010000000000 |                             0100
+           S_RD_REG_ADDR |                 0000100000000000 |                             0111
+          S_RD_REG_ADDR1 |                 0001000000000000 |                             1110
+          S_RD_DEV_ADDR1 |                 0010000000000000 |                             1000
+               S_RD_DATA |                 0100000000000000 |                             1001
+               S_RD_STOP |                 1000000000000000 |                             1010
+                S_RD_ACK |                 0000000100000000 |                             1111
+                  S_WAIT |                 0000001000000000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'i2c_master_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                              000
+          S_WR_I2C_CHECK |                               01 |                              001
+                S_WR_I2C |                               10 |                              010
+           S_WR_I2C_DONE |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'i2c_config'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 869.465 ; gain = 564.715
+---------------------------------------------------------------------------------
+RAM Pipeline Warning: Read Address Register Found For RAM ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_reg. We will not be able to pipeline it. This may degrade performance. 
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |mac_test            |           4|     27897|
+|2     |video_ethernet__GC0 |           1|     19491|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 64    
+	   2 Input     20 Bit       Adders := 4     
+	   2 Input     19 Bit       Adders := 8     
+	   2 Input     18 Bit       Adders := 12    
+	   2 Input     17 Bit       Adders := 68    
+	   2 Input     16 Bit       Adders := 34    
+	   3 Input     16 Bit       Adders := 4     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 12    
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 12    
+	   2 Input      3 Bit       Adders := 14    
++---XORs : 
+	   2 Input      1 Bit         XORs := 64    
+	   3 Input      1 Bit         XORs := 48    
+	   6 Input      1 Bit         XORs := 56    
+	   8 Input      1 Bit         XORs := 8     
+	   5 Input      1 Bit         XORs := 32    
+	   7 Input      1 Bit         XORs := 56    
+	  10 Input      1 Bit         XORs := 16    
+	   9 Input      1 Bit         XORs := 24    
+	  12 Input      1 Bit         XORs := 8     
+	   4 Input      1 Bit         XORs := 8     
++---Registers : 
+	               80 Bit    Registers := 4     
+	               64 Bit    Registers := 4     
+	               48 Bit    Registers := 24    
+	               32 Bit    Registers := 112   
+	               20 Bit    Registers := 12    
+	               19 Bit    Registers := 8     
+	               18 Bit    Registers := 12    
+	               17 Bit    Registers := 32    
+	               16 Bit    Registers := 94    
+	               14 Bit    Registers := 2     
+	               11 Bit    Registers := 24    
+	               10 Bit    Registers := 10    
+	                8 Bit    Registers := 117   
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 8     
+	                5 Bit    Registers := 12    
+	                4 Bit    Registers := 22    
+	                3 Bit    Registers := 28    
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 289   
++---RAMs : 
+	              16K Bit         RAMs := 4     
+	               2K Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 8     
+	   2 Input     48 Bit        Muxes := 60    
+	   7 Input     48 Bit        Muxes := 8     
+	   2 Input     32 Bit        Muxes := 122   
+	   4 Input     32 Bit        Muxes := 20    
+	   5 Input     32 Bit        Muxes := 4     
+	   3 Input     32 Bit        Muxes := 8     
+	   2 Input     20 Bit        Muxes := 4     
+	   2 Input     19 Bit        Muxes := 8     
+	   2 Input     18 Bit        Muxes := 12    
+	  18 Input     18 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 48    
+	   2 Input     16 Bit        Muxes := 78    
+	  32 Input     16 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 4     
+	   2 Input     11 Bit        Muxes := 16    
+	  11 Input     11 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 12    
+	   3 Input     10 Bit        Muxes := 4     
+	   4 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 16    
+	   2 Input      8 Bit        Muxes := 115   
+	   3 Input      8 Bit        Muxes := 12    
+	  43 Input      8 Bit        Muxes := 4     
+	   6 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 24    
+	   4 Input      7 Bit        Muxes := 8     
+	   3 Input      6 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 52    
+	   6 Input      6 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 36    
+	   3 Input      5 Bit        Muxes := 12    
+	  24 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 76    
+	   3 Input      4 Bit        Muxes := 4     
+	   6 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 58    
+	   3 Input      3 Bit        Muxes := 8     
+	   6 Input      3 Bit        Muxes := 8     
+	  15 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 40    
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 239   
+	   3 Input      1 Bit        Muxes := 34    
+	   4 Input      1 Bit        Muxes := 16    
+	  18 Input      1 Bit        Muxes := 12    
+	   6 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mac_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module mac_tx_mode 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+Module crc 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 7     
+	   8 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 7     
+	  10 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 3     
+	  12 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+Module arp_tx 
+Detailed RTL Component Info : 
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	  43 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module ip_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 8     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 3     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 2     
+	               17 Bit    Registers := 5     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module ip_tx_mode 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module udp_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module crc__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 7     
+	   8 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 7     
+	  10 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 3     
+	  12 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input     48 Bit        Muxes := 3     
+	   7 Input     48 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 9     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ip_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module dpram 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module udp_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 3     
+	               16 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 4     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 5     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 1     
+Module arp_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 10    
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module dpram__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
+Module icmp_reply 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     17 Bit       Adders := 4     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 8     
+	               16 Bit    Registers := 4     
+	               11 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 3     
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 1     
+Module arp_cache 
+Detailed RTL Component Info : 
++---Registers : 
+	               80 Bit    Registers := 1     
+	               48 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module mac_test 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module i2c_master_bit_ctrl__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  18 Input     18 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 2     
+	  24 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 13    
+	  18 Input      1 Bit        Muxes := 6     
+Module i2c_master_byte_ctrl__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	  15 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 6     
+Module i2c_master_top__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  32 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+Module i2c_config__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+Module lut_ov5640_rgb565_800_600__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module i2c_master_bit_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  18 Input     18 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 2     
+	  24 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 13    
+	  18 Input      1 Bit        Muxes := 6     
+Module i2c_master_byte_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	  15 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 6     
+Module i2c_master_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  32 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+Module i2c_config 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+Module lut_ov5640_rgb565_800_600 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module cmos_select 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module camera_delay 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element mac_tx_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/mac_tx.v:199]
+WARNING: [Synth 8-6014] Unused sequential element timeout_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/mac_tx_mode.v:85]
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element timeout_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/arp_tx.v:150]
+WARNING: [Synth 8-6014] Unused sequential element arp_send_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/arp_tx.v:192]
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element ip_send_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/ip_tx.v:199]
+WARNING: [Synth 8-6014] Unused sequential element timeout_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/tx/ip_tx_mode.v:92]
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "udp_tx_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preamble" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mac_rx_source_mac_addr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element mac_rx_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/mac_rx.v:228]
+WARNING: [Synth 8-6014] Unused sequential element preamble_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/mac_rx.v:327]
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_checksum_error" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element ip_rx_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/ip_rx.v:181]
+INFO: [Synth 8-5546] ROM "udp_data_length" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "verify_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "udp_checksum_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "udp_rec_data_length" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element udp_rx_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/udp_rx.v:182]
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element arp_rx_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/rx/arp_rx.v:126]
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_data_length" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_rx_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_checksum_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_tx_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reply_checkout_buf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_tx_req" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element icmp_rx_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/icmp_reply.v:242]
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "identify_code_d0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element wait_cnt_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:290]
+WARNING: [Synth 8-6014] Unused sequential element identify_code_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/mac/mac_test.v:279]
+INFO: [Synth 8-4471] merging register 'i2c_config_m1/i2c_master_top_m0/ack_in_reg' into 'i2c_config_m0/i2c_master_top_m0/ack_in_reg' [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_top.v:210]
+WARNING: [Synth 8-6014] Unused sequential element i2c_config_m0/i2c_master_top_m0/i2c_read_data_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_top.v:236]
+WARNING: [Synth 8-6014] Unused sequential element i2c_config_m0/error_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_config.v:86]
+WARNING: [Synth 8-6014] Unused sequential element i2c_config_m1/i2c_master_top_m0/i2c_read_data_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_top.v:236]
+WARNING: [Synth 8-6014] Unused sequential element i2c_config_m1/i2c_master_top_m0/ack_in_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_master_top.v:210]
+WARNING: [Synth 8-6014] Unused sequential element i2c_config_m1/error_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/i2c_master/i2c_config.v:86]
+WARNING: [Synth 8-6014] Unused sequential element camera_delay_inst/cmos_vsync_buf_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/camera_delay.v:27]
+INFO: [Synth 8-5546] ROM "cmos_select_inst/key_sig" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cmos_select_inst/key_counter_reg was removed.  [D:/demo_ax7101/demo/video_ethernet/video_ethernet.srcs/sources_1/new/cmos_select.v:54]
+WARNING: [Synth 8-3917] design video_ethernet has port cmos1_rst_n driven by constant 1
+WARNING: [Synth 8-3917] design video_ethernet has port cmos2_rst_n driven by constant 1
+WARNING: [Synth 8-3917] design video_ethernet has port e1_reset driven by constant 1
+WARNING: [Synth 8-3917] design video_ethernet has port e2_reset driven by constant 1
+WARNING: [Synth 8-3917] design video_ethernet has port e3_reset driven by constant 1
+WARNING: [Synth 8-3917] design video_ethernet has port e4_reset driven by constant 1
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM udp_receive_ram/ram_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM mac_top0/icmp0/icmp_receive_ram/ram_reg to conserve power
+RAM Pipeline Warning: Read Address Register Found For RAM udp_receive_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM mac_top0/icmp0/icmp_receive_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM udp_receive_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM mac_top0/icmp0/icmp_receive_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM udp_receive_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM mac_top0/icmp0/icmp_receive_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM udp_receive_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM mac_top0/icmp0/icmp_receive_ram/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp2_reg[16]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[16]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[1]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[2]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[3]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[4]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[5]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[6]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[7]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp2_reg[8]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[8]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp2_reg[9]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[9]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp2_reg[10]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[10]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp2_reg[11]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[11]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp2_reg[12]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[12]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp2_reg[13]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[13]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp2_reg[14]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[14]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/reply_check_out_reg[17]' (FDCE) to 'mac_test:/mac_top0/icmp0/reply_check_out_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/reply_check_out_reg[18]' (FDCE) to 'mac_test:/mac_top0/icmp0/reply_check_out_reg[19]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/reply_check_out_reg[19]' (FDCE) to 'mac_test:/mac_top0/icmp0/reply_check_out_reg[20]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/reply_check_out_reg[20]' (FDCE) to 'mac_test:/mac_top0/icmp0/reply_check_out_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/reply_check_out_reg[21]' (FDCE) to 'mac_test:/mac_top0/icmp0/reply_check_out_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/reply_check_out_reg[22]' (FDCE) to 'mac_test:/mac_top0/icmp0/reply_check_out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/reply_check_out_reg[23]' (FDCE) to 'mac_test:/mac_top0/icmp0/reply_check_out_reg[24]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/reply_check_out_reg[24]' (FDCE) to 'mac_test:/mac_top0/icmp0/reply_check_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/reply_check_out_reg[25]' (FDCE) to 'mac_test:/mac_top0/icmp0/reply_check_out_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/reply_check_out_reg[26]' (FDCE) to 'mac_test:/mac_top0/icmp0/reply_check_out_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/reply_check_out_reg[27]' (FDCE) to 'mac_test:/mac_top0/icmp0/reply_check_out_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/reply_check_out_reg[28]' (FDCE) to 'mac_test:/mac_top0/icmp0/reply_check_out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/reply_check_out_reg[29]' (FDCE) to 'mac_test:/mac_top0/icmp0/reply_check_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/reply_check_out_reg[30]' (FDCE) to 'mac_test:/mac_top0/icmp0/reply_check_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/reply_check_out_reg[31]' (FDCE) to 'mac_test:/mac_top0/icmp0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[16]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[1]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[2]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[3]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[4]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[5]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[6]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[7]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[8]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[9]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[10]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[11]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[12]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[13]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[14]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/check_out_reg[30]' (FDCE) to 'mac_test:/mac_top0/icmp0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/check_out_reg[31]' (FDCE) to 'mac_test:/mac_top0/icmp0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/check_out_reg[29]' (FDCE) to 'mac_test:/mac_top0/icmp0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/check_out_reg[28]' (FDCE) to 'mac_test:/mac_top0/icmp0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/check_out_reg[27]' (FDCE) to 'mac_test:/mac_top0/icmp0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/check_out_reg[26]' (FDCE) to 'mac_test:/mac_top0/icmp0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/check_out_reg[25]' (FDCE) to 'mac_test:/mac_top0/icmp0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/check_out_reg[24]' (FDCE) to 'mac_test:/mac_top0/icmp0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/check_out_reg[23]' (FDCE) to 'mac_test:/mac_top0/icmp0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/check_out_reg[22]' (FDCE) to 'mac_test:/mac_top0/icmp0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/check_out_reg[21]' (FDCE) to 'mac_test:/mac_top0/icmp0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/check_out_reg[20]' (FDCE) to 'mac_test:/mac_top0/icmp0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/check_out_reg[19]' (FDCE) to 'mac_test:/mac_top0/icmp0/check_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/icmp0/check_out_reg[18]' (FDCE) to 'mac_test:/mac_top0/icmp0/check_out_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/icmp0/check_out_reg[17] )
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[17]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[18]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[18]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/check_out_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/ip0/check_out_reg[19] )
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[8]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (mac_test:/\mac_top0/mac_tx0/ipmode/ip_send_type_reg[0] )
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[9]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ipmode/ip_send_type_reg[1]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[2]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[10]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ipmode/ip_send_type_reg[2]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[3]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[11]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ipmode/ip_send_type_reg[3]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[4]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[12]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[5]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[13]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ipmode/ip_send_type_reg[5]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[6]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[14]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ipmode/ip_send_type_reg[6]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[7]' (FDC) to 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/arp_tx0/op_reg[15]' (FDC) to 'mac_test:/mac_top0/mac_tx0/mac0/send_state_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ipmode/ip_send_type_reg[7]' (FDC) to 'mac_test:/mac_top0/mac_tx0/mac0/send_state_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/icmp0/state_reg[6] )
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/mac0/send_state_reg[0]' (FDC) to 'mac_test:/mac_top0/mac_tx0/udp0/state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/udp0/state_reg[4]' (FDC) to 'mac_test:/mac_top0/mac_tx0/udp0/state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/udp0/state_reg[3]' (FDC) to 'mac_test:/mac_top0/mac_tx0/udp0/state_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/udp0/state_reg[2]' (FDC) to 'mac_test:/mac_top0/mac_tx0/udp0/state_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/state_reg[1] )
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp2_reg[0]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp6_reg[3]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp6_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp6_reg[5]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp6_reg[14]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp6_reg[7]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp6_reg[14]'
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checksum_tmp2_reg[7]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checksum_tmp2_reg[6]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checksum_tmp2_reg[5]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checksum_tmp2_reg[3]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checksum_tmp2_reg[2]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checksum_tmp2_reg[1]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checksum_tmp6_reg[17]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checksum_tmp6_reg[13]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checksum_tmp6_reg[12]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checksum_tmp6_reg[11]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checksum_tmp6_reg[10]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checksum_tmp6_reg[9]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checksum_tmp6_reg[8]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checksum_tmp6_reg[6]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checkout_buf_reg[19]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checkout_buf_reg[18]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checkout_buf_reg[17]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/checkout_buf_reg[16]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ip0/check_out_reg[19]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/ipmode/ip_send_type_reg[0]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_top0/mac_tx0/udp0/state_reg[1]) is unused and will be removed from module mac_test.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[47]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[46]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[45]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[44]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[43]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[42]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[41]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[40]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[39]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[38]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[37]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[36]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[35]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[34]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[33]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[32]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[31]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[30]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[29]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[28]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[27]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[26]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[25]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[24]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[23]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[22]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[21]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[20]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[19]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[18]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[17]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[16]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[15]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[14]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[13]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[12]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[11]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[10]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[9]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[8]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[7]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[6]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[5]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[4]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[3]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[2]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[1]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (mac_rx_source_mac_addr_reg[0]) is unused and will be removed from module mac_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[31]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[30]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[29]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[28]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[27]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[26]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[25]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[24]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[23]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[22]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[21]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[20]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[19]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[18]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[17]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (check_out_reg[16]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (checkout_buf_reg[31]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (checkout_buf_reg[30]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (checkout_buf_reg[29]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (checkout_buf_reg[28]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (checkout_buf_reg[27]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (checkout_buf_reg[26]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (checkout_buf_reg[25]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (checkout_buf_reg[24]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (checkout_buf_reg[23]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (checkout_buf_reg[22]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (checkout_buf_reg[21]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (checkout_buf_reg[20]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (checkout_buf_reg[19]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (checkout_buf_reg[18]) is unused and will be removed from module ip_rx.
+WARNING: [Synth 8-3332] Sequential element (checkout_buf_reg[17]) is unused and will be removed from module ip_rx.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[0]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/ip0/checksum_tmp3_reg[0] )
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp2_reg[15]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp3_reg[15]' (FDCE) to 'mac_test:/mac_top0/mac_tx0/ip0/checksum_tmp4_reg[15]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_data_length_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_data_length_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_data_length_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_data_length_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_data_length_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_data_length_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_data_length_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_data_length_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_data_length_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_data_length_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_data_length_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_data_length_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test4/\mac_top0/mac_tx0/ip0/checksum_tmp3_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test4/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test:/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_test4/\mac_top0/mac_tx0/udp0/udp_total_data_length_reg[4] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 869.465 ; gain = 564.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++-----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name            | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|dpram__parameterized0: | ram_reg    | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|dpram__parameterized0: | ram_reg    | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |mac_test            |           3|      7006|
+|2     |video_ethernet__GC0 |           1|      3521|
+|3     |mac_test__1         |           1|      6996|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'sys_pll_m0/clk_out1' to pin 'sys_pll_m0/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'sys_pll_m0/clk_in1' to 'i_40/cmos_select_inst/key_counter_reg[15]/C'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 896.215 ; gain = 591.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 911.078 ; gain = 606.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++-----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name            | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|dpram__parameterized0: | ram_reg    | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|dpram__parameterized0: | ram_reg    | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-----------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |mac_test            |           3|      7006|
+|2     |video_ethernet__GC0 |           1|      3521|
+|3     |mac_test__1         |           1|      6996|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance mac_test1/mac_top0/icmp0/icmp_receive_ram/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mac_test2/mac_top0/icmp0/icmp_receive_ram/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mac_test3/mac_top0/icmp0/icmp_receive_ram/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mac_test4/mac_top0/icmp0/icmp_receive_ram/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 964.074 ; gain = 659.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[0] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[0]_inv.
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[1] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[1]_inv.
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[2] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[2]_inv.
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[3] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[3]_inv.
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[4] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[4]_inv.
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[5] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[5]_inv.
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[6] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[6]_inv.
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[7] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[7]_inv.
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[8] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[8]_inv.
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[9] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[9]_inv.
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[10] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[10]_inv.
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[11] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[11]_inv.
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[12] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[12]_inv.
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[13] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[13]_inv.
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[14] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[14]_inv.
+INFO: [Synth 8-5365] Flop mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[15] is being inverted and renamed to mac_test1/mac_top0/mac_tx0/ip0/checkout_buf_reg[15]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[0] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[0]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[1] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[1]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[2] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[2]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[3] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[3]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[4] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[4]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[5] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[5]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[6] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[6]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[7] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[7]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[8] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[8]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[9] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[9]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[10] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[10]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[11] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[11]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[12] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[12]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[13] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[13]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[14] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[14]_inv.
+INFO: [Synth 8-5365] Flop mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[15] is being inverted and renamed to mac_test2/mac_top0/mac_tx0/ip0/checkout_buf_reg[15]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[0] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[0]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[1] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[1]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[2] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[2]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[3] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[3]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[4] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[4]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[5] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[5]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[6] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[6]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[7] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[7]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[8] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[8]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[9] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[9]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[10] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[10]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[11] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[11]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[12] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[12]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[13] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[13]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[14] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[14]_inv.
+INFO: [Synth 8-5365] Flop mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[15] is being inverted and renamed to mac_test3/mac_top0/mac_tx0/ip0/checkout_buf_reg[15]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[0] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[0]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[1] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[1]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[2] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[2]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[3] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[3]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[4] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[4]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[5] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[5]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[6] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[6]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[7] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[7]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[8] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[8]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[9] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[9]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[10] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[10]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[11] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[11]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[12] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[12]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[13] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[13]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[14] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[14]_inv.
+INFO: [Synth 8-5365] Flop mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[15] is being inverted and renamed to mac_test4/mac_top0/mac_tx0/ip0/checkout_buf_reg[15]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 964.074 ; gain = 659.324
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 964.074 ; gain = 659.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 964.074 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 964.074 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 964.074 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 964.074 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------+------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name    | RTL Name                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------+------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|video_ethernet | mac_test1/vsync_posedge_buf_reg[9] | 10     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|video_ethernet | mac_test2/vsync_posedge_buf_reg[9] | 10     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|video_ethernet | mac_test3/vsync_posedge_buf_reg[9] | 10     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++---------------+------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |sys_pll       |         1|
+|2     |camera_fifo   |         4|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |camera_fifo    |     1|
+|2     |camera_fifo__1 |     1|
+|3     |camera_fifo__2 |     1|
+|4     |camera_fifo__3 |     1|
+|5     |sys_pll        |     1|
+|6     |BUFG           |     5|
+|7     |CARRY4         |   976|
+|8     |LUT1           |   371|
+|9     |LUT2           |  2002|
+|10    |LUT3           |  1412|
+|11    |LUT4           |  1376|
+|12    |LUT5           |  1232|
+|13    |LUT6           |  2556|
+|14    |MUXF7          |    95|
+|15    |MUXF8          |    40|
+|16    |RAMB18E1       |     4|
+|17    |SRL16E         |     3|
+|18    |FDCE           |  6998|
+|19    |FDPE           |   890|
+|20    |FDRE           |   174|
+|21    |FDSE           |    24|
+|22    |IBUF           |    64|
+|23    |IBUFDS         |     1|
+|24    |IOBUF          |     4|
+|25    |OBUF           |    46|
+|26    |OBUFT          |     8|
++------+---------------+------+
+
+Report Instance Areas: 
++------+-------------------------+-------------------------+------+
+|      |Instance                 |Module                   |Cells |
++------+-------------------------+-------------------------+------+
+|1     |top                      |                         | 18427|
+|2     |  camera_delay_inst      |camera_delay             |    27|
+|3     |  cmos_select_inst       |cmos_select              |    58|
+|4     |  i2c_config_m0          |i2c_config               |   480|
+|5     |    i2c_master_top_m0    |i2c_master_top_56        |   448|
+|6     |      byte_controller    |i2c_master_byte_ctrl_57  |   224|
+|7     |        bit_controller   |i2c_master_bit_ctrl_58   |   156|
+|8     |  i2c_config_m1          |i2c_config_0             |   479|
+|9     |    i2c_master_top_m0    |i2c_master_top           |   447|
+|10    |      byte_controller    |i2c_master_byte_ctrl     |   224|
+|11    |        bit_controller   |i2c_master_bit_ctrl      |   156|
+|12    |  mac_test1              |mac_test                 |  4284|
+|13    |    mac_top0             |mac_top_39               |  4056|
+|14    |      cache0             |arp_cache_40             |   256|
+|15    |      icmp0              |icmp_reply_41            |   892|
+|16    |        icmp_receive_ram |dpram__parameterized0_55 |     9|
+|17    |      mac_rx0            |mac_rx_top_42            |  1391|
+|18    |        c0               |crc_52                   |    69|
+|19    |        arp0             |arp_rx_51                |   289|
+|20    |        ip0              |ip_rx_53                 |   482|
+|21    |        mac0             |mac_rx_54                |   550|
+|22    |      mac_tx0            |mac_tx_top_43            |  1517|
+|23    |        c0               |crc_45                   |    69|
+|24    |        arp_tx0          |arp_tx_44                |   305|
+|25    |        ip0              |ip_tx_46                 |   550|
+|26    |        ipmode           |ip_tx_mode_47            |   137|
+|27    |        mac0             |mac_tx_48                |   185|
+|28    |        mode0            |mac_tx_mode_49           |    80|
+|29    |        udp0             |udp_tx_50                |   191|
+|30    |  mac_test2              |mac_test_1               |  4305|
+|31    |    mac_top0             |mac_top_22               |  4056|
+|32    |      cache0             |arp_cache_23             |   256|
+|33    |      icmp0              |icmp_reply_24            |   892|
+|34    |        icmp_receive_ram |dpram__parameterized0_38 |     9|
+|35    |      mac_rx0            |mac_rx_top_25            |  1391|
+|36    |        c0               |crc_35                   |    69|
+|37    |        arp0             |arp_rx_34                |   289|
+|38    |        ip0              |ip_rx_36                 |   482|
+|39    |        mac0             |mac_rx_37                |   550|
+|40    |      mac_tx0            |mac_tx_top_26            |  1517|
+|41    |        c0               |crc_28                   |    69|
+|42    |        arp_tx0          |arp_tx_27                |   305|
+|43    |        ip0              |ip_tx_29                 |   550|
+|44    |        ipmode           |ip_tx_mode_30            |   137|
+|45    |        mac0             |mac_tx_31                |   185|
+|46    |        mode0            |mac_tx_mode_32           |    80|
+|47    |        udp0             |udp_tx_33                |   191|
+|48    |  mac_test3              |mac_test_2               |  4285|
+|49    |    mac_top0             |mac_top_5                |  4057|
+|50    |      cache0             |arp_cache_6              |   256|
+|51    |      icmp0              |icmp_reply_7             |   892|
+|52    |        icmp_receive_ram |dpram__parameterized0_21 |     9|
+|53    |      mac_rx0            |mac_rx_top_8             |  1392|
+|54    |        c0               |crc_18                   |    69|
+|55    |        arp0             |arp_rx_17                |   289|
+|56    |        ip0              |ip_rx_19                 |   482|
+|57    |        mac0             |mac_rx_20                |   551|
+|58    |      mac_tx0            |mac_tx_top_9             |  1517|
+|59    |        c0               |crc_11                   |    69|
+|60    |        arp_tx0          |arp_tx_10                |   305|
+|61    |        ip0              |ip_tx_12                 |   550|
+|62    |        ipmode           |ip_tx_mode_13            |   137|
+|63    |        mac0             |mac_tx_14                |   185|
+|64    |        mode0            |mac_tx_mode_15           |    80|
+|65    |        udp0             |udp_tx_16                |   191|
+|66    |  mac_test4              |mac_test_3               |  4231|
+|67    |    mac_top0             |mac_top                  |  4052|
+|68    |      cache0             |arp_cache                |   257|
+|69    |      icmp0              |icmp_reply               |   894|
+|70    |        icmp_receive_ram |dpram__parameterized0    |     9|
+|71    |      mac_rx0            |mac_rx_top               |  1389|
+|72    |        c0               |crc_4                    |    69|
+|73    |        arp0             |arp_rx                   |   287|
+|74    |        ip0              |ip_rx                    |   482|
+|75    |        mac0             |mac_rx                   |   550|
+|76    |      mac_tx0            |mac_tx_top               |  1512|
+|77    |        c0               |crc                      |    69|
+|78    |        arp_tx0          |arp_tx                   |   300|
+|79    |        ip0              |ip_tx                    |   554|
+|80    |        ipmode           |ip_tx_mode               |   136|
+|81    |        mac0             |mac_tx                   |   184|
+|82    |        mode0            |mac_tx_mode              |    80|
+|83    |        udp0             |udp_tx                   |   189|
++------+-------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 964.074 ; gain = 659.324
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 570 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 964.074 ; gain = 268.645
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 964.074 ; gain = 659.324
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1184 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+451 Infos, 305 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 964.074 ; gain = 670.793
+INFO: [Common 17-1381] The checkpoint 'D:/demo_ax7101/demo/video_ethernet/video_ethernet.runs/synth_1/video_ethernet.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file video_ethernet_utilization_synth.rpt -pb video_ethernet_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.120 . Memory (MB): peak = 964.074 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jul  3 13:39:23 2018...
